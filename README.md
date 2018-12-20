@@ -32,7 +32,7 @@ $ cd /home/darkeden/ && ./start
 ```
 
 ### Changing username and password
-Open file ```Dockerfile``` and change variables ```USERNAME``` and ```PASSWORD```. The local server's ip will be set automatically end sent to terminal after build. Iimportant: DO NOT REMOVE ```\``` FROM END LINE:
+Open file ```Dockerfile``` and change variables ```USERNAME``` and ```PASSWORD```. The local server's ip will be set automatically and printed on terminal after build. Important: DO NOT REMOVE ```\``` FROM END LINE:
 
 
 FROM

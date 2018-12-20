@@ -64,9 +64,9 @@ RUN apt-get update \
     && apt-get -y install iputils-ping \
     && apt-get -y install gcc \
     && apt-get -y install lua5.1 \
-    #&& apt-get -y install libcppunit-1.14-0 \
+    && apt-get -y install libcppunit-1.14-0 \
     && apt-get -y install zlib1g \
-    #&& apt-get -y install zlib1g-dev \
+    && apt-get -y install zlib1g-dev \
     && apt-get -y install gcc \
     #&& apt-get -y install zip unzip rar unrar \
     && apt-get -y install xz-utils \
