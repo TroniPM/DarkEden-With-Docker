@@ -37,8 +37,8 @@ LABEL maintainer="paulomatew@gmail.com"
 ################################           ###############################
 ##########################################################################
 #INSERT '\' after every line, except the last one
-ENV USERNAME=elcastle \
-    PASSWORD=elca110 \
+ENV USERNAME=dk \
+    PASSWORD=dk123 \
     #DO NOT CHANGE DOWN HERE#
     IP_PLACEHOLDER=\@\@IP_CHANGE\@\@ \
     USERNAME_PLACEHOLDER=\@\@USERNAME_CHANGE\@\@ \
@@ -72,6 +72,7 @@ RUN apt-get update \
     && apt-get -y install xz-utils \
     && apt-get -y install mysql-server-5.7 \
     && apt-get -y install mysql-client-5.7 \
+    && apt-get -y install nano \
 \
 ##########################################################################
 ####################                               #######################
@@ -107,9 +108,19 @@ RUN apt-get update \
 ######################### POPULATING DATABASE ############################
 #########################                     ############################
 ##########################################################################
+#ENTRYPOINT service mysql start
 #FAZER .SQL COMPATIVEL com a versão do mysql da máquina
 #PEGAR IP E POPULAR BANCO
 
+#RUN THIS COMMANDS MANUALLY
+# HOST IP >>>>>>>>>>>> netstat -nr | grep -m1 eth0 | awk '{print $2}'
+
+
+# service mysql start
+# mysql -u dk -p 123 -e "CREATE USER 'dk'@'localhost' IDENTIFIED BY 'dk123';"
+# mysql -u dk -p 123 -e "CREATE USER 'dk'@'172.17.0.1' IDENTIFIED BY 'dk123';"
+# CREATE USER 'dk'@'localhost' IDENTIFIED BY 'dk123';
+# CREATE USER 'dk'@'172.17.0.1' IDENTIFIED BY 'dk123';
 
 #ACCESS MYSQL REMOTELY
 EXPOSE 3306/tcp 3306/udp
