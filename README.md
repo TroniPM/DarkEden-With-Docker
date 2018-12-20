@@ -31,8 +31,10 @@ Now what? Inside the docker image (REALLY lightwave), just start your server ;]
 $ cd /home/darkeden/ && ./start
 ```
 
-### Changing username, password and ip
-Open file ```Dockerfile``` and change variables 'from' > 'to' (important: DO NOT REMOVE ```\``` FROM END LINE). The local server's ip will be set automatically end sent to terminal after build:
+### Changing username and password
+Open file ```Dockerfile``` and change variables ```USERNAME``` and ```PASSWORD```. The local server's ip will be set automatically end sent to terminal after build. Iimportant: DO NOT REMOVE ```\``` FROM END LINE:
+
+
 FROM
 ```
 ...
@@ -53,7 +55,8 @@ PASSWORD=YOUR_PASSWORD \
 - One world only
 
 # Work to-do: 
-- INSTALL MYSQL-CLIENT and MYSQL-SERVER
+- Convert database dump (DARKEDEN.SQL) from mysql4.0.20-standard to mysql5.7
+  - Populate the database with new dump.
 - Clean the database to remaing with ```only required data```
 - Create an account ADMIN with 3 characters (slayer, vampire and ouster)
   - Create variable to set username/password for admin default account
