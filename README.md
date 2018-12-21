@@ -8,7 +8,7 @@
 # DarkEden Docker
 Set up your very own server using a current technology (vm is pretty dead boysssss) with a few steps. Everyone wants to make your own server, by gets stuck on VPS princing. Why is that? Too expansive. But Why [Docker]? Well, docker works like a VM, but without a Operating System behind. But why this matter? Well... You can execute a 'vm like' with less resources of memory, cpu, etc.
 
-# NOT WORKING YET. Why?
+# NOT WORKING YET. [Why]? 
  - Populate mysql with files: ```inserts.sql``` and ```creates.sql```
 
 # About Docker
@@ -40,15 +40,23 @@ Open file ```Dockerfile``` and change variables ```USERNAME``` and ```PASSWORD``
 FROM
 ```
 ...
-USERNAME=elcastle \
-PASSWORD=elca110 \
+DB_USERNAME=dk \
+DB_PASSWORD=dk123 \
+DB_NAME=dkdocker \
+ADMIN_USERNAME=admin \
+ADMIN_PASSWORD=123456 \
+DK_SERVER_NAME=DKDocker \
 ...
 ```
 TO
 ```
 ...
-USERNAME=YOUR_USERNAME \
-PASSWORD=YOUR_PASSWORD \
+DB_USERNAME=YOUR_USERNAME \
+DB_PASSWORD=YOUR_PASSWORD \
+DB_NAME=YOUR_DATABASE_NAME \
+ADMIN_USERNAME=YOUR_DKSERVER_ADMIN_USERNAME \
+ADMIN_PASSWORD=YOUR_DKSERVER_ADMIN_PASSWORD \
+DK_SERVER_NAME=YOUR_DKSERVER_WORLD_NAME \
 ...
 ```
 
@@ -56,15 +64,10 @@ PASSWORD=YOUR_PASSWORD \
 - Tables translated to english: ```AttrInfo.sql``` and ```GSStringPool.sql```
 - One world only
 
-# Work to-do: 
-- import inserts.sql and creates.sqle into mysql on build
-- Clean the database to remaing with ```only required data```
-- Create an account ADMIN with 3 characters (slayer, vampire and ouster)
-  - Create variable to set username/password for admin default account
-
 # Contributing
 Bro, just send me a pull request explaining what you did. =]
 
 
    [Docker]: <https://www.docker.com/resources/what-container>
    [Gerry Fleming]: <https://www.nebulaworks.com/blog/2015/03/24/what-is-docker-a-simple-explanation/>
+   [Why]: <https://github.com/TroniPM/DarkEden-With-Docker/issues>
