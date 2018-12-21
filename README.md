@@ -12,6 +12,9 @@ Set up your very own server using a current technology (vm is pretty dead boysss
  - Convert database dump (DARKEDEN.SQL) from mysql4.0.20-standard to mysql5.7
  - Populate mysql with file (DARKEDEN.SQL)
 
+# About Docker
+Docker is based on the idea of that you can package your code with dependencies into a deployable unit called a container. For a visual explanation, think of the shipping containers used for intermodal shipping. You put your package (code and dependencies) in the container, ship it using a boat or train (laptop or cloud) and when it arrives at its destination it works (runs) just like it did when it was shipped. Docker creates an isolated Linux process using software fences. The other part of the puzzle are images. Images are an artifact, essentially a snapshot of the contents a container is meant to run. Low overhead: Unlike virtual machine hypervisors, Docker is lightweight and very fast, containers are small and boot instantly. Gerry Fleming, 2015.
+
 # Build
 ### Dependencies
 ```sh
@@ -66,3 +69,4 @@ Bro, just send me a pull request explaining what you did. =]
 
 
    [Docker]: <https://www.docker.com/resources/what-container>
+   [Gerry Fleming]: <https://www.nebulaworks.com/blog/2015/03/24/what-is-docker-a-simple-explanation/>

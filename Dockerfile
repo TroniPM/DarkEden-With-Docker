@@ -59,20 +59,19 @@ COPY libs.tar.xz DARKEDENSQL.tar.xz darkeden.tar.xz /home/
 ################################          ################################
 ##########################################################################
 
-RUN apt-get update \
-    && apt-get -y install net-tools \
-    && apt-get -y install iputils-ping \
-    && apt-get -y install gcc \
-    && apt-get -y install lua5.1 \
-    && apt-get -y install libcppunit-1.14-0 \
-    && apt-get -y install zlib1g \
-    && apt-get -y install zlib1g-dev \
-    && apt-get -y install gcc \
-    #&& apt-get -y install zip unzip rar unrar \
-    && apt-get -y install xz-utils \
-    && apt-get -y install mysql-server-5.7 \
-    && apt-get -y install mysql-client-5.7 \
-    && apt-get -y install nano \
+RUN apt-get update && apt install -y \
+    net-tools \
+    iputils-ping \
+    gcc \
+    lua5.1 \
+    #libcppunit-1.14-0 \
+    #zlib1g \
+    #zlib1g-dev \
+    #zip unzip rar unrar \
+    xz-utils \
+    #mysql-server-5.7 \
+    #mysql-client-5.7 \
+    #nano \
 \
 ##########################################################################
 ####################                               #######################
