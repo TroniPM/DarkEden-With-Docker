@@ -9,7 +9,7 @@
 Set up your very own server using a current technology (vm is pretty dead boysssss) with a few steps. Everyone wants to make your own server, by gets stuck on VPS princing. Why is that? Too expansive. But Why [Docker]? Well, docker works like a VM, but without a Operating System behind. But why this matter? Well... You can execute a 'vm like' with less resources of memory, cpu, etc.
 
 # NOT WORKING YET. [Why]? 
- - Populate mysql with files: ```inserts.sql``` and ```creates.sql```
+ - Error : SQLConnectException : Bad handshakee.
 
 # About Docker
 Docker is based on the idea of that you can package your code with dependencies into a deployable unit called a container. For a visual explanation, think of the shipping containers used for intermodal shipping. You put your package (code and dependencies) in the container, ship it using a boat or train (laptop or cloud) and when it arrives at its destination it works (runs) just like it did when it was shipped. Docker creates an isolated Linux process using software fences. The other part of the puzzle are images. Images are an artifact, essentially a snapshot of the contents a container is meant to run. Low overhead: Unlike virtual machine hypervisors, Docker is lightweight and very fast, containers are small and boot instantly. [Gerry Fleming], 2015.
@@ -33,39 +33,32 @@ Now what? Inside the docker image (REALLY lightwave), just start your server ;]
 $ cd /home/darkeden/ && ./start
 ```
 
-### Changing username and password
-Open file ```Dockerfile``` and change variables ```USERNAME``` and ```PASSWORD```. The local server's ip will be set automatically and printed on terminal after build. Important: DO NOT REMOVE ```\``` FROM END LINE:
+### Customizable
+Open file ```Dockerfile``` and change these variables as you wish. Importante 1: The local server's ip will be set automatically and printed on terminal after build is complete. Important 2: DO NOT remove ```\``` from variables end line:
 
 
 FROM
 ```
 ...
-DB_USERNAME=dk \
-DB_PASSWORD=dk123 \
-DB_NAME=dkdocker \
-ADMIN_USERNAME=admin \
-ADMIN_PASSWORD=123456 \
-DK_SERVER_NAME=DKDocker \
-...
-```
-TO
-```
-...
-DB_USERNAME=YOUR_USERNAME \
-DB_PASSWORD=YOUR_PASSWORD \
-DB_NAME=YOUR_DATABASE_NAME \
-ADMIN_USERNAME=YOUR_DKSERVER_ADMIN_USERNAME \
-ADMIN_PASSWORD=YOUR_DKSERVER_ADMIN_PASSWORD \
-DK_SERVER_NAME=YOUR_DKSERVER_WORLD_NAME \
+DB_USERNAME=dk \                 #database username (maybe elcastle? hehehe)
+DB_PASSWORD=dk123 \              #database password (what about 'elca110'? recommended change!)
+DB_NAME=dkdocker \               #database name (v2 'original' files was 'DARKEDEN')
+
+ADMIN_USERNAME=admin \           #username default account (admin privileges) on dk server
+ADMIN_PASSWORD=123456 \          #password default account (admin privileges) on dk server
+
+DK_SERVER_NAME=DKDocker \        #dk server name showing on client (World and Subworld).
 ...
 ```
 
-# Done so far
+
+# Done so far on server
 - Tables translated to english: ```AttrInfo.sql``` and ```GSStringPool.sql```
 - One world only
 
+
 # Contributing
-Bro, just send me a pull request explaining what you did. =]
+Bro, just open an issue explaining what you thinking, then we discuss about it, then you may send a pull request. For bugs, suggestions, requests and enhancements, create an issue. =]
 
 
    [Docker]: <https://www.docker.com/resources/what-container>
