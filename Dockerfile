@@ -59,6 +59,8 @@ ENV DB_USERNAME=dk \
     DK_PATH=/home/darkeden/ \
     CONF_PATH=/home/darkeden/vs/conf/
 
+EXPOSE 3306 9999 9998 9997 9996
+
 ##########################################################################
 ########################                       ###########################
 ######################## SENDING DATA TO IMAGE ###########################
@@ -76,26 +78,27 @@ COPY libs.tar.xz sql.tar.xz darkeden.tar.xz /home/
 RUN apt-get update && apt install -y --no-install-recommends \
     net-tools \
     iputils-ping \
-    gcc \
-    lua5.2 \
+    #gcc \
+    #lua5.2 \
     xz-utils \
     mysql-server-5.7 \
-    libcppunit-1.14-0 \
+    #libcppunit-1.14-0 \
     #zlib1g \
     #zlib1g-dev \
     #zip unzip rar unrar \
     #mysql-client-5.7 \
-    #nano \
-    && rm -rf /var/lib/apt/lists/* \
-\
+    nano \
+    && rm -rf /var/lib/apt/lists/* 
+
 ##########################################################################
 ####################                               #######################
 #################### UNCOMPRESSING AND PERMISSIONS #######################
 ####################                               #######################
 ##########################################################################
-\
-    && export SERVER_IP=`ifconfig eth0 | grep inet | awk '{print $2}'` \
+RUN \
+       export SERVER_IP=`ifconfig eth0 | grep inet | awk '{print $2}'` \
     && export HOST_IP=`netstat -nr | grep -m1 eth0 | awk '{print $2}'` \
+    #&& export HOSTNAME=`hostname` \
     && mkdir /home/libs && tar -xJf /home/libs.tar.xz -C /home/libs && dpkg -i /home/libs/libstdc++2.10-glibc2.2_2.95.4-27_i386.deb && rm -r /home/libs/ \
     && mkdir ${DK_PATH}   && tar -xJf /home/darkeden.tar.xz -C /home/ && cd ${DK_PATH} && chmod -R +x start stop vs/bin \
     && tar -xJf /home/sql.tar.xz -C ${DK_PATH} \
@@ -115,14 +118,17 @@ RUN apt-get update && apt install -y --no-install-recommends \
     && sed -i "s/${ADMIN_PASSWORD_PLACEHOLDER}/${ADMIN_PASSWORD}/g" ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${DK_PATH}sql/inserts.sql ${DK_PATH}sql/creates.sql \
     && sed -i "s/${DK_SERVER_NAME_PLACEHOLDER}/${DK_SERVER_NAME}/g" ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${DK_PATH}sql/inserts.sql ${DK_PATH}sql/creates.sql \
     && sed -i "s/bind-address/#bind-address/g" /etc/mysql/mysql.conf.d/mysqld.cnf \
-    && rm /home/darkeden.tar.xz /home/libs.tar.xz /home/sql.tar.xz \
-\
+    && rm /home/darkeden.tar.xz /home/libs.tar.xz /home/sql.tar.xz 
+
 ##########################################################################
 #########################                     ############################
 ######################### POPULATING DATABASE ############################
 #########################                     ############################
 ##########################################################################
-\
+RUN \
+       export SERVER_IP=`ifconfig eth0 | grep inet | awk '{print $2}'` \
+    && export HOST_IP=`netstat -nr | grep -m1 eth0 | awk '{print $2}'` \
+    && export HOSTNAME=`hostname` \
     && service mysql start \
     \
     && mysql -u root -e "CREATE DATABASE ${DB_NAME};" \
@@ -136,6 +142,7 @@ RUN apt-get update && apt install -y --no-install-recommends \
     && mysql -u root -e "CREATE USER '${DB_USERNAME}'@'localhost.localdomain' IDENTIFIED BY '${DB_PASSWORD}';" \
     && mysql -u root -e "CREATE USER '${DB_USERNAME}'@'${SERVER_IP}'          IDENTIFIED BY '${DB_PASSWORD}';" \
     && mysql -u root -e "CREATE USER '${DB_USERNAME}'@'${HOST_IP}'            IDENTIFIED BY '${DB_PASSWORD}';" \
+    && mysql -u root -e "CREATE USER '${DB_USERNAME}'@'${HOSTNAME}'            IDENTIFIED BY '${DB_PASSWORD}';" \
     \
     #granting permissions
     && mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USERNAME}'@'127.0.0.1';" \
@@ -143,6 +150,7 @@ RUN apt-get update && apt install -y --no-install-recommends \
     && mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USERNAME}'@'localhost.localdomain';" \
     && mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USERNAME}'@'${SERVER_IP}';" \
     && mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USERNAME}'@'${HOST_IP}';" \
+    && mysql -u root -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USERNAME}'@'${HOSTNAME}';" \
     \
     #populating database
     && cat /home/darkeden/sql/creates.sql | mysql -u ${DB_USERNAME} -p${DB_PASSWORD} \
@@ -156,16 +164,11 @@ RUN apt-get update && apt install -y --no-install-recommends \
 \
     && echo "\r\n\r\n\r\n\r\nYour DK !local! ip address is: ${SERVER_IP}.\r\nChange your dk client files...\r\n\r\n\r\n\r\n"
 
-EXPOSE 3306/udp 3306/tcp \
-       9999/udp 9999/tcp \
-       9998/udp 9998/tcp \
-       9997/udp 9997/tcp \
-       9996/udp 9996/tcp
-
 #open bash
 CMD service mysql restart \
     && export SERVER_IP=`ifconfig eth0 | grep inet | awk '{print $2}'` \
     && export HOST_IP=`netstat -nr | grep -m1 eth0 | awk '{print $2}'` \
+    && export HOSTNAME=`hostname` \
     && /bin/bash
 
 
