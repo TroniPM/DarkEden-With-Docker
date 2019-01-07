@@ -24,9 +24,9 @@ $ sudo apt install docker
 Easy peasy lemon squeezy steps. Just run these commands below (```-d``` means "Run container in background and print container ID", ```-P``` means "Publish a container’s port(s) to the host", ```-e``` means "Set environment variables". You can learn more about arguments [here].):
 ```sh
 $ cd DarkEden-Docker/
-$ docker build -t dk .                                #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
-$ docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk    #THIS WILL RUN THE IMAGE CALLED 'dk'
-$ docker exec -it CONTAINER_ID /bin/bash              #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
+$ docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
+$ CONTAINER=`docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk'
+$ docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
 ```
 
 Now what? Inside the docker image (REALLY lightwave), just setup and start your server ;]

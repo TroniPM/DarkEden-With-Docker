@@ -15,6 +15,8 @@ echo ''
 echo ${str}
 echo ''
 
+echo 'Dropping (IF EXISTS) database' && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME};"
+
 echo 'Starting creates.sql' && cat /home/darkeden/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates.sql done...'
 echo 'Starting inserts.sql' && cat /home/darkeden/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
 
