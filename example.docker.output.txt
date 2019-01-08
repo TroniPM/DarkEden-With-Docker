@@ -1,0 +1,2321 @@
+BillingGameNo : 1
+BillingServerIP : 172.17.0.2
+BillingServerPort : 3001
+DB_DB : dkdocker
+DB_HOST : 172.17.0.2
+DB_PASSWORD : dk123
+DB_USER : dk
+DIST_DB_DB : dkdocker
+DIST_DB_HOST : 172.17.0.2
+DIST_DB_PASSWORD : dk123
+DIST_DB_USER : dk
+FreePlaySlayerSum : 30
+FreePlayVampireLevel : 30
+GameServerUDPPort : 9997
+HomePath : /home/darkeden/vs
+IsNetMarble : 0
+LogLevel : 2999
+LogServerIP : 172.17.0.2
+LogServerPort : 5000
+LoginServerBaseID : 100
+LoginServerBasePort : 9900
+LoginServerBaseUDPPort : 9800
+LoginServerID : 0
+LoginServerPort : 9999
+LoginServerUDPPort : 9996
+ServerInfoReloadTime : 1
+UI_DB_DB : dkdocker
+UI_DB_HOST : 172.17.0.2
+UI_DB_PASSWORD : dk123
+UI_DB_USER : dk
+User : excel96
+
+--------------------------------------------------
+            Init DatabaseManager 
+--------------------------------------------------
+2019-01-08 20:17:52
+[LOGIN_SERVER] query WorldDBInfo
+--------------------------------------------------
+--------------------------------------------------
+Connecting....... Another DB Server
+--------------------------------------------------
+--------------------------------------------------
+Connectiong: WorldID=0, HOST=172.17.0.2, DB=dkdocker, User=dk, Port=3306
+Adding TID connection BEGIN
+Adding TID connection END
+WorldID=0, IP=172.17.0.2
+MAX SERVER GROUP = 1
+WorldID:1 ServerGroupID:0 follows0
+GameServerInfoManager(
+GameServerInfo(ServerID: 1,Nickname:game1,IP: 172.17.0.2,TCPPort:9998,UDPPort:9997,GroupID:0,WorldID:1,ServerStat:0)
+)EMPTY)
+addGameServerGroupInfo: 1, 0 : DKDocker
+GameServerGroupInfoManager(
+GameServerGroupInfo(WorldID : 1ServerGroupID: 0,GroupName:DKDocker)
+EMPTY)
+ZoneInfoManager(
+ZoneInfo(ZoneID:11,ZoneGroupID:2)
+ZoneInfo(ZoneID:12,ZoneGroupID:2)
+ZoneInfo(ZoneID:13,ZoneGroupID:2)
+ZoneInfo(ZoneID:14,ZoneGroupID:2)
+ZoneInfo(ZoneID:21,ZoneGroupID:1)
+ZoneInfo(ZoneID:22,ZoneGroupID:1)
+ZoneInfo(ZoneID:23,ZoneGroupID:1)
+ZoneInfo(ZoneID:24,ZoneGroupID:1)
+ZoneInfo(ZoneID:31,ZoneGroupID:2)
+ZoneInfo(ZoneID:32,ZoneGroupID:2)
+ZoneInfo(ZoneID:33,ZoneGroupID:2)
+ZoneInfo(ZoneID:34,ZoneGroupID:2)
+ZoneInfo(ZoneID:1001,ZoneGroupID:1)
+ZoneInfo(ZoneID:1002,ZoneGroupID:1)
+ZoneInfo(ZoneID:1003,ZoneGroupID:1)
+ZoneInfo(ZoneID:1004,ZoneGroupID:1)
+ZoneInfo(ZoneID:1005,ZoneGroupID:2)
+ZoneInfo(ZoneID:1006,ZoneGroupID:2)
+ZoneInfo(ZoneID:41,ZoneGroupID:1)
+ZoneInfo(ZoneID:1007,ZoneGroupID:2)
+ZoneInfo(ZoneID:42,ZoneGroupID:1)
+ZoneInfo(ZoneID:1201,ZoneGroupID:1)
+ZoneInfo(ZoneID:1008,ZoneGroupID:2)
+ZoneInfo(ZoneID:43,ZoneGroupID:1)
+ZoneInfo(ZoneID:1202,ZoneGroupID:1)
+ZoneInfo(ZoneID:1009,ZoneGroupID:2)
+ZoneInfo(ZoneID:44,ZoneGroupID:1)
+ZoneInfo(ZoneID:1203,ZoneGroupID:1)
+ZoneInfo(ZoneID:1010,ZoneGroupID:2)
+ZoneInfo(ZoneID:1204,ZoneGroupID:1)
+ZoneInfo(ZoneID:1011,ZoneGroupID:2)
+ZoneInfo(ZoneID:1205,ZoneGroupID:2)
+ZoneInfo(ZoneID:1012,ZoneGroupID:2)
+ZoneInfo(ZoneID:1206,ZoneGroupID:2)
+ZoneInfo(ZoneID:1013,ZoneGroupID:2)
+ZoneInfo(ZoneID:1401,ZoneGroupID:1)
+ZoneInfo(ZoneID:1402,ZoneGroupID:1)
+ZoneInfo(ZoneID:51,ZoneGroupID:2)
+ZoneInfo(ZoneID:52,ZoneGroupID:2)
+ZoneInfo(ZoneID:1211,ZoneGroupID:2)
+ZoneInfo(ZoneID:53,ZoneGroupID:2)
+ZoneInfo(ZoneID:1212,ZoneGroupID:2)
+ZoneInfo(ZoneID:54,ZoneGroupID:2)
+ZoneInfo(ZoneID:1020,ZoneGroupID:1)
+ZoneInfo(ZoneID:1600,ZoneGroupID:1)
+ZoneInfo(ZoneID:1601,ZoneGroupID:1)
+ZoneInfo(ZoneID:1602,ZoneGroupID:1)
+ZoneInfo(ZoneID:1603,ZoneGroupID:1)
+ZoneInfo(ZoneID:1410,ZoneGroupID:2)
+ZoneInfo(ZoneID:1604,ZoneGroupID:1)
+ZoneInfo(ZoneID:1411,ZoneGroupID:2)
+ZoneInfo(ZoneID:1412,ZoneGroupID:2)
+ZoneInfo(ZoneID:61,ZoneGroupID:1)
+ZoneInfo(ZoneID:1413,ZoneGroupID:2)
+ZoneInfo(ZoneID:62,ZoneGroupID:1)
+ZoneInfo(ZoneID:1221,ZoneGroupID:1)
+ZoneInfo(ZoneID:63,ZoneGroupID:1)
+ZoneInfo(ZoneID:1222,ZoneGroupID:1)
+ZoneInfo(ZoneID:64,ZoneGroupID:1)
+ZoneInfo(ZoneID:1611,ZoneGroupID:2)
+ZoneInfo(ZoneID:1612,ZoneGroupID:2)
+ZoneInfo(ZoneID:2000,ZoneGroupID:1)
+ZoneInfo(ZoneID:2001,ZoneGroupID:1)
+ZoneInfo(ZoneID:71,ZoneGroupID:2)
+ZoneInfo(ZoneID:2002,ZoneGroupID:1)
+ZoneInfo(ZoneID:72,ZoneGroupID:2)
+ZoneInfo(ZoneID:2003,ZoneGroupID:1)
+ZoneInfo(ZoneID:1231,ZoneGroupID:2)
+ZoneInfo(ZoneID:73,ZoneGroupID:2)
+ZoneInfo(ZoneID:2004,ZoneGroupID:1)
+ZoneInfo(ZoneID:1232,ZoneGroupID:2)
+ZoneInfo(ZoneID:74,ZoneGroupID:2)
+ZoneInfo(ZoneID:75,ZoneGroupID:1)
+ZoneInfo(ZoneID:1621,ZoneGroupID:2)
+ZoneInfo(ZoneID:2010,ZoneGroupID:2)
+ZoneInfo(ZoneID:2011,ZoneGroupID:2)
+ZoneInfo(ZoneID:81,ZoneGroupID:1)
+ZoneInfo(ZoneID:2012,ZoneGroupID:2)
+ZoneInfo(ZoneID:2013,ZoneGroupID:2)
+ZoneInfo(ZoneID:1241,ZoneGroupID:1)
+ZoneInfo(ZoneID:2014,ZoneGroupID:2)
+ZoneInfo(ZoneID:1242,ZoneGroupID:1)
+ZoneInfo(ZoneID:8000,ZoneGroupID:1)
+ZoneInfo(ZoneID:8001,ZoneGroupID:1)
+ZoneInfo(ZoneID:2020,ZoneGroupID:1)
+ZoneInfo(ZoneID:2021,ZoneGroupID:1)
+ZoneInfo(ZoneID:91,ZoneGroupID:2)
+ZoneInfo(ZoneID:2022,ZoneGroupID:1)
+ZoneInfo(ZoneID:92,ZoneGroupID:2)
+ZoneInfo(ZoneID:2023,ZoneGroupID:1)
+ZoneInfo(ZoneID:1251,ZoneGroupID:2)
+ZoneInfo(ZoneID:93,ZoneGroupID:2)
+ZoneInfo(ZoneID:2024,ZoneGroupID:1)
+ZoneInfo(ZoneID:1252,ZoneGroupID:2)
+ZoneInfo(ZoneID:94,ZoneGroupID:2)
+ZoneInfo(ZoneID:1261,ZoneGroupID:1)
+ZoneInfo(ZoneID:1262,ZoneGroupID:1)
+ZoneInfo(ZoneID:3001,ZoneGroupID:1)
+ZoneInfo(ZoneID:3002,ZoneGroupID:1)
+ZoneInfo(ZoneID:3003,ZoneGroupID:1)
+ZoneInfo(ZoneID:1100,ZoneGroupID:1)
+ZoneInfo(ZoneID:1101,ZoneGroupID:1)
+ZoneInfo(ZoneID:1102,ZoneGroupID:1)
+ZoneInfo(ZoneID:1103,ZoneGroupID:1)
+ZoneInfo(ZoneID:1104,ZoneGroupID:1)
+ZoneInfo(ZoneID:1105,ZoneGroupID:2)
+ZoneInfo(ZoneID:4001,ZoneGroupID:1)
+ZoneInfo(ZoneID:1106,ZoneGroupID:2)
+ZoneInfo(ZoneID:4002,ZoneGroupID:1)
+ZoneInfo(ZoneID:4003,ZoneGroupID:1)
+ZoneInfo(ZoneID:1301,ZoneGroupID:1)
+ZoneInfo(ZoneID:4004,ZoneGroupID:1)
+ZoneInfo(ZoneID:1302,ZoneGroupID:1)
+ZoneInfo(ZoneID:4005,ZoneGroupID:2)
+ZoneInfo(ZoneID:1303,ZoneGroupID:1)
+ZoneInfo(ZoneID:1111,ZoneGroupID:2)
+ZoneInfo(ZoneID:1112,ZoneGroupID:2)
+ZoneInfo(ZoneID:1113,ZoneGroupID:2)
+ZoneInfo(ZoneID:1500,ZoneGroupID:1)
+ZoneInfo(ZoneID:1114,ZoneGroupID:2)
+ZoneInfo(ZoneID:1501,ZoneGroupID:1)
+ZoneInfo(ZoneID:1115,ZoneGroupID:1)
+ZoneInfo(ZoneID:1502,ZoneGroupID:1)
+ZoneInfo(ZoneID:1503,ZoneGroupID:1)
+ZoneInfo(ZoneID:1504,ZoneGroupID:1)
+ZoneInfo(ZoneID:1311,ZoneGroupID:2)
+ZoneInfo(ZoneID:1505,ZoneGroupID:2)
+ZoneInfo(ZoneID:1506,ZoneGroupID:2)
+ZoneInfo(ZoneID:1121,ZoneGroupID:1)
+ZoneInfo(ZoneID:1122,ZoneGroupID:1)
+ZoneInfo(ZoneID:1123,ZoneGroupID:1)
+ZoneInfo(ZoneID:1124,ZoneGroupID:1)
+ZoneInfo(ZoneID:1125,ZoneGroupID:2)
+ZoneInfo(ZoneID:1126,ZoneGroupID:2)
+ZoneInfo(ZoneID:1127,ZoneGroupID:2)
+ZoneInfo(ZoneID:1321,ZoneGroupID:1)
+ZoneInfo(ZoneID:1128,ZoneGroupID:2)
+ZoneInfo(ZoneID:1322,ZoneGroupID:1)
+ZoneInfo(ZoneID:1129,ZoneGroupID:2)
+ZoneInfo(ZoneID:1323,ZoneGroupID:1)
+ZoneInfo(ZoneID:1130,ZoneGroupID:2)
+ZoneInfo(ZoneID:1324,ZoneGroupID:1)
+ZoneInfo(ZoneID:1131,ZoneGroupID:2)
+ZoneInfo(ZoneID:1132,ZoneGroupID:2)
+ZoneInfo(ZoneID:1133,ZoneGroupID:2)
+ZoneInfo(ZoneID:1134,ZoneGroupID:2)
+ZoneInfo(ZoneID:2101,ZoneGroupID:1)
+ZoneInfo(ZoneID:2102,ZoneGroupID:1)
+)
+ZoneGroupInfoManager(ZoneGroupInfo(ZoneGroupID:1,ServerID:1)ZoneGroupInfo(ZoneGroupID:2,ServerID:1))
+Loading GameWorldInfoManager....
+GameWorldInfo(WorldID: 1,Name:DKDocker)
+Size : 0
+End GameWorldInfoManager Load
+GameWorldInfoManager(
+GameWorldInfo(WorldID: 1,Name:DKDocker)
+)
+UserInfoManager(UserInfo(WorldID:ServerGroupID:0,UserNum:0)EMPTY)
+Adding TID connection BEGIN
+Adding TID connection END
+DB_DB : dkdocker
+DB_HOST : 172.17.0.2
+DB_PASSWORD : dk123
+DB_USER : dk
+DIST_DB_DB : dkdocker
+DIST_DB_HOST : 172.17.0.2
+DIST_DB_PASSWORD : dk123
+DIST_DB_USER : dk
+Dimension : 1
+HomePath : /home/darkeden/vs
+LogLevel : 2999
+LogServerIP : 172.17.0.2
+LogServerPort : 5001
+TCPPort : 9977
+UI_DB_DB : dkdocker
+UI_DB_HOST : 172.17.0.2
+UI_DB_PASSWORD : dk123
+UI_DB_USER : dk
+User : excel96
+WorldID : 1
+
+SharedServer::init() start
+--------------------------------------------------
+            Init DatabaseManager 
+--------------------------------------------------
+2019-01-08 20:17:53
+--------------------------------------------------
+--------------------------------------------------
+Connecting....... Another DB Server
+--------------------------------------------------
+--------------------------------------------------
+Connectiong: WorldID=0, HOST=172.17.0.2, DB=dkdocker, User=dk, Port=3306
+MAX SERVER GROUP = 1
+GameServerInfoManager(
+GameServerInfo(ServerID: 1,Nickname:game1,IP: 172.17.0.2,TCPPort:9998,UDPPort:9997,GroupID:0,WorldID:1,ServerStat:0)
+)
+GameServerGroupInfoManager(
+GameServerGroupInfo(WorldID : 1ServerGroupID: 0,GroupName:DKDocker)
+EMPTY)
+Loading GameWorldInfoManager....
+GameWorldInfo(WorldID: 1,Name:DKDocker)
+Size : 0
+End GameWorldInfoManager Load
+GameWorldInfoManager(
+GameWorldInfo(WorldID: 1,Name:DKDocker)
+)
+---------- Start SharedServer ---------
+>>> STARTING GAME SERVER...
+>>> RANDOMIZATION INITIALIZATION SUCCESS...
+>>> COMMAND-LINE PARAMETER READING SUCCESS...
+>>> LOGCLIENT INITIALZATION SUCCESS...
+>>> GAME SERVER INSTANCE CREATED...
+GameServer::init() : System Initialization Success...
+--------------------------------------------------
+            Init DatabaseManager 
+--------------------------------------------------
+2019-01-08 20:17:55
+--------------------------------------------------
+--------------------------------------------------
+Connecting....... Another DB Server
+--------------------------------------------------
+--------------------------------------------------
+Connectiong: WorldID=0, HOST=172.17.0.2, DB=dkdocker, User=dk, Port=3306
+GameServer::init() : DatabaseManager Initialization Success...
+ObjectManager::load() : SystemAvailabilitiesManager Initialization Start
+ObjectManager::load() : SystemAvailabilitiesManager Initialization Success
+ObjectManager::init() : StringPool Initialization Start....... 
+ObjectManager::init() : StringPool Initialization Success....... 
+ObjectManager::init() : VariableManager Initialization Start....... 
+Event¹ß»ý¿©ºÎ: 1
+Event¹ß»ýºóµµ: 100
+ItemÃß°¡¹ß»ýÈ®·ü:  99999
+°æÇèÄ¡ Ãß°¡ ¹ß»ýÈ®·ü: 50000
+ÀüÀï ½Â¸® À¯Áö½Ã°£: 14400
+½½·¹ÀÌ¾î ÀüÀï HP º¸³Ê½º: 0
+¹ìÆÄÀÌ¾î ÀüÀï HP º¸³Ê½º: 0
+ÇÁ¸®¹Ì¾ö »ç¿ëÀÚÀÇ °æÇèÄ¡ º¸³Ê½º: 200
+ÇÁ¸®¹Ì¾ö Á¸ÀÇ ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 150
+ZoneGroupBalancing ½Ã°£ ÁÖ±â: 60ºÐ
+°·ºí ItemType È®·ü: 100
+°·ºí ItemOption È®·ü: 100
+¿ÀÅä¹ÙÀÌ ¼ÒÈ¯±â´É: ON
+¸ó½ºÅÍ ¿¬¼Ó Àû ¼³Á¤ ½Ã°£: 300ÃÊ
+½½·¹ÀÌ¾î ÀüÀï Damage º¸³Ê½º: 0
+¹ìÆÄÀÌ¾î ÀüÀï Damage º¸³Ê½º: 0
+·¹¾î ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 85000
+À¯´ÏÅ© ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 70000
+¸¶½ºÅÍ ·¹¾î ÀÛµ¿: ON
+¸¶½ºÅÍ ·¹¾î¿¡ Á×°í ´Ù½Ã µé¾î°¡±â: OFF
+Ãß¼® ¼ÛÆí ¾ÆÀÌÅÛ È®·ü : 0
+¸¶½ºÅÍ ÈíÇ÷ ½ÃÀÛ HP : 70%
+¸¶½ºÅÍ ÈíÇ÷ ½ÃÀÛ BD : 20%
+¸¶½ºÅÍ ÈíÇ÷ ³¡ HP : 30%
+¸¶½ºÅÍ ÈíÇ÷ ³¡ BD : 40%
+Ä¡ÇÁ ¸ó½ºÅÍ µîÀå ON
+Ä¡ÇÁ ¸ó½ºÅÍ ·¹¾î ¾ÆÀÌÅÛ ·çÆÃ È®·ü : 75000%
+´É·ÂÄ¡ 40µÈ ¾Öµé ±æµå·Î ÀÌµ¿ : OFF
+½½·¹ÀÌ¾î ¹«·á »ç¿ë °¡´É µµ¸ÞÀÎ·¹º§ÇÕ: 30
+¹ìÆÄÀÌ¾î ¹«·á »ç¿ë °¡´É ·¹º§: 30
+IncomingConnection°ü·ÃµÈ Log: OFF
+Å©¸®½º¸¶½º ÆøÁ× ·çÆÃ È®·ü : 0 / 10000 
+Å©¸®½º¸¶½º Æ®¸® Á¶°¢ ·çÆÃ È®·ü : 0 / 10000 
+Å©¸®½º¸¶½º ¼±¹° »óÀÚ ·çÆÃ È®·ü: 0 / 10000 
+Å©¸®½º¸¶½º Æ®¸® Áö¼Ó ½Ã°£: 360ºÐ
+¸¶½ºÅÍ ·¹¾î ÃâÀÔ °¡´É ÀÎ¿ø ¼ö: 15¸í
+°è±Þ °æÇèÄ¡´Â ±âº» °æÇèÄ¡ÀÇ 30000%
+Luck º¸³Ê½º´Â ±âº» È®·üÀÇ 100%
+´ë¹Ú ¾ÆÀÌÅÛ È®·ü : 0 / 10000
+´ë¹Ú ¾ÆÀÌÅÛ Ãß°¡ ¾ÆÀÌÅÛ °³¼ö : 4
+´ë¹Ú ÇØ°ñ È®·ü : 0 / 10000
+À¯·á »ç¿ëÀÚ ¾ÚÇÃ, Ç÷Ã» ¹Ý°ª ÀÌº¥Æ® : OFF
+°ø¿ë¼º ÀÔÀå·á : 1000
+±æµå¼º ÀÔÀå·á : 10000
+°ø¿ë¼º ¾ÆÀÌÅÛ ¼¼±Ý : 100
+±æµå¼º ¾ÆÀÌÅÛ ¼¼±Ý : 100
+ÀüÀï ½ÅÃ»±Ý : 30000000
+±æµå ÀüÀï ½Ã°£ : 7200 ÃÊ == 120ºÐ
+Á¾Á· ÀüÀï ½Ã°£ : 7200 ÃÊ == 120ºÐ
+ÀüÀïÁÖ±â : ÁÖ ´ÜÀ§
+¾Æ´ãÀÇ ¼ºÁö ÀüÀï ±â´É : ON
+Á¾Á· ÀüÀï½Ã Timeband : Àú³á
+Á¾Á· ÀüÀï ÀÚµ¿ ½ÃÀÛ ±â´É: OFF
+Á¾Á· ÀüÀï Âü°¡ ÀÎ¿ø Á¦ÇÑ: OFF
+Ä¡ÇÁ ¸ó½ºÅÍ Ãß°¡ ¾ÆÀÌÅÛ °³¼ö: 4 °³
+¾ÆÀÌÅÛ ÁÖ´Â ÀÌº¥Æ®: OFF
+¹ìÆÄÀÌ¾î ´É·ÂÄ¡ ÀçºÐ¹è ºñ¿ë: 1000000
+Ä¿ÇÃ ¼º»ç ±â´É: ON
+Çì¾îÁø Àû ÀÖ´Â »ç¶÷ÀÌ ¶Ç Ä¿ÇÃÀÌ µÉ ¼ö ÀÖ´Â°¡: Y
+±æµå ÀüÀïÀ» ÇÏ´Â°¡?: No
+¾Æ¿ì½ºÅÍ½º ¹«·á »ç¿ë °¡´É ·¹º§: 30
+Äù½ºÆ®¸¦ ½ÅÃ»ÇÒ ¼ö ÀÖ´Â°¡?: Yes
+Äù½ºÆ® Á¤º¸¸¦ º¸³»Áà¾ß ÇÏ´Â°¡?: No
+¾ÆÀÌÅÛ »óÁ¡ ±â´ÉÀÌ ÄÑÁ®ÀÖ´Â°¡: Yes
+PC¹æ °æÇèÄ¡ º¸³Ê½º: 100
+PC¹æ ¾ÆÀÌÅÛ È¹µæ È®·ü º¸³Ê½º: 99
+µ· ·Î±× ³²±â´Â ÃÖ¼Ò ±Ý¾×: 5000000
+ÇÇ¾¾¹æ º¹±Ç ÀÌº¥Æ®: 0
+±ê¹ß»¯±â °ÔÀÓ ½ÇÇà: no
+DAEMONCTL Á×ÀÌ´Â ¿©ºÎ: no
+±×¹Ê´Þ(¾ø´Â) Ä«µå ³ª¿Ã È®·ü: 1 / 50000
+ÃÊ½Â´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 3000
+¹Ý´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 200
+º¸¸§´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 225000
+´ÞÄ«µå ÀÌº¥Æ®¸¦ Áß´ÜÇß½À´Ï´Ù.
+·¹º§º° ÀüÀï ÁøÇà ¿©ºÎ: no
+Á¾Á·Àü½Ã HP º¸³Ê½º: 0
+¸Ó¸® °¹¼ö Ä«¿îÆ®ÇÏ±â: no
+¸Ó¸® °¡°Ý º¸³Ê½º : 100
+·¹º§º° ÀüÀï Á¸¿¡ ÀÚÀ¯·Ó°Ô µé¾î°¥ ¼ö ÀÖ´Â°¡? : yes
+º¹ÁÖ¸Ó´Ï ÀÌº¥Æ®°¡ ÁøÇàÁßÀÌÁö ¾Ê½À´Ï´Ù.
+ÃÊ·Ï»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 200
+Æê °æÇèÄ¡ ºñÀ² : 4500
+ÆÄ¶õ»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 3000
+È²±Ý»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 15000
+»¡°£»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 50000
+¼±¹°»óÀÚ ±³È¯ ÀÌº¥Æ®°¡ ÁøÇàÁßÀÌÁö ¾Ê½À´Ï´Ù.
+»¡°£»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
+ÆÄ¶õ»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
+ÃÊ·Ï»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
+³ë¶õ»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
+³Ý¸¶ºí Ä«µå ÀÌº¥Æ® : No
+³Ý¸¶ºí Ä«µå ³ª¿Ã È®·ü : 0 / 100000
+Æê ¸ÔÀÌ ÀÌº¥Æ® : No
+ÇÁ¸®¹Ì¾ö Ã¼Çè ÀÌº¥Æ® : No
+°í´Ü°è Æê ¸ÔÀÌ È®·ü : 20%
+Æê ¸ÔÀÌ ·çÆÃ È®·ü : 10 / 100000
+Á¾Á·º° Æê ¸ÔÀÌ È®·ü : 40%
+¸®¹ÙÀÌ¹ú ¼Â È®·ü : 10%
+¿À´ÃÀº ±¹°æÀÏÀÌ ¾Æ´Õ´Ï´Ù.
+½½·¹ÀÌ¾î HPºñÀ² : 100%
+¹ìÆÄÀÌ¾î HPºñÀ² : 175%
+¾Æ¿ì½ºÅÍÁî HPºñÀ² : 150%
+¸ó½ºÅÍ HPºñÀ² : 150%
+¸ó½ºÅÍ EXPºñÀ² : 130%
+³×ÀÙÅ¬·Î¹ö ÀÌº¥Æ® : off
+³×ÀÙÅ¬·Î¹ö È®·ü : 100/100000
+¸ó½ºÅÍ Damage ºñÀ² : 120%
+2Â÷ Æê Äù½ºÆ® : on
+³×ÀÌ¹ÖÆæ ÀÌº¥Æ® : off
+³×ÀÌ¹ÖÆæ È®·ü : 5/100000
+±Ý¸Þ´Þ È®·ü : 0/100000
+º¹³¯ ÀÌº¥Æ® : off
+¿Ã¸²ÇÈ ÀÌº¥Æ® ¾ÆÀÌÅÛ ·çÆÃ È®·ü : 0/100000
+´Ùµ§ ¿Ã¸²ÇÈ ÀÌº¥Æ® : on
+¿ù°è°ü °¡°Ý : 1
+ÃÊº¸ÀÚ ÀÌº¥Æ® : off
+PINE_CAKE_EVENT: 0
+PINE_CAKE_RATIO: 500
+±æµå Å»Åð½Ã Àç°¡ÀÔ ºÒ°¡ ±â°£ : 7
+¿¬ÇÕ ±æµå °¹¼ö Á¦ÇÑ : 1
+¼ö´É ´ë¹Ú ¾ÆÀÌÅÛ È®·ü : 0
+Áúµå·¹ ·¹¾î ÀÎ¿ø Á¦ÇÑ : 36
+±âºÎ ÀÌº¥Æ® 2005.01 : on
+HOURGLASS_RATIO_S: 3
+HOURGLASS_RATIO_M: 3
+HOURGLASS_RATIO_L: 5
+2005³â »õÇØ ¸ÂÀÌ ÀÌº¥Æ® : off
+º¹Á¶¸® ¾ÆÀÌÅÛ È®·ü : 1 / 2500
+ÀÌº¥Æ® »¡°£ ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
+ÀÌº¥Æ® ³ì»ö ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
+ÀÌº¥Æ® ÆÄ¶õ ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
+ÀÌº¥Æ® °ËÀº ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
+ÀÌº¥Æ® ¾¦»ö ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
+½Ã°£´ëº° °æÇèÄ¡ 2¹è ÀÌº¥Æ® : on
+: 0
+
+
+: 1
+
+
+: 1
+ObjectManager::init() : VariableManager Initialization Success....... 
+ObjectManager::init() : ConditionFactoryManager Initialization Start
+ObjectManager::init() : ConditionFactoryManager Initialization Success
+ObjectManager::init() : ActionFactoryManager Initialization Start
+ObjectManager::init() : ActionFactoryManager Initialization Success
+ObjectManager::init() : ShopTemplate Initialization Start
+ObjectManager::init() : ShopTemplate Initialization Success
+ObjectManager::init() : DirectiveSetManager Initialization Start
+ID[0] Directive Loading Begin >> Loading End
+ID[1] Directive Loading Begin >> Loading End
+ID[3] Directive Loading Begin >> Loading End
+ID[2] Directive Loading Begin >> Loading End
+ID[4] Directive Loading Begin >> Loading End
+ID[5] Directive Loading Begin >> Loading End
+ID[7] Directive Loading Begin >> Loading End
+ID[20] Directive Loading Begin >> Loading End
+ID[9] Directive Loading Begin >> Loading End
+ID[14] Directive Loading Begin >> Loading End
+ID[15] Directive Loading Begin >> Loading End
+ID[18] Directive Loading Begin >> Loading End
+ID[10] Directive Loading Begin >> Loading End
+ID[16] Directive Loading Begin >> Loading End
+ID[17] Directive Loading Begin >> Loading End
+ID[12] Directive Loading Begin >> Loading End
+ID[19] Directive Loading Begin >> Loading End
+ID[6] Directive Loading Begin >> Loading End
+ID[8] Directive Loading Begin >> Loading End
+ID[13] Directive Loading Begin >> Loading End
+ID[23] Directive Loading Begin >> Loading End
+ID[25] Directive Loading Begin >> Loading End
+ID[22] Directive Loading Begin >> Loading End
+ID[27] Directive Loading Begin >> Loading End
+ID[21] Directive Loading Begin >> Loading End
+ID[11] Directive Loading Begin >> Loading End
+ID[26] Directive Loading Begin >> Loading End
+ID[24] Directive Loading Begin >> Loading End
+ID[28] Directive Loading Begin >> Loading End
+ID[29] Directive Loading Begin >> Loading End
+ID[33] Directive Loading Begin >> Loading End
+ID[31] Directive Loading Begin >> Loading End
+ID[30] Directive Loading Begin >> Loading End
+ID[32] Directive Loading Begin >> Loading End
+ID[34] Directive Loading Begin >> Loading End
+ID[35] Directive Loading Begin >> Loading End
+ID[36] Directive Loading Begin >> Loading End
+ID[37] Directive Loading Begin >> Loading End
+ID[38] Directive Loading Begin >> Loading End
+ID[39] Directive Loading Begin >> Loading End
+ID[40] Directive Loading Begin >> Loading End
+ID[41] Directive Loading Begin >> Loading End
+ID[42] Directive Loading Begin >> Loading End
+ID[43] Directive Loading Begin >> Loading End
+ID[44] Directive Loading Begin >> Loading End
+ID[45] Directive Loading Begin >> Loading End
+ID[46] Directive Loading Begin >> Loading End
+ID[47] Directive Loading Begin >> Loading End
+ID[48] Directive Loading Begin >> Loading End
+ID[49] Directive Loading Begin >> Loading End
+ID[50] Directive Loading Begin >> Loading End
+ID[51] Directive Loading Begin >> Loading End
+ID[52] Directive Loading Begin >> Loading End
+ID[53] Directive Loading Begin >> Loading End
+ID[54] Directive Loading Begin >> Loading End
+ID[55] Directive Loading Begin >> Loading End
+ID[56] Directive Loading Begin >> Loading End
+ID[57] Directive Loading Begin >> Loading End
+ID[58] Directive Loading Begin >> Loading End
+ID[59] Directive Loading Begin >> Loading End
+ID[60] Directive Loading Begin >> Loading End
+ID[61] Directive Loading Begin >> Loading End
+ID[62] Directive Loading Begin >> Loading End
+ID[63] Directive Loading Begin >> Loading End
+ID[64] Directive Loading Begin >> Loading End
+ID[65] Directive Loading Begin >> Loading End
+ID[66] Directive Loading Begin >> Loading End
+ID[67] Directive Loading Begin >> Loading End
+ID[68] Directive Loading Begin >> Loading End
+ID[69] Directive Loading Begin >> Loading End
+ID[70] Directive Loading Begin >> Loading End
+ID[71] Directive Loading Begin >> Loading End
+ID[72] Directive Loading Begin >> Loading End
+ID[73] Directive Loading Begin >> Loading End
+ID[74] Directive Loading Begin >> Loading End
+ID[75] Directive Loading Begin >> Loading End
+ID[76] Directive Loading Begin >> Loading End
+ID[77] Directive Loading Begin >> Loading End
+ID[78] Directive Loading Begin >> Loading End
+ID[79] Directive Loading Begin >> Loading End
+ID[80] Directive Loading Begin >> Loading End
+ID[81] Directive Loading Begin >> Loading End
+ID[82] Directive Loading Begin >> Loading End
+ID[83] Directive Loading Begin >> Loading End
+ID[84] Directive Loading Begin >> Loading End
+ID[85] Directive Loading Begin >> Loading End
+ID[86] Directive Loading Begin >> Loading End
+ID[87] Directive Loading Begin >> Loading End
+ID[88] Directive Loading Begin >> Loading End
+ID[89] Directive Loading Begin >> Loading End
+ID[90] Directive Loading Begin >> Loading End
+ID[91] Directive Loading Begin >> Loading End
+ID[92] Directive Loading Begin >> Loading End
+ID[93] Directive Loading Begin >> Loading End
+ID[94] Directive Loading Begin >> Loading End
+ID[95] Directive Loading Begin >> Loading End
+ID[96] Directive Loading Begin >> Loading End
+ID[97] Directive Loading Begin >> Loading End
+ID[98] Directive Loading Begin >> Loading End
+ID[99] Directive Loading Begin >> Loading End
+ID[100] Directive Loading Begin >> Loading End
+ID[101] Directive Loading Begin >> Loading End
+ID[102] Directive Loading Begin >> Loading End
+ID[103] Directive Loading Begin >> Loading End
+ID[104] Directive Loading Begin >> Loading End
+ID[105] Directive Loading Begin >> Loading End
+ID[106] Directive Loading Begin >> Loading End
+ID[107] Directive Loading Begin >> Loading End
+ID[108] Directive Loading Begin >> Loading End
+ID[109] Directive Loading Begin >> Loading End
+ID[110] Directive Loading Begin >> Loading End
+ID[111] Directive Loading Begin >> Loading End
+ID[112] Directive Loading Begin >> Loading End
+ID[113] Directive Loading Begin >> Loading End
+ID[114] Directive Loading Begin >> Loading End
+ID[115] Directive Loading Begin >> Loading End
+ID[116] Directive Loading Begin >> Loading End
+ID[117] Directive Loading Begin >> Loading End
+ID[118] Directive Loading Begin >> Loading End
+ID[119] Directive Loading Begin >> Loading End
+ID[120] Directive Loading Begin >> Loading End
+ID[121] Directive Loading Begin >> Loading End
+ID[122] Directive Loading Begin >> Loading End
+ID[123] Directive Loading Begin >> Loading End
+ID[124] Directive Loading Begin >> 124 : can see safe zone
+Loading End
+ID[125] Directive Loading Begin >> 125 : can see safe zone
+Loading End
+ID[126] Directive Loading Begin >> 126 : can see safe zone
+Loading End
+ID[127] Directive Loading Begin >> 127 : can see safe zone
+Loading End
+ID[128] Directive Loading Begin >> 128 : can see safe zone
+Loading End
+ID[129] Directive Loading Begin >> Loading End
+ID[130] Directive Loading Begin >> Loading End
+ID[131] Directive Loading Begin >> Loading End
+ID[132] Directive Loading Begin >> Loading End
+ID[133] Directive Loading Begin >> Loading End
+ID[134] Directive Loading Begin >> Loading End
+ID[135] Directive Loading Begin >> Loading End
+ID[136] Directive Loading Begin >> Loading End
+ID[137] Directive Loading Begin >> Loading End
+ID[138] Directive Loading Begin >> Loading End
+ID[139] Directive Loading Begin >> Loading End
+ID[140] Directive Loading Begin >> Loading End
+ID[141] Directive Loading Begin >> Loading End
+ID[142] Directive Loading Begin >> Loading End
+ID[143] Directive Loading Begin >> Loading End
+ID[144] Directive Loading Begin >> Loading End
+ID[145] Directive Loading Begin >> Loading End
+ID[146] Directive Loading Begin >> Loading End
+ID[147] Directive Loading Begin >> Loading End
+ID[148] Directive Loading Begin >> Loading End
+ID[149] Directive Loading Begin >> Loading End
+ID[150] Directive Loading Begin >> Loading End
+ID[151] Directive Loading Begin >> Loading End
+ID[152] Directive Loading Begin >> Loading End
+ID[153] Directive Loading Begin >> Loading End
+ID[154] Directive Loading Begin >> Loading End
+ID[155] Directive Loading Begin >> Loading End
+ID[156] Directive Loading Begin >> Loading End
+ID[157] Directive Loading Begin >> Loading End
+ID[158] Directive Loading Begin >> Loading End
+ID[159] Directive Loading Begin >> Loading End
+ID[160] Directive Loading Begin >> Loading End
+ID[161] Directive Loading Begin >> Loading End
+ID[162] Directive Loading Begin >> Loading End
+ID[163] Directive Loading Begin >> Loading End
+ID[164] Directive Loading Begin >> Loading End
+ID[165] Directive Loading Begin >> Loading End
+ObjectManager::init() : DirectiveSetManager Initialization Success
+ObjectManager::init() : MonsterNameManager Initialization Start
+ObjectManager::init() : MonsterNameManager Initialization Success
+ObjectManager::init() : TimeManager Initialization Start
+ObjectManager::init() : TimeManager Initialization Success
+ObjectManager::init() : PublicScriptManager Initialization Start
+ObjectManager::init() : PublicScriptManager Initialization Success
+ObjectManager::init() : OptionInfoManager Initialization Start
+ObjectManager::init() : OptionInfoManager Initialization Success
+ObjectManager::init() : SweeperBonusManager Initialization Start....... 
+ObjectManager::init() : SweeperBonusManager Initialization Success....... 
+ObjectManager::init() : ItemInfoManager Initialization Start
+AR...ItemIDRegistry:1
+Belt...ItemIDRegistry:1
+Cross...ItemIDRegistry:7
+Blade...ItemIDRegistry:1
+Bomb...ItemIDRegistry:1
+BombMaterial...ItemIDRegistry:1
+Bracelet...ItemIDRegistry:1
+Coat...ItemIDRegistry:7
+ETC...ItemIDRegistry:1
+Glove...ItemIDRegistry:1
+Helm...ItemIDRegistry:1
+HolyWater...ItemIDRegistry:1
+Key...ItemIDRegistry:1
+LearningItem...ItemIDRegistry:1
+Magazine...ItemIDRegistry:7
+Mine...ItemIDRegistry:1
+Money...ItemIDRegistry:1
+Motorcycle...ItemIDRegistry:1
+Necklace...ItemIDRegistry:1
+Potion...ItemIDRegistry:9
+Ring...ItemIDRegistry:1
+SG...ItemIDRegistry:1
+SMG...ItemIDRegistry:1
+Shield...ItemIDRegistry:1
+Shoes...ItemIDRegistry:1
+Sword...ItemIDRegistry:7
+SR...ItemIDRegistry:1
+Trouser...ItemIDRegistry:7
+VampireBracelet...ItemIDRegistry:1
+VampireNecklace...ItemIDRegistry:1
+VampireRing...ItemIDRegistry:1
+Water...ItemIDRegistry:1
+VampireCoat...ItemIDRegistry:1
+Skull...ItemIDRegistry:1
+Mace...ItemIDRegistry:7
+Serum...ItemIDRegistry:1
+VampireETC...ItemIDRegistry:1
+SlayerPortalItem...ItemIDRegistry:1
+VampirePortalItem...ItemIDRegistry:1
+GiftBox...ItemIDRegistry:1
+EventStar...ItemIDRegistry:1
+VampireEarring...ItemIDRegistry:1
+RelicObject...ItemIDRegistry:1
+VampireWeaponObject...ItemIDRegistry:1
+VampireAmuletObject...ItemIDRegistry:1
+QuestItem...ItemIDRegistry:44516
+EventTree...ItemIDRegistry:1
+EventETC...ItemIDRegistry:1
+BloodBible...ItemIDRegistry:10075
+CastleSymbol...ItemIDRegistry:5437
+CoupleRing...ItemIDRegistry:1
+CoupleRing...ItemIDRegistry:1
+EventItem...ItemIDRegistry:1
+DyePotion...ItemIDRegistry:1
+ResurrectItem...ItemIDRegistry:1
+MixingItem...ItemIDRegistry:1
+OustersArmsband...ItemIDRegistry:1
+OustersBoots...ItemIDRegistry:1
+OustersChakram...ItemIDRegistry:4
+OustersCirclet...ItemIDRegistry:1
+OustersCoat...ItemIDRegistry:1
+OustersPendent...ItemIDRegistry:1
+OustersRing...ItemIDRegistry:1
+OustersStone...ItemIDRegistry:1
+OustersWristlet...ItemIDRegistry:1
+Larva...ItemIDRegistry:4
+Pupa...ItemIDRegistry:4
+ComposMei...ItemIDRegistry:1
+OustersSummonItem...ItemIDRegistry:1
+EffectItem...ItemIDRegistry:1
+CodeSheet...ItemIDRegistry:1
+MoonCard...ItemIDRegistry:53612
+Sweeper...ItemIDRegistry:10138
+PetItem...ItemIDRegistry:1
+PetFood...ItemIDRegistry:1
+PetEnchantItem...ItemIDRegistry:105509
+LuckyBag...ItemIDRegistry:1
+SMSItem...ItemIDRegistry:1
+CoreZap...ItemIDRegistry:1
+TrapItem...ItemIDRegistry:1
+WarItem...ItemIDRegistry:7756
+CarryingReceiverObject...ItemIDRegistry:1
+ShoulderArmorObject...ItemIDRegistry:1
+DermisObject...ItemIDRegistry:1
+PersonaObject...ItemIDRegistry:1
+FasciaObject...ItemIDRegistry:1
+MittenObject...ItemIDRegistry:1
+ObjectManager::init() : ItemInfoManager Initialization Success
+ObjectManager::init() : ItemMineInfoManager Initialization Start
+ObjectManager::init() : ItemMineInfoManager Initialization Success
+ObjectManager::init() : WarID Initialization Start
+War::WarIDRegistry:228
+ObjectManager::init() : WarID Initialization Success
+ObjectManager::init() : VolumeInfoManager Initialization Start
+ObjectManager::init() : VolumeInfoManager Initialization Success
+ObjectManager::init() : ItemFactory Initialization Start
+ObjectManager::init() : ItemFactory Initialization Success
+ObjectManager::init() : ItemLoaderManager Initialization Start
+ObjectManager::init() : ItemLoaderManager Initialization Success
+ObjectManager::init() : DarkLightInfoManager Initialization Start
+ObjectManager::init() : DarkLightInfoManager Initialization Success
+ObjectManager::init() : MonsterInfoManager Initialization Start
+Load - slayer_filename:/home/darkeden/vs/data/Class1.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class1.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class1.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class2.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class2.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class2.ousters.bin
+[NoTreasureFile] Ã„Â«Ã€ÃŒÃ€Ãº
+Load - slayer_filename:/home/darkeden/vs/data/Class4.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class4.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class4.ousters.bin
+[NoTreasureFile] ÂºÃªÂ¸Â®Ã„ÃÂ¶Ã³Ã„Â«Â½Âº
+Load - slayer_filename:/home/darkeden/vs/data/Class3.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class3.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class3.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class7.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class7.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class7.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class5.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class5.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class5.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class6.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class6.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class6.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class9.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class9.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class9.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Santa1.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Santa1.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Santa1.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Santa2.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Santa2.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Santa2.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Rudolf1.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Rudolf1.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Rudolf1.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Rudolf2.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Rudolf2.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Rudolf2.ousters.bin
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+[NoTreasureFile] Â¼ÂºÂ¹Â°ÂºÂ¸Â°Ã¼Ã‡Ã”
+Load - slayer_filename:/home/darkeden/vs/data/Class8.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class8.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class8.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class10.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class10.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class10.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Bathory.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Bathory.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Bathory.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Tepez.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Tepez.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Tepez.ousters.bin
+[NoTreasureFile] Ã…Â©Â¸Â®Â½ÂºÂ¸Â¶Â½ÂºÃ†Â®Â¸Â®
+Load - slayer_filename:/home/darkeden/vs/data/Class11.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class11.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class11.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class14.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class14.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class14.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/Class12.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class12.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class12.ousters.bin
+[NoTreasureFile] Â¾Ã†Â¸Â£Â¸ÃžÂ°Â¡Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´
+[NoTreasureFile] Â¹ÃŒÃˆÂ£Â·Â¹Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã…Â°Â·ÃŽÂ¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Ã€ÃŒÂ´ÃÂ¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â±Ã—Â¸Â®Â°Ã­Â¸Â®Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´
+[NoTreasureFile] Ã„ÃœÃ„Â¥Â¸Â®Â¾Ã†Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´
+[NoTreasureFile] Â·Â¹ÃÃ¶Â¿Ã€Â½ÂºÂ¼Ã¶ÃˆÂ£Â¼ÂºÂ´
+[NoTreasureFile] ÃˆÃºÂ¸Â±Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã€Ã°ÂºÃªÂ¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â³Ã—Â¸Â¶Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Â·ÃŽÂ»Ã§Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã‚Ã·Â½ÂºÃ†Ã„Â¼Ã¶ÃˆÂ£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Â¸Â£Â¸ÃžÂ°Â¡Â¼ÂºÃÃ¶Â¼ÂºÂ´
+[NoTreasureFile] Â¹ÃŒÃˆÂ£Â·Â¹Â¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã…Â°Â·ÃŽÂ¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Ã€ÃŒÂ´ÃÂ¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â±Ã—Â¸Â®Â°Ã­Â¸Â®Â¼ÂºÃÃ¶Â¼ÂºÂ´
+[NoTreasureFile] Ã„ÃœÃ„Â¥Â¸Â®Â¾Ã†Â¼ÂºÃÃ¶Â¼ÂºÂ´
+[NoTreasureFile] Â·Â¹ÃÃ¶Â¿Ã€Â½ÂºÂ¼ÂºÃÃ¶Â¼ÂºÂ´
+[NoTreasureFile] ÃˆÃºÂ¸Â±Â¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã€Ã°ÂºÃªÂ¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â³Ã—Â¸Â¶Â¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Â·ÃŽÂ»Ã§Â¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã‚Ã·Â½ÂºÃ†Ã„Â¼ÂºÃÃ¶Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã‡ÃÂ¶Ã³Â¿Ã€Â·ÃŽÂ½ÂºÂ¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã†Ã„Ã‡ÃÂ´ÃÂ¸Â£Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Â¾Ã†Â¸Â®Â¿Ã€Ã…Â©Â¼ÂºÂ´Ãœ
+[NoTreasureFile] Ã€ÃŒÂ¸Ã°Â¸Â£Ã…Â»Â·Â¯Ã†Â¼Â¼ÂºÂ´
+Load - slayer_filename:/home/darkeden/vs/data/Class13.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/Class13.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/Class13.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestKid.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestKid.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestKid.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestModeras.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestModeras.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestModeras.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestWidows.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestWidows.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestWidows.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestBloodWarlock.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestBloodWarlock.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestBloodWarlock.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestCrimsonSlaughter.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestCrimsonSlaughter.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestCrimsonSlaughter.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestChaosGurdian.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestChaosGurdian.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestChaosGurdian.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestLordChaos.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestLordChaos.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestLordChaos.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestDarkGuardian.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestDarkGuardian.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestDarkGuardian.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestChaosGreed.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestChaosGreed.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestChaosGreed.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/QuestDunWolfarch.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/QuestDunWolfarch.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/QuestDunWolfarch.ousters.bin
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â¿Ã€Â·Â¹
+[NoTreasureFile] Â±ÃªÂ´Ã«
+[NoTreasureFile] Â½ÂºÃ€Â§Ã†Ã›ÂºÂ¸Â°Ã¼Â´Ã«
+[NoTreasureFile] Â¸Â®ÃÂ¨ÃÂ¸ Ã…Â¸Â¿Ã¶
+Load - slayer_filename:/home/darkeden/vs/data/BossCrimsonSlaughter.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/BossCrimsonSlaughter.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/BossCrimsonSlaughter.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/BossLordChaos.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/BossLordChaos.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/BossLordChaos.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/BossDarkBerith.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/BossDarkBerith.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/BossDarkBerith.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/BossAshBalog.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/BossAshBalog.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/BossAshBalog.ousters.bin
+Load - slayer_filename:/home/darkeden/vs/data/BossTurningDead.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/BossTurningDead.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/BossTurningDead.ousters.bin
+[NoTreasureFile] ÃÃ–Â´ÃÂ¾Ã® Â¿Ã¯Ã‡ÃÂ¾Ã†Ã…Â©
+[NoTreasureFile] Â´Ã«ÃÃ¶ ÃÂ¤Â·Ã‰
+[NoTreasureFile] ÂºÃ­Â·Ã§Ã„Â«Â¿Ã€Â½ÂºÂ°Â¡ÂµÃ°Â¾
+Load - slayer_filename:/home/darkeden/vs/data/GillesdeRais.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/GillesdeRais.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/GillesdeRais.ousters.bin
+[NoTreasureFile] ÃÃºÂµÃ¥Â·Â¹ÂºÃÂ½Ã…
+[NoTreasureFile] Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®Â
+[NoTreasureFile] Â°Â¢Â¼ÂºÃÃºÂµÃ¥Â·Â¹
+[NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã®Â½Ã‡Ã‡Ã¨ÃƒÂ¼1
+[NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã®Â½Ã‡Ã‡Ã¨ÃƒÂ¼2
+[NoTreasureFile] Â¼ÂºÂ¹Â®1
+[NoTreasureFile] Â¼ÂºÂ¹Â®2
+[NoTreasureFile] Â¼ÂºÂ¹Â®3
+[NoTreasureFile] Â¼ÂºÂ¹Â®4
+[NoTreasureFile] Â¿Ã¶ ÂµÃ°Ã†Ã¦Â´Ãµ
+[NoTreasureFile] Â±Ã¦ÂµÃ¥Ã…Â¸Â¿Ã¶
+[NoTreasureFile] Â½Â½Â·Â¹Ã€ÃŒÂ¾Ã®Â°Ã¦ÂºÃ±ÂºÂ´
+[NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã®Â°Ã¦ÂºÃ±ÂºÂ´
+[NoTreasureFile] Â¾Ã†Â¿Ã¬Â½ÂºÃ…ÃÃÃ®Â°Ã¦ÂºÃ±Âº
+[NoTreasureFile] Ã‡ÃƒÂ·Â¹ÃÂ® Â½ÂºÃ…Ã—Ã€ÃŒÂ¼Ã‡
+[NoTreasureFile] Â·Â£ÂµÃ¥Â¸Â¶Ã€ÃŽ
+[NoTreasureFile] Ã…Â©Â·Â¹Ã€ÃŒÂ¸Ã°Â¾Ã®
+[NoTreasureFile] Â¿Ã€Ã…Ã¤ Ã…ÃÂ·Â¿
+[NoTreasureFile] ÂµÃ¥Â·Â³Ã…Ã«
+[NoTreasureFile] Â»Ã¯Â°Â¢Â´Ã« A
+[NoTreasureFile] Â»Ã¯Â°Â¢Â´Ã« B
+[NoTreasureFile] Â»Ã¯Â°Â¢Â´Ã« C
+[NoTreasureFile] Ã€Ã¥Â¾Ã–Â¹Â° A
+[NoTreasureFile] Ã€Ã¥Â¾Ã–Â¹Â° B
+[NoTreasureFile] Â°Ã­Â¾Ã® Â±Ã—Â·Â£ÂµÃ¥
+[NoTreasureFile] Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°
+Load - slayer_filename:/home/darkeden/vs/data/GreatRuffianSkull.slayer.bin
+Load - vampire_filename:/home/darkeden/vs/data/GreatRuffianSkull.vampire.bin
+Load - ousters_filename:/home/darkeden/vs/data/GreatRuffianSkull.ousters.bin
+[NoTreasureFile] Â¹ÃŒÂ°Â¡
+[NoTreasureFile] Â¿Ã¶ÂµÃ°Ã†Ã¦Â´Ãµ ÂºÃ­Â·Â¢
+[NoTreasureFile] Â¿Ã¶ÂµÃ°Ã†Ã¦Â´Ãµ Â·Â¹ÂµÃ¥
+[NoTreasureFile] Ã€ÃŒÂ¼ÂºÃ€Ã‡ ÂºÃ€Ã€ÃŽ
+[NoTreasureFile] Â½Â½Â·Â¹Ã€ÃŒÂ¾Ã® ÃÂ¦Â¹Â°
+[NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã® ÃÂ¦Â¹Â°
+[NoTreasureFile] Â¾Ã†Â¿Ã¬Â½ÂºÃ…ÃÃÃ® ÃÂ¦Â¹Â°
+[NoTreasureFile] Â¸Ã°Â³Ã« Â½Â½Â·Â¹Ã€ÃŒÂ¾Ã® Â³Â²
+[NoTreasureFile] Â¸Ã°Â³Ã« Â½Â½Â·Â¹Ã€ÃŒÂ¾Ã® Â¿Â©
+[NoTreasureFile] Â¸Ã°Â³Ã« Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã® Â³Â²
+[NoTreasureFile] Â¸Ã°Â³Ã« Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã® Â¿Â©
+[NoTreasureFile] Â¸Ã°Â³Ã« Â¾Ã†Â¿Ã¬Â½ÂºÃ…ÃÃÃ®
+Class[1] : 5, 6, 7, 8, 
+Class[2] : 4, 9, 42, 43, 60, 69, 
+Class[3] : 41, 61, 62, 64, 67, 68, 
+Class[4] : 27, 40, 48, 
+Class[5] : 57, 72, 74, 
+Class[6] : 70, 71, 76, 
+Class[7] : 47, 75, 248, 
+Class[8] : 88, 89, 
+Class[9] : 73, 
+Class[10] : 90, 91, 92, 101, 102, 103, 244, 245, 
+Class[11] : 105, 132, 193, 232, 233, 240, 
+Class[12] : 107, 108, 194, 242, 246, 
+Class[13] : 133, 243, 
+Class[14] : 106, 134, 192, 205, 220, 234, 235, 237, 238, 240, 241, 246, 
+ObjectManager::init() : MonsterInfoManager Initialization Success
+ObjectManager::init() : EffectLoaderManager Initialization Start
+ObjectManager::init() : EffectLoaderManager Initialization Success
+ObjectManager::init() : ZoneInfoManager Initialization Start
+ObjectManager::init() : ZoneInfoManager Initialization Success
+ObjectManager::load() : MasterLairInfoManager Initialization Start
+ObjectManager::load() : MasterLairInfoManager Initialization Success
+ObjectManager::load() : CastleInfoManager Initialization Start
+CastleInfo(ZoneID:1201,Item Tax Ratie:110,Entrance Fee:10000,Tax Balance:6673164)
+CastleInfo(ZoneID:1202,Item Tax Ratie:100,Entrance Fee:10000,Tax Balance:480000)
+CastleInfo(ZoneID:1203,Item Tax Ratie:100,Entrance Fee:10000,Tax Balance:60280000)
+CastleInfo(ZoneID:1204,Item Tax Ratie:100,Entrance Fee:10000,Tax Balance:30760000)
+CastleInfo(ZoneID:1205,Item Tax Ratie:110,Entrance Fee:10000,Tax Balance:1004688)
+CastleInfo(ZoneID:1206,Item Tax Ratie:110,Entrance Fee:10000,Tax Balance:725794)
+ObjectManager::load() : CastleInfoManager Initialization Success
+ObjectManager::init() : ZoneGroupManager Initialization Start
+
+@@@@@@@@@@@@@@@ [21]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [21]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [22]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [22]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [23]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¶Ã³Â¸Â£Â¹Ã™] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [23]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [24]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [24]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [41]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [41]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [42]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [42]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [43]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [43]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [44]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [44]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [61]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¸Ã±Ã€Ã¶Ã†Â¤Ã‹Â¹] loading begin >> loading end
+NPC[Â¸Ã“Ã‡Ã‡] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [61]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [62]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [62]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [63]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [63]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [64]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã‚Ã¥Â±Ã¶] loading begin >> loading end
+NPC[Ã„Â«Â¸Â£Â¸Ã ] loading begin >> loading end
+NPC[Ã‡ÃÂ·Â¹ÂµÃ¥Â¸Â¯] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [64]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [75]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [75]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [81]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [81]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1001]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1001]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1002]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1002]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1003]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÂºÃªÂ¸Â®Ã„ÃÂ¶Ã³Ã„Â«Â½Âº] loading begin >> loading end
+NPC[Ã„Â«Ã†Ã„Ã†Â¼Â´Ã] loading begin >> loading end
+NPC[Â¹ÃŸÂ·Â¹Â¸Â®] loading begin >> loading end
+NPC[Â½ÃªÂ¾Â²] loading begin >> loading end
+NPC[Ã„Â«Ã„Ãœ] loading begin >> loading end
+NPC[Â·Â¹ÂºÂ£Ã„Â«] loading begin >> Loading Quest Info : QuestInfo(QuestID : 60 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 10 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 61 ,Race : Vampire ,MinGrade : 11 ,MaxGrade : 20 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 62 ,Race : Vampire ,MinGrade : 21 ,MaxGrade : 30 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 63 ,Race : Vampire ,MinGrade : 31 ,MaxGrade : 40 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 64 ,Race : Vampire ,MinGrade : 41 ,MaxGrade : 50 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 65 ,Race : Vampire ,MinGrade : 51 ,MaxGrade : 60 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 66 ,Race : Vampire ,MinGrade : 61 ,MaxGrade : 70 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 67 ,Race : Vampire ,MinGrade : 71 ,MaxGrade : 80 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 68 ,Race : Vampire ,MinGrade : 81 ,MaxGrade : 90 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 69 ,Race : Vampire ,MinGrade : 91 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 1)
+Loading Quest Info : QuestInfo(QuestID : 70 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 2)
+Loading Quest Info : QuestInfo(QuestID : 71 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 3)
+Loading Quest Info : QuestInfo(QuestID : 72 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 4)
+Loading Quest Info : QuestInfo(QuestID : 58 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 0)
+Loading Quest Info : QuestInfo(QuestID : 59 ,Race : Vampire ,MinGrade : 1 ,MaxGrade : 150 ,TimeLimit : 0 ,RewardClass : 10 ,isEventQuest : yes ,QuestLevel : 0)
+loading end
+
+@@@@@@@@@@@@@@@ [1003]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1004]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1004]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1020]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1020]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1100]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1100]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1101]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1101]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1102]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1102]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1103]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1103]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1104]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1104]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1115]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1115]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1121]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1121]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1122]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1122]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1123]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1123]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1124]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1124]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1201]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1201] Castle : WarScheduler->load
+NPC[Â¾Ã†Ã€ÃÂ¸Â°] loading begin >> loading end
+NPC[Â¾Ã‹Â·Â»] loading begin >> loading end
+NPC[Â½ÃƒÂ¸Ã°Â³Ã—] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1201]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1202]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1202] Castle : WarScheduler->load
+NPC[Â¸Â¶Â¸Â®] loading begin >> loading end
+NPC[ÂºÂ£Â¾Ã†Ã†Â®Â¸Â¯Â½Âº] loading begin >> loading end
+NPC[Ã‡Ã¥Ã†Â®] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1202]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1203]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1203] Castle : WarScheduler->load
+NPC[ÃÃ–ÂµÃ°Â½Âº] loading begin >> loading end
+NPC[Ã‡Ã¬Â·Ã‘ÂµÃ¥] loading begin >> loading end
+NPC[ÂºÃªÂ·Â»Â´Ã™] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1203]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1204]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1204] Castle : WarScheduler->load
+NPC[Â¾Ã†Â¹ÃŒ] loading begin >> loading end
+NPC[Â¸Ã´Â·Ã] loading begin >> loading end
+NPC[Â¹Ã™Â·Ã©] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1204]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1221]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1221]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1222]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1222]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1241]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1241]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1242]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1242]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1261]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1261]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1262]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1262]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1301]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1301]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1302]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1302]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1303]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1303]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1321]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1321]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1322]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1322]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1323]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1323]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1324]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1324]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1401]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1401]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1402]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+x : 71
+y : 75
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+x : 71
+y : 76
+x : 94
+y : 172
+Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ÂÀÇ HP : 22491
+x : 167
+y : 95
+Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ÂÀÇ HP : 22491
+
+@@@@@@@@@@@@@@@ [1402]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1500]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1500]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1501]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â°Ã‚Ã‹Ã¾ÃŽÃšÃ‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[Â¿ÃÃ…Â¸ÂºÃŽÂ½ÂºÂµÂµÂ¿Ã¬Â¹ÃŒ2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1501]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1502]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÃˆÃ¼ÃŒÃ˜ÃˆÃ°Ã‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[ÃˆÃ¼ÃŒÃ˜ÃˆÃ°Ã‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1502]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1503]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÃˆÃ¼Ã†Ã•ÂµÃ™Ã„Â¬Ã‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[ÃˆÃ¼Ã†Ã•ÂµÃ™Ã„Â¬Ã‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1503]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1504]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã€Â¨Ã‹Ã¾Ã‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[Ã€Â¨Ã‹Ã¾Ã‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1504]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1600]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1600]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1601]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1601]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1602]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1602]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1603]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1603]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1604]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1604]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2000]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2000]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2001]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â´Ã·ÃŽÂ¬] loading begin >> loading end
+NPC[Â¿Â­ÃŽÃ„] loading begin >> loading end
+NPC[Ã‰Â³Ã€Â­Ã‚Ã¼ÂµÃ‚] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2001]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2002]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã‹Ã·Ã„Ã¡Ã‘Ã‡] loading begin >> loading end
+NPC[Ã…Â©Â·ÃŽÂ¿Ã¬] loading begin >> loading end
+NPC[Ã…Â©Â¶Ã³Ã€ÃŒÃ‡Ã] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2002]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2003]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÂµÃ¥Â·Â¹Ã€ÃŒÃ…Â©] loading begin >> loading end
+NPC[Â½ÂºÃ†Ã„Â¸Â£Ã…Âº] loading begin >> loading end
+NPC[Ã€Ã²] loading begin >> loading end
+NPC[Â½ÂºÂ¹ÃŒÂ½Âº] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2003]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2004]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â½ÂºÃ…Âµ] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2004]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2020]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2020]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2021]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¿Ã‹Ã€Ã¯Ã‹Â¹] loading begin >> loading end
+NPC[Ã‹Â¾Ã‚Ã­Â¶Ã»Ã‚ÃžÃŽÂ¬Ã†Ã¦] loading begin >> loading end
+NPC[Ã”Â¼ÂºÂ²Ã„Ãˆ] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2021]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2022]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¸Ã§Ã‚Â³Â²Â®] loading begin >> loading end
+NPC[ÃŽÃ·Â¹Ã¾Ã€Â­] loading begin >> loading end
+NPC[Ã‰Â½ÂµÃ‚Ã€Â­] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2022]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2023]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÂºÃ•Ã‹Â¹Â²Â¼Ã‚Ãž] loading begin >> loading end
+NPC[Ã“ÃˆÃÃž] loading begin >> loading end
+NPC[ÂºÂº] loading begin >> loading end
+NPC[Â¿Ã‰Ã„Ã] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2023]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2024]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2024]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2101]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÂµÂ¥Â´ÃÂ½Âº] loading begin >> loading end
+NPC[Â¸Â¶Ã…Â©] loading begin >> loading end
+NPC[ÃÂ¸] loading begin >> loading end
+NPC[Â¸Â®Â»Ã§] loading begin >> loading end
+NPC[Ã†Ã„ÂºÃ±Â¾Ãˆ] loading begin >> loading end
+NPC[ÃÂ¦Ã‡Ã] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2101]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2102]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¾ÃŸÂ¸Â¶Â¸Ã°Ã…Ã¤] loading begin >> loading end
+NPC[Ã†Â®Â¸Â®Â½ÂºÃ…Âº] loading begin >> loading end
+NPC[Â¿Â¤Â·Â»] loading begin >> loading end
+NPC[Ã†ÃÃ†Â®Â¸Â®Â»Ã¾] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2102]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3001]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3001]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3002]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3002]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3003]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [3003]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4001]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4001]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4002]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4002]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4003]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4003]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4004]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4004]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [8000]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [8000]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [8001]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [8001]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [11]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [11]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [12]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â½ÃœÂ¿Ã‹] loading begin >> loading end
+NPC[Ã‚ÃµÃŒÃ˜] loading begin >> loading end
+NPC[Â¿Â­Ã”Ã³] loading begin >> loading end
+NPC[Ã”ÃºÂ¿Ã‹] loading begin >> loading end
+NPC[Ã‹Ã¾Ã„Ãˆ] loading begin >> loading end
+NPC[ÃŒÃ˜Ã€Ã¯] loading begin >> loading end
+NPC[Ã„ÃÃŽÃ·] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [12]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [13]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [13]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [14]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [14]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [31]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [31]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [32]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [32]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [33]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [33]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [34]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â·Â¹Ã€ÃŒÂºÃ¬] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [34]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+Monster(ObjectID:12041,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:32343,Y:0,Sight :13) regens at 90 , 189
+Monster(ObjectID:12042,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:48474,Y:19756,Sight :13) regens at 207 , 55
+Monster(ObjectID:12043,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:14287,Y:19756,Sight :13) regens at 193 , 63
+Monster(ObjectID:12044,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:16321,Y:19756,Sight :13) regens at 74 , 17
+
+@@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+Monster(ObjectID:13336,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:0,Y:5936,Sight :13) regens at 24 , 66
+Monster(ObjectID:13337,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16920,Y:19756,Sight :13) regens at 167 , 144
+Monster(ObjectID:13338,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:37031,Y:19756,Sight :13) regens at 176 , 221
+Monster(ObjectID:13339,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:56752,Y:19756,Sight :13) regens at 131 , 148
+
+@@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+Monster(ObjectID:12152,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16741,Y:0,Sight :13) regens at 159 , 141
+Monster(ObjectID:12153,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:36255,Y:19756,Sight :13) regens at 167 , 25
+Monster(ObjectID:12154,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:6567,Y:19756,Sight :13) regens at 214 , 211
+Monster(ObjectID:12155,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:54230,Y:19756,Sight :13) regens at 101 , 44
+
+@@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+Monster(ObjectID:11772,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:55150,Y:0,Sight :13) regens at 82 , 63
+Monster(ObjectID:11773,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16210,Y:19756,Sight :13) regens at 190 , 176
+Monster(ObjectID:11774,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:45246,Y:19756,Sight :13) regens at 27 , 89
+Monster(ObjectID:11775,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:22811,Y:19756,Sight :13) regens at 203 , 135
+
+@@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [71]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã†Ã„Ã‡ÃÂ´ÃÂ¸Â£] loading begin >> loading end
+NPC[Ã€ÃŒÂ¸Ã°Â¸Â£Ã…Â»Â·Â¯Ã†Â¼] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [71]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [72]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¹ÃŒÂ³Ã—Â¼Â¾Â½Âº] loading begin >> loading end
+NPC[Ã‡Ã‡Â½ÂºÃ„Ã‰Ã€ÃŒÃ†Â®] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [72]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [73]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã‡ÃÂ¶Ã³Â¿Ã€Â·ÃŽÂ½Âº] loading begin >> loading end
+NPC[Â¾Ã†Â¸Â®Â¿Ã€Ã…Â©] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [73]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [74]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+x : 70
+y : 52
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+x : 41
+y : 52
+x : 72
+y : 114
+x : 104
+y : 35
+
+@@@@@@@@@@@@@@@ [74]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [91]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [91]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [92]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [92]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [93]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [93]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [94]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [94]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1005]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1005]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1006]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1006]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1007]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¾Ã†Â±Ã—Â³Ã—] loading begin >> loading end
+NPC[Â¾Ã†Ã€ÃŒÂ¸Â¸] loading begin >> loading end
+NPC[Ã„Â«Ã€Ã“] loading begin >> loading end
+NPC[Ã‡ÃÂ¸Â®Â¾ÃŸ] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1007]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1008]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1008]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1009]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1009]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1010]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1010]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1011]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1011]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1012]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1012]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1013]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+
+@@@@@@@@@@@@@@@ [1013]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1105]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1105]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1106]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1106]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1111]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1111]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1112]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1112]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1113]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1113]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1114]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1114]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1125]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1125]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1126]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1126]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1127]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1127]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1128]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1128]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1129]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1129]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1130]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+GreatRuffianSkullÀÇ HP : 60000
+
+@@@@@@@@@@@@@@@ [1130]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1131]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1131]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1132]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1132]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1133]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1133]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1134]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1134]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1205]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1205] Castle : WarScheduler->load
+NPC[Â´ÃÃ†Â®Â¸Â®Â»Ã¾] loading begin >> loading end
+NPC[Â·Â¹Ã‡ÃÂ¸Â®] loading begin >> loading end
+NPC[Â·ÃŽÂ¿Ã] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1205]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1206]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+[1206] Castle : WarScheduler->load
+NPC[Â¿Â¤Â·Ã§Â´ÃÂ¾Ã†] loading begin >> loading end
+NPC[Â³ÂªÃ€ÃŒÂ»Ã¾Â½Âº] loading begin >> loading end
+NPC[Ã€ÃŒÂ±Ã—Â´ÃÂ¾Ã¶] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1206]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1211]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1211]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1212]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1212]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1231]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1231]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1232]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1232]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1251]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1251]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1252]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1252]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1311]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã€Â­ÃŽÂ¬Ã‘Ã‡] loading begin >> loading end
+NPC[Ã€Ã»ÃŒÃ˜] loading begin >> loading end
+NPC[Â¸Â¶Â³Ã—Â½ÂºÃ„Ã­] loading begin >> loading end
+NPC[Ã‹Ã·Ã€Â­] loading begin >> loading end
+NPC[Â°Â¢Ã‚Ã­Ã‹Ã¾] loading begin >> loading end
+NPC[ÂºÃ‚Ã€Â­] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1311]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1410]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1410]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1411]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1411]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1412]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1412]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1413]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1413]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1505]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã…Ã­Ã‹Ã¾Ã…Â¬Ã‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[Ã…Ã­Ã‹Ã¾Ã…Â¬Ã‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1505]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1506]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[ÂºÂ£Â¿Ã‹ÃŽÃ·Ã€Ã¯ÃŽÃšÃ‹Â¹Â·Ã–Ã‰Ã­1] loading begin >> loading end
+NPC[ÂºÂ£Â¿Ã‹ÃŽÃ·Ã€Ã¯ÃŽÃšÃ‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [1506]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1611]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1611]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1612]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1612]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [1621]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+GreatRuffianSkullÀÇ HP : 60000
+
+@@@@@@@@@@@@@@@ [1621]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2010]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2010]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2011]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã…Â©Â¸Â®Â½ÂºÃ†Â¾] loading begin >> loading end
+NPC[Â±Ã—Â¸Â®Ã‡Ã‚] loading begin >> loading end
+NPC[Â½ÃŒ] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2011]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2012]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Â¿Â¹ÂºÃªÂ°Ã”Â´Ã] loading begin >> loading end
+NPC[Â´ÃÃ„ÃÂ¶Ã³Ã€ÃŒ] loading begin >> loading end
+NPC[Â¸Â®Ã‚Ã·ÂµÃ¥Â½Â¼] loading begin >> loading end
+NPC[Ã„Â«Ã€ÃŽ] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2012]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2013]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+NPC[Ã‡Ã‘Â´ÃÂ¹ÃŸ] loading begin >> loading end
+NPC[Â»Ã¾Â¸Ã°Â¸Â£] loading begin >> loading end
+NPC[Â¶Ã³ÃˆÃ¥Â¸Â¶Â³Ã«Ã‡Ã] loading begin >> loading end
+NPC[Â½ÂºÃ…Ã¤Â¾ÃŸÂ³Ã«Ã‡Ã] loading begin >> loading end
+
+@@@@@@@@@@@@@@@ [2013]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2014]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [2014]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4005]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@ [4005]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
+ObjectManager::init() : ZoneGroupManager Initialization Success
+ObjectManager::load() : BloodBibleBonusManager Initialization Start
+ObjectManager::load() : BloodBibleBonusManager Initialization Success
+ObjectManager::init() : ShrineInfoManager Initialization Start
+AddShrine[1201] Guard, mtype=526, oid=10252
+AddShrine[1204] Guard, mtype=526, oid=10172
+AddShrine[1205] Guard, mtype=526, oid=10208
+AddShrine[1201] Guard, mtype=527, oid=10280
+AddShrine[1204] Guard, mtype=527, oid=10198
+AddShrine[1205] Guard, mtype=527, oid=10234
+AddShrine[1201] Guard, mtype=528, oid=10308
+AddShrine[1204] Guard, mtype=528, oid=10224
+AddShrine[1205] Guard, mtype=528, oid=10260
+AddShrine[1203] Guard, mtype=529, oid=10173
+AddShrine[1202] Guard, mtype=529, oid=10259
+AddShrine[1206] Guard, mtype=529, oid=10256
+AddShrine[1203] Guard, mtype=530, oid=10201
+AddShrine[1202] Guard, mtype=530, oid=10285
+AddShrine[1206] Guard, mtype=530, oid=10282
+AddShrine[1203] Guard, mtype=531, oid=10227
+AddShrine[1202] Guard, mtype=531, oid=10311
+AddShrine[1206] Guard, mtype=531, oid=10308
+AddShrine[1203] Guard, mtype=532, oid=10255
+AddShrine[1202] Guard, mtype=532, oid=10337
+AddShrine[1206] Guard, mtype=532, oid=10334
+AddShrine[1203] Guard, mtype=533, oid=10283
+AddShrine[1202] Guard, mtype=533, oid=10359
+AddShrine[1206] Guard, mtype=533, oid=10356
+AddShrine[1203] Guard, mtype=534, oid=10311
+AddShrine[1202] Guard, mtype=534, oid=10385
+AddShrine[1206] Guard, mtype=534, oid=10382
+AddShrine[1201] Guard, mtype=535, oid=10336
+AddShrine[1204] Guard, mtype=535, oid=10250
+AddShrine[1205] Guard, mtype=535, oid=10286
+AddShrine[1201] Guard, mtype=536, oid=10364
+AddShrine[1204] Guard, mtype=536, oid=10276
+AddShrine[1205] Guard, mtype=536, oid=10312
+AddShrine[1201] Guard, mtype=537, oid=10392
+AddShrine[1204] Guard, mtype=537, oid=10302
+AddShrine[1205] Guard, mtype=537, oid=10338
+ObjectManager::init() : ShrineInfoManager Initialization Success
+ObjectManager::init() : CastleShrineInfoManager Initialization Start
+AddShrine[1212] Guard, mtype=560, oid=10171
+AddShrine[1211] Holy, mtype=560, oid=10149
+AddShrine[1222] Guard, mtype=561, oid=10162
+AddShrine[1221] Holy, mtype=561, oid=10141
+AddShrine[1232] Guard, mtype=562, oid=10197
+AddShrine[1231] Holy, mtype=562, oid=10143
+AddShrine[1242] Guard, mtype=563, oid=10177
+AddShrine[1241] Holy, mtype=563, oid=10165
+AddShrine[1252] Guard, mtype=563, oid=10177
+AddShrine[1251] Holy, mtype=563, oid=10165
+AddShrine[1262] Guard, mtype=562, oid=10174
+AddShrine[1261] Holy, mtype=562, oid=10153
+ObjectManager::init() : CastleShrineInfoManager Initialization Success
+ObjectManager::init() : WeatherInfoManager Initialization Start
+ObjectManager::init() : WeatherInfoManager Initialization Success
+ObjectManager::load() : WayPointManager Initialization Start
+ObjectManager::load() : WayPointManager Initialization Success
+ObjectManager::load() : LevelWarZoneInfoManager Initialization Start
+ObjectManager::load() : LevelWarZoneInfoManager Initialization Success
+ObjectManager::load() : LevelNickInfoManager Initialization Start
+ObjectManager::load() : LevelNickInfoManager Initialization Success
+ObjectManager::load() : DragonEyeManagerManager Initialization Start
+ObjectManager::load() : DragonEyeManagerManager Initialization Success
+ObjectManager::init() : TimeChecker Initialization Start
+ObjectManager::init() : TimeChecker Initialization Success
+ObjectManager::init() : GuildManager Initialization Start
+ObjectManager::init() : GuildManager Initialization Success
+ObjectManager::init() : GuildUnionManager Initialization Start
+ObjectManager::init() : GuildUnionManager Initialization Success
+ObjectManager::init() : SkillHandlerManager Initialization Start
+ObjectManager::init() : SkillHandlerManager Initialization Success
+ObjectManager::init() : SkillInfoManager Initialization Start
+ObjectManager::init() : SkillInfoManager Initialization Success
+ObjectManager::init() : SkillDomainInfoManager Initialization Start
+ObjectManager::init() : SkillDomainInfoManager Initialization Success
+ObjectManager::init() : ResurrectLocationManager Initialization Start
+ObjectManager::init() : ResurrectLocationManager Initialization Success
+ObjectManager::init() : STR Exp Table Initialization Start
+ObjectManager::init() : STR Exp Table Initialization Success
+ObjectManager::init() : DEX Exp Table Initialization Start
+ObjectManager::init() : DEX Exp Table Initialization Success
+ObjectManager::init() : INT Exp Table Initialization Start
+ObjectManager::init() : INT Exp Table Initialization Success
+ObjectManager::init() : VampExpInfoManager Initialization Start
+ObjectManager::init() : VampExpInfoManager Initialization Success
+ObjectManager::init() : OustersEXPInfoManager Initialization Start
+ObjectManager::init() : OustersEXPInfoManager Initialization Success
+ObjectManager::init() : AdvancementClassExpTable Initialization Start
+ObjectManager::init() : AdvancementClassExpTable Initialization Success
+ObjectManager::init() : VisionInfoManager Initialization Start
+ObjectManager::init() : VisionInfoManager Initialization Success
+ObjectManager::load() : GameWorldInfoManager Initialization Start
+Loading GameWorldInfoManager....
+GameWorldInfo(WorldID: 1,Name:DKDocker)
+Size : 0
+End GameWorldInfoManager Load
+ObjectManager::load() : GameWorldInfoManager Initialization Success
+ObjectManager::load() : CombatInfoManager Initialization Start
+ObjectManager::load() : CombatInfoManager Initialization Success
+ObjectManager::load() : UniqueItemManager Initialization Start
+ObjectManager::load() : UniqueItemManager Initialization Success
+ObjectManager::load() : RankExpTables Initialization Start
+ObjectManager::load() : RankExpTables Initialization Success
+ObjectManager::load() : LogNameManager Initialization Start
+ObjectManager::load() : LogNameManager Initialization Success
+ObjectManager::load() : RankBonusInfoManager Initialization Start
+ObjectManager::load() : RankBonusInfoManager Initialization Success
+ObjectManager::load() : WarSystem Initialization Start
+Á¾Á·ÀüÀï ÆÐÅ¶ º¸³»´Â ³¯Â¥ : 19010600
+ObjectManager::load() : WarSystem Initialization Success
+ObjectManager::load() : RaceWarLimiter Initialization Start
+ObjectManager::load() : RaceWarLimiter Initialization Success
+ObjectManager::load() : PKZoneInfoManager Initialization Start
+[1301]PKZoneInfo(ZoneID: 1301,isFree: false,Race: 
+[1302]PKZoneInfo(ZoneID: 1302,isFree: false,Race: ,EnterPosition( 32, 35) ,PCLimit: 50)
+[1303]PKZoneInfo(ZoneID: 1303,isFree: true,Race: ,EnterPosition( 46, 49) ,PCLimit: 100)
+ObjectManager::load() : PKZoneInfoManager Initialization Success
+ObjectManager::load() : GameServerGroupInfoManager Initialization Start
+addGameServerGroupInfo: 1, 0 : DKDocker
+GameServerGroupInfoManager(
+GameServerGroupInfo(WorldID : 1ServerGroupID: 0,GroupName:DKDocker)
+EMPTY)
+ObjectManager::load() : GameServerGroupInfoManager Initialization Success
+ObjectManager::load() : CastleSkillInfoManager Initialization Start
+ObjectManager::load() : CastleSkillInfoManager Initialization Success
+ObjectManager::load() : GoodsInfoManager Initialization Start
+ObjectManager::load() : GoodsInfoManager Initialization Success
+ObjectManager::load() : EventQuestLootingManager Initialization Start
+ObjectManager::load() : EventQuestLootingManager Initialization Success
+ObjectManager::load() : FlagManager Initialization Start
+ObjectManager::load() : FlagManager Initialization Success
+ObjectManager::load() : RegenZoneManager Initialization Start
+ObjectManager::load() : RegenZoneManager Initialization Success
+ObjectManager::load() : DefaultOptionSetInfoManager Initialization Start
+ObjectManager::load() : DefaultOptionSetInfoManager Initialization Success
+ObjectManager::load() : PetTypeInfoManager Initialization Start
+ObjectManager::load() : PetTypeInfoManager Initialization Success
+ObjectManager::load() : PetAttrInfoManager Initialization Start
+ObjectManager::load() : PetAttrInfoManager Initialization Success
+ObjectManager::load() : PetExpInfoManager Initialization Start
+ObjectManager::load() : PetExpInfoManager Initialization Success
+ObjectManager::load() : ItemGradeManager Initialization Start
+1±Þ : 6000, 3000, 1000
+2±Þ : 13000, 14000, 5000
+3±Þ : 29000, 36000, 36000
+4±Þ : 33000, 43000, 38500
+5±Þ : 11000, 3600, 13000
+6±Þ : 4490, 400, 6000
+7±Þ : 2150, 0, 500
+8±Þ : 1080, 0, 0
+9±Þ : 210, 0, 0
+10±Þ : 70, 0, 0
+ObjectManager::load() : ItemGradeManager Initialization Success
+ObjectManager::load() : EventZoneInfoManager Initialization Start
+ObjectManager::load() : EventZoneInfoManager Initialization Success
+ObjectFactory::load() : GQuestElementFactory Initialization Start
+add Prototype : Level
+add Prototype : Time
+add Prototype : Level
+add Prototype : BloodDrain
+add Prototype : GiveVampireExp
+add Prototype : SayNPC
+add Prototype : TamePet
+add Prototype : Script
+add Prototype : Message
+add Prototype : GiveItem
+add Prototype : GiveQuestItem
+add Prototype : LoseQuestItem
+add Prototype : Race
+add Prototype : Killed
+add Prototype : GiveDomainExp
+add Prototype : GiveMoney
+add Prototype : SkillLevel
+add Prototype : RideMotorcycle
+add Prototype : GiveOustersExp
+add Prototype : TouchWayPoint
+add Prototype : HasQuestItem
+add Prototype : KillMonster
+add Prototype : PartyDissect
+add Prototype : GiveEventQuestItem
+add Prototype : EventParty
+add Prototype : EventPartyCrash
+add Prototype : CompleteQuest
+add Prototype : FastMove
+add Prototype : IllegalWarp
+add Prototype : Travel
+add Prototype : OR
+add Prototype : NOT
+add Prototype : Random
+add Prototype : AdvancementClassLevel
+add Prototype : ClearDynamicZone
+add Prototype : AddEffect
+add Prototype : RemoveEffect
+add Prototype : SetDynamicZone
+add Prototype : EnterDynamicZone
+add Prototype : StartOtherQuest
+add Prototype : GiveAdvancementClassExp
+add Prototype : AdvanceClass
+add Prototype : Warp
+Prototype : HasQuestItem
+Prototype : GiveEventQuestItem
+Prototype : GiveAdvancementClassExp
+Prototype : TamePet
+Prototype : GiveItem
+Prototype : GiveQuestItem
+Prototype : EventParty
+Prototype : PartyDissect
+Prototype : GiveOustersExp
+Prototype : Time
+Prototype : RideMotorcycle
+Prototype : LoseQuestItem
+Prototype : Warp
+Prototype : Script
+Prototype : StartOtherQuest
+Prototype : OR
+Prototype : Random
+Prototype : Killed
+Prototype : CompleteQuest
+Prototype : AdvancementClassLevel
+Prototype : RemoveEffect
+Prototype : SkillLevel
+Prototype : Travel
+Prototype : BloodDrain
+Prototype : NOT
+Prototype : TouchWayPoint
+Prototype : AddEffect
+Prototype : EventPartyCrash
+Prototype : KillMonster
+Prototype : AdvanceClass
+Prototype : EnterDynamicZone
+Prototype : ClearDynamicZone
+Prototype : Race
+Prototype : Message
+Prototype : GiveMoney
+Prototype : GiveVampireExp
+Prototype : IllegalWarp
+Prototype : GiveDomainExp
+Prototype : SayNPC
+Prototype : SetDynamicZone
+Prototype : Level
+Prototype : FastMove
+ObjectFactory::load() : GQuestElementFactory Initialization Success
+ObjectManager::load() : GQuestInfoManager Initialization Start
+make Element : Race
+make Element : Level
+make Element : Level
+make Element : Time
+make Element : GiveVampireExp
+make Element : GiveMoney
+make Element : Race
+make Element : Level
+make Element : BloodDrain
+make Element : Time
+make Element : GiveItem
+make Element : GiveVampireExp
+make Element : Race
+make Element : Level
+make Element : SayNPC
+make Element : GiveQuestItem
+make Element : SayNPC
+make Element : Message
+make Element : LoseQuestItem
+make Element : GiveQuestItem
+make Element : GiveVampireExp
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : GiveVampireExp
+make Element : Killed
+make Element : GiveItem
+make Element : GiveVampireExp
+make Element : Race
+make Element : Level
+make Element : TamePet
+make Element : Time
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : Level
+make Element : Time
+make Element : GiveDomainExp
+make Element : GiveMoney
+make Element : Race
+make Element : Level
+make Element : SkillLevel
+make Element : Time
+make Element : GiveQuestItem
+make Element : SayNPC
+make Element : Message
+make Element : GiveDomainExp
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : TouchWayPoint
+make Element : Message
+make Element : GiveQuestItem
+make Element : SayNPC
+make Element : Message
+make Element : LoseQuestItem
+make Element : GiveDomainExp
+make Element : GiveDomainExp
+make Element : Killed
+make Element : RideMotorcycle
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : TamePet
+make Element : Time
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : Level
+make Element : Time
+make Element : GiveMoney
+make Element : GiveOustersExp
+make Element : Race
+make Element : Level
+make Element : BloodDrain
+make Element : Time
+make Element : GiveOustersExp
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : TouchWayPoint
+make Element : Killed
+make Element : RideMotorcycle
+make Element : GiveOustersExp
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : TamePet
+make Element : Time
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SayNPC
+make Element : Script
+make Element : GiveQuestItem
+make Element : AddEffect
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : GiveQuestItem
+make Element : Script
+make Element : RemoveEffect
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : Killed
+make Element : RideMotorcycle
+make Element : IllegalWarp
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SetDynamicZone
+4001
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4001
+0
+make Element : ClearDynamicZone
+make Element : Script
+make Element : SetDynamicZone
+4002
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4002
+0
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : ClearDynamicZone
+make Element : SetDynamicZone
+72
+1
+make Element : Killed
+make Element : Time
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : SetDynamicZone
+4003
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4003
+0
+make Element : ClearDynamicZone
+make Element : Warp
+make Element : SayNPC
+make Element : Killed
+make Element : AdvanceClass
+make Element : Random
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SayNPC
+make Element : Script
+make Element : GiveQuestItem
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : GiveQuestItem
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : Killed
+make Element : IllegalWarp
+make Element : RideMotorcycle
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SetDynamicZone
+4001
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4001
+0
+make Element : ClearDynamicZone
+make Element : Script
+make Element : SetDynamicZone
+4002
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4002
+0
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : ClearDynamicZone
+make Element : SetDynamicZone
+72
+1
+make Element : Killed
+make Element : Time
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : SetDynamicZone
+4004
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4004
+0
+make Element : ClearDynamicZone
+make Element : Warp
+make Element : SayNPC
+make Element : Killed
+make Element : AdvanceClass
+make Element : Random
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SayNPC
+make Element : Script
+make Element : GiveQuestItem
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : GiveQuestItem
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : LoseQuestItem
+make Element : Killed
+make Element : IllegalWarp
+make Element : RideMotorcycle
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : SetDynamicZone
+4001
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4001
+0
+make Element : ClearDynamicZone
+make Element : Script
+make Element : SetDynamicZone
+4002
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4002
+0
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : ClearDynamicZone
+make Element : SetDynamicZone
+72
+1
+make Element : Killed
+make Element : Time
+make Element : CompleteQuest
+make Element : Race
+make Element : Level
+make Element : NOT
+make Element : AdvancementClassLevel
+make Element : Script
+make Element : SayNPC
+make Element : Script
+make Element : Script
+make Element : Script
+make Element : SetDynamicZone
+4005
+1
+make Element : EnterDynamicZone
+make Element : SetDynamicZone
+4005
+0
+make Element : ClearDynamicZone
+make Element : Warp
+make Element : SayNPC
+make Element : Killed
+make Element : AdvanceClass
+make Element : Random
+make Element : GiveItem
+make Element : GiveItem
+make Element : GiveItem
+ObjectManager::load() : GQuestInfoManager Initialization Success
+ObjectManager::load() : GQuestCheckPoint Initialization Start
+ObjectManager::load() : GQuestCheckPoint Initialization Success
+ObjectManager::load() : SiegeManager Initialization Start
+ObjectManager::load() : SiegeManager Initialization Success
+ObjectManager::load() : CSAuth Table Initialization Start
+ObjectManager::load() : CSAuth Table Initialization Success
+ObjectManager::load() : CSAuth Index Initialization Start
+ObjectManager::load() : CSAuth Index Initialization Success
+ObjectManager::load() : DynamicZoneInfoManager Initialization Start
+ObjectManager::load() : DynamicZoneInfoManager Initialization Success
+ObjectManager::load() : DynamicZoneManager Initialization Start
+ObjectManager::load() : DynamicZoneManager Initialization Success
+ObjectManager::load() : DynamicZoneFactoryManager Initialization Start
+ObjectManager::load() : DynamicZoneFactoryManager Initialization Success
+GameServer::init() : ObjectManager Initialization Success...
+GameServer::init() : ThreadManager Initialization Success...
+GameServer::init() : PacketFactoryManager Initialization Success...
+GameServer::init() : PacketValidator Initialization Success...
+GameServer::init() : LoginServerManager Initialization Success...
+GameServer::init() : SharedServerManager Initialization Success...
+GameServer::init() : MPacketManager Initialization Success...
+GameServer::init() : MPlayerManager Initialization Success...
+MAX SERVER GROUP = 1
+WorldID:1 ServerGroupID:0 follows0
+GameServerInfoManager(
+GameServerInfo(ServerID: 1,Nickname:game1,IP: 172.17.0.2,TCPPort:9998,UDPPort:9997,GroupID:0,WorldID:1,ServerStat:0)
+)EMPTY)
+GameServer::init() : GameServerInfoManager Initialization Success...
