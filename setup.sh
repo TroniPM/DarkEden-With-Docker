@@ -17,15 +17,15 @@ echo ''
 
 echo 'Dropping (IF EXISTS) database' && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME};"
 
-echo 'Starting creates.sql' && cat /home/darkeden/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates.sql done...'
-echo 'Starting inserts.sql' && cat /home/darkeden/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
+echo 'Starting creates.sql' && cat /home/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates.sql done...'
+echo 'Starting inserts.sql' && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
 
-echo "Checking if sqls was successfully..."
-echo "Showing data in database '${DB_NAME}' on table 'WorldDBInfo' with host '${SERVER_IP}':"
+echo "Checking if DK sqls was successfully..."
+echo "Showing data in database '${DB_NAME}' on table 'WorldDBInfo' with host '${SERVER_IP}' (if nothing shows up, something was wrong):"
 mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from dkdocker.WorldDBInfo;"
 
 echo ''
-echo 'Showing mysql users and hosts:'
+echo 'Showing mysql users and hosts (if nothing shows up, something was wrong):'
 mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select User, Host, Password from mysql.user;"
 
 echo ''

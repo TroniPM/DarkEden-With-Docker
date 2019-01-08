@@ -21,12 +21,12 @@ $ sudo apt install docker
 ```
 
 ### Runinng
-Easy peasy lemon squeezy steps. Just run these commands below (```-d``` means "Run container in background and print container ID", ```-P``` means "Publish a container’s port(s) to the host", ```-e``` means "Set environment variables". You can learn more about arguments [here].):
+Easy peasy lemon squeezy steps. Just run these commands below (```-d``` means "Run container in background and print container ID", ```-P``` means "Publish a container’s port(s) to the host", ```-e``` means "Set environment variables", ```-v``` means "Bind mount a volume". You can learn more about arguments [here].):
 ```sh
 $ cd DarkEden-Docker/
-$ docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
-$ CONTAINER=`docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk'
-$ docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
+sudo docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
+CONTAINER=`sudo docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" -v "/home/pmateus/DarkEden-With-Docker/data/:/home/darkeden/vs/data" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk'
+sudo docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
 ```
 
 Now what? Inside the docker image (REALLY lightwave), just setup and start your server ;]
