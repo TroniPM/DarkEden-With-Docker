@@ -8,6 +8,7 @@ MAINTAINER Paulo Mateus <paulomatew@gmail.com>
 ENV DB_USERNAME=dk \
     DB_PASSWORD=dk123 \
     DB_NAME=dkdocker \
+    DB_NAME_INFO=dkdocker_info \
     ADMIN_USERNAME=admin \
     ADMIN_PASSWORD=123456 \
     DK_SERVER_NAME=DKDocker
@@ -21,6 +22,7 @@ ENV PATH=/usr/local/mysql/bin:$PATH \
   DB_USERNAME_PLACEHOLDER=@@DB_USERNAME_CHANGE@@ \
   DB_PASSWORD_PLACEHOLDER=@@DB_PASSWORD_CHANGE@@ \
   DB_NAME_PLACEHOLDER=@@DB_NAME_CHANGE@@ \
+  DB_NAME_PLACEHOLDER2=@@DB2_NAME_CHANGE@@ \
   ADMIN_USERNAME_PLACEHOLDER=@@ADMIN_USERNAME_CHANGE@@ \
   ADMIN_PASSWORD_PLACEHOLDER=@@ADMIN_PASSWORD_CHANGE@@ \
   DK_SERVER_NAME_PLACEHOLDER=@@DK_SERVER_NAME_CHANGE@@ \
@@ -72,19 +74,33 @@ RUN \
 #########################                     ############################
 ##########################################################################
 \
-    && sed -i "s/${IP_PLACEHOLDER}/${SERVER_IP}/g"                    ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
-    && sed -i "s/${DB_USERNAME_PLACEHOLDER}/${DB_USERNAME}/g"         ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
-    && sed -i "s/${DB_PASSWORD_PLACEHOLDER}/${DB_PASSWORD}/g"         ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
-    && sed -i "s/${DB_NAME_PLACEHOLDER}/${DB_NAME}/g"                 ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
+    && sed -i "s/${IP_PLACEHOLDER}/${SERVER_IP}/g"                    ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+    && sed -i "s/${DB_USERNAME_PLACEHOLDER}/${DB_USERNAME}/g"         ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+    && sed -i "s/${DB_PASSWORD_PLACEHOLDER}/${DB_PASSWORD}/g"         ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+    && sed -i "s/${DB_NAME_PLACEHOLDER}/${DB_NAME}/g"                 ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
 \
-    && sed -i "s/${ADMIN_USERNAME_PLACEHOLDER}/${ADMIN_USERNAME}/g" ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
-    && sed -i "s/${ADMIN_PASSWORD_PLACEHOLDER}/${ADMIN_PASSWORD}/g" ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
-    && sed -i "s/${DK_SERVER_NAME_PLACEHOLDER}/${DK_SERVER_NAME}/g" ${CONF_PATH}loginserver.conf ${CONF_PATH}gameserver.conf ${CONF_PATH}sharedserver.conf ${SQL_PATH}inserts.sql ${SQL_PATH}creates.sql \
+    && sed -i "s/${DB_NAME_PLACEHOLDER2}/${DB_NAME_INFO}/g"           ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+\
+    && sed -i "s/${ADMIN_USERNAME_PLACEHOLDER}/${ADMIN_USERNAME}/g"   ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+    && sed -i "s/${ADMIN_PASSWORD_PLACEHOLDER}/${ADMIN_PASSWORD}/g"   ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
+    && sed -i "s/${DK_SERVER_NAME_PLACEHOLDER}/${DK_SERVER_NAME}/g"   ${CONF_PATH}*.conf ${SQL_PATH}*.sql \
     && rm /home/darkeden.tar.xz /home/libs.tar.xz \
     && cp ${DK_PATH}start ${DK_PATH}stop / && chmod -R +x /start /stop && cd ${DK_PATH} && chmod -R +x start stop vs/bin \
     && echo "\r\n\r\n\r\n\r\nYour DK !local! ip address is: ${SERVER_IP}.\r\nChange your dk client files...\r\n\r\n\r\n\r\n"
 
-EXPOSE 3306 9999 9998 9997 9996
+EXPOSE 3306/tcp 3306/udp \
+       9999/tcp 9999/udp \
+       9998/tcp 9998/udp \
+       9997/tcp 9997/udp \
+       9996/tcp 9996/udp \
+       9977/tcp 9977/udp \
+       9900/tcp 9900/udp \
+       9800/tcp 9800/udp \
+       5001/tcp 5001/udp \
+       5000/tcp 5000/udp \
+       3001/tcp 3001/udp \
+       2999/tcp 2999/udp \
+       1111/tcp 1111/udp 
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["mysqld_safe"]

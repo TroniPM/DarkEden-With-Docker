@@ -15,9 +15,11 @@ echo ''
 echo ${str}
 echo ''
 
-echo 'Dropping (IF EXISTS) database' && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME};"
+echo "Dropping database: ${DB_NAME}" && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME};"
+echo "Dropping database: ${DB_NAME_INFO}" && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME_INFO};"
 
 echo 'Starting creates.sql' && cat /home/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates.sql done...'
+echo 'Starting creates.sql' && cat /home/sql/creates_info.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates_info.sql done...'
 echo 'Starting inserts.sql' && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
 
 echo "Checking if DK sqls was successfully..."

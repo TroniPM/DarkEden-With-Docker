@@ -1,3 +1,9 @@
+daemonctl: no process found
+loginserver: no process found
+sharedserver: no process found
+gameserver: no process found
+mysqld: no process found
+./stop./start: 9: ./start: safe_mysqld: not found
 BillingGameNo : 1
 BillingServerIP : 172.17.0.2
 BillingServerPort : 3001
@@ -33,7 +39,7 @@ User : excel96
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-09 12:16:03
+2019-01-09 15:54:12
 [LOGIN_SERVER] query WorldDBInfo
 --------------------------------------------------
 --------------------------------------------------
@@ -239,7 +245,7 @@ SharedServer::init() start
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-09 12:16:04
+2019-01-09 15:54:13
 --------------------------------------------------
 --------------------------------------------------
 Connecting....... Another DB Server
@@ -261,7 +267,7 @@ GameWorldInfoManager(
 GameWorldInfo(WorldID: 1,Name:DKDocker)
 )
 ---------- Start SharedServer ---------
->>> STARTING GAME SERVER...
+root@62ff8b28ccca:/# ./stop>>> STARTING GAME SERVER...
 >>> RANDOMIZATION INITIALIZATION SUCCESS...
 >>> COMMAND-LINE PARAMETER READING SUCCESS...
 >>> LOGCLIENT INITIALZATION SUCCESS...
@@ -270,7 +276,7 @@ GameServer::init() : System Initialization Success...
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-09 12:16:05
+2019-01-09 15:54:14
 --------------------------------------------------
 --------------------------------------------------
 Connecting....... Another DB Server
@@ -283,141 +289,141 @@ ObjectManager::load() : SystemAvailabilitiesManager Initialization Success
 ObjectManager::init() : StringPool Initialization Start....... 
 ObjectManager::init() : StringPool Initialization Success....... 
 ObjectManager::init() : VariableManager Initialization Start....... 
-Event¹ß»ý¿©ºÎ: 1
-Event¹ß»ýºóµµ: 100
-ItemÃß°¡¹ß»ýÈ®·ü:  99999
-°æÇèÄ¡ Ãß°¡ ¹ß»ýÈ®·ü: 50000
-ÀüÀï ½Â¸® À¯Áö½Ã°£: 14400
-½½·¹ÀÌ¾î ÀüÀï HP º¸³Ê½º: 0
-¹ìÆÄÀÌ¾î ÀüÀï HP º¸³Ê½º: 0
-ÇÁ¸®¹Ì¾ö »ç¿ëÀÚÀÇ °æÇèÄ¡ º¸³Ê½º: 200
-ÇÁ¸®¹Ì¾ö Á¸ÀÇ ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 150
-ZoneGroupBalancing ½Ã°£ ÁÖ±â: 60ºÐ
-°·ºí ItemType È®·ü: 100
-°·ºí ItemOption È®·ü: 100
-¿ÀÅä¹ÙÀÌ ¼ÒÈ¯±â´É: ON
-¸ó½ºÅÍ ¿¬¼Ó Àû ¼³Á¤ ½Ã°£: 300ÃÊ
-½½·¹ÀÌ¾î ÀüÀï Damage º¸³Ê½º: 0
-¹ìÆÄÀÌ¾î ÀüÀï Damage º¸³Ê½º: 0
-·¹¾î ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 85000
-À¯´ÏÅ© ¾ÆÀÌÅÛ ·çÆÃ È®·ü: 70000
-¸¶½ºÅÍ ·¹¾î ÀÛµ¿: ON
-¸¶½ºÅÍ ·¹¾î¿¡ Á×°í ´Ù½Ã µé¾î°¡±â: OFF
-Ãß¼® ¼ÛÆí ¾ÆÀÌÅÛ È®·ü : 0
-¸¶½ºÅÍ ÈíÇ÷ ½ÃÀÛ HP : 70%
-¸¶½ºÅÍ ÈíÇ÷ ½ÃÀÛ BD : 20%
-¸¶½ºÅÍ ÈíÇ÷ ³¡ HP : 30%
-¸¶½ºÅÍ ÈíÇ÷ ³¡ BD : 40%
-Ä¡ÇÁ ¸ó½ºÅÍ µîÀå ON
-Ä¡ÇÁ ¸ó½ºÅÍ ·¹¾î ¾ÆÀÌÅÛ ·çÆÃ È®·ü : 75000%
-´É·ÂÄ¡ 40µÈ ¾Öµé ±æµå·Î ÀÌµ¿ : OFF
-½½·¹ÀÌ¾î ¹«·á »ç¿ë °¡´É µµ¸ÞÀÎ·¹º§ÇÕ: 30
-¹ìÆÄÀÌ¾î ¹«·á »ç¿ë °¡´É ·¹º§: 30
-IncomingConnection°ü·ÃµÈ Log: OFF
-Å©¸®½º¸¶½º ÆøÁ× ·çÆÃ È®·ü : 0 / 10000 
-Å©¸®½º¸¶½º Æ®¸® Á¶°¢ ·çÆÃ È®·ü : 0 / 10000 
-Å©¸®½º¸¶½º ¼±¹° »óÀÚ ·çÆÃ È®·ü: 0 / 10000 
-Å©¸®½º¸¶½º Æ®¸® Áö¼Ó ½Ã°£: 360ºÐ
-¸¶½ºÅÍ ·¹¾î ÃâÀÔ °¡´É ÀÎ¿ø ¼ö: 15¸í
-°è±Þ °æÇèÄ¡´Â ±âº» °æÇèÄ¡ÀÇ 30000%
-Luck º¸³Ê½º´Â ±âº» È®·üÀÇ 100%
-´ë¹Ú ¾ÆÀÌÅÛ È®·ü : 0 / 10000
-´ë¹Ú ¾ÆÀÌÅÛ Ãß°¡ ¾ÆÀÌÅÛ °³¼ö : 4
-´ë¹Ú ÇØ°ñ È®·ü : 0 / 10000
-À¯·á »ç¿ëÀÚ ¾ÚÇÃ, Ç÷Ã» ¹Ý°ª ÀÌº¥Æ® : OFF
-°ø¿ë¼º ÀÔÀå·á : 1000
-±æµå¼º ÀÔÀå·á : 10000
-°ø¿ë¼º ¾ÆÀÌÅÛ ¼¼±Ý : 100
-±æµå¼º ¾ÆÀÌÅÛ ¼¼±Ý : 100
-ÀüÀï ½ÅÃ»±Ý : 30000000
-±æµå ÀüÀï ½Ã°£ : 7200 ÃÊ == 120ºÐ
-Á¾Á· ÀüÀï ½Ã°£ : 7200 ÃÊ == 120ºÐ
-ÀüÀïÁÖ±â : ÁÖ ´ÜÀ§
-¾Æ´ãÀÇ ¼ºÁö ÀüÀï ±â´É : ON
-Á¾Á· ÀüÀï½Ã Timeband : Àú³á
-Á¾Á· ÀüÀï ÀÚµ¿ ½ÃÀÛ ±â´É: OFF
-Á¾Á· ÀüÀï Âü°¡ ÀÎ¿ø Á¦ÇÑ: OFF
-Ä¡ÇÁ ¸ó½ºÅÍ Ãß°¡ ¾ÆÀÌÅÛ °³¼ö: 4 °³
-¾ÆÀÌÅÛ ÁÖ´Â ÀÌº¥Æ®: OFF
-¹ìÆÄÀÌ¾î ´É·ÂÄ¡ ÀçºÐ¹è ºñ¿ë: 1000000
-Ä¿ÇÃ ¼º»ç ±â´É: ON
-Çì¾îÁø Àû ÀÖ´Â »ç¶÷ÀÌ ¶Ç Ä¿ÇÃÀÌ µÉ ¼ö ÀÖ´Â°¡: Y
-±æµå ÀüÀïÀ» ÇÏ´Â°¡?: No
-¾Æ¿ì½ºÅÍ½º ¹«·á »ç¿ë °¡´É ·¹º§: 30
-Äù½ºÆ®¸¦ ½ÅÃ»ÇÒ ¼ö ÀÖ´Â°¡?: Yes
-Äù½ºÆ® Á¤º¸¸¦ º¸³»Áà¾ß ÇÏ´Â°¡?: No
-¾ÆÀÌÅÛ »óÁ¡ ±â´ÉÀÌ ÄÑÁ®ÀÖ´Â°¡: Yes
-PC¹æ °æÇèÄ¡ º¸³Ê½º: 100
-PC¹æ ¾ÆÀÌÅÛ È¹µæ È®·ü º¸³Ê½º: 99
-µ· ·Î±× ³²±â´Â ÃÖ¼Ò ±Ý¾×: 5000000
-ÇÇ¾¾¹æ º¹±Ç ÀÌº¥Æ®: 0
-±ê¹ß»¯±â °ÔÀÓ ½ÇÇà: no
-DAEMONCTL Á×ÀÌ´Â ¿©ºÎ: no
-±×¹Ê´Þ(¾ø´Â) Ä«µå ³ª¿Ã È®·ü: 1 / 50000
-ÃÊ½Â´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 3000
-¹Ý´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 200
-º¸¸§´Þ Ä«µå ³ª¿Ã È®·ü: 1 / 225000
-´ÞÄ«µå ÀÌº¥Æ®¸¦ Áß´ÜÇß½À´Ï´Ù.
-·¹º§º° ÀüÀï ÁøÇà ¿©ºÎ: no
-Á¾Á·Àü½Ã HP º¸³Ê½º: 0
-¸Ó¸® °¹¼ö Ä«¿îÆ®ÇÏ±â: no
-¸Ó¸® °¡°Ý º¸³Ê½º : 100
-·¹º§º° ÀüÀï Á¸¿¡ ÀÚÀ¯·Ó°Ô µé¾î°¥ ¼ö ÀÖ´Â°¡? : yes
-º¹ÁÖ¸Ó´Ï ÀÌº¥Æ®°¡ ÁøÇàÁßÀÌÁö ¾Ê½À´Ï´Ù.
-ÃÊ·Ï»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 200
-Æê °æÇèÄ¡ ºñÀ² : 4500
-ÆÄ¶õ»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 3000
-È²±Ý»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 15000
-»¡°£»ö º¹ÁÖ¸Ó´Ï ³ª¿Ã È®·ü : 1 / 50000
-¼±¹°»óÀÚ ±³È¯ ÀÌº¥Æ®°¡ ÁøÇàÁßÀÌÁö ¾Ê½À´Ï´Ù.
-»¡°£»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
-ÆÄ¶õ»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
-ÃÊ·Ï»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
-³ë¶õ»ö ¼±¹°»óÀÚ ³ª¿Ã È®·ü : 1 / 10000
-³Ý¸¶ºí Ä«µå ÀÌº¥Æ® : No
-³Ý¸¶ºí Ä«µå ³ª¿Ã È®·ü : 0 / 100000
-Æê ¸ÔÀÌ ÀÌº¥Æ® : No
-ÇÁ¸®¹Ì¾ö Ã¼Çè ÀÌº¥Æ® : No
-°í´Ü°è Æê ¸ÔÀÌ È®·ü : 20%
-Æê ¸ÔÀÌ ·çÆÃ È®·ü : 10 / 100000
-Á¾Á·º° Æê ¸ÔÀÌ È®·ü : 40%
-¸®¹ÙÀÌ¹ú ¼Â È®·ü : 10%
-¿À´ÃÀº ±¹°æÀÏÀÌ ¾Æ´Õ´Ï´Ù.
-½½·¹ÀÌ¾î HPºñÀ² : 100%
-¹ìÆÄÀÌ¾î HPºñÀ² : 175%
-¾Æ¿ì½ºÅÍÁî HPºñÀ² : 150%
-¸ó½ºÅÍ HPºñÀ² : 150%
-¸ó½ºÅÍ EXPºñÀ² : 130%
-³×ÀÙÅ¬·Î¹ö ÀÌº¥Æ® : off
-³×ÀÙÅ¬·Î¹ö È®·ü : 100/100000
-¸ó½ºÅÍ Damage ºñÀ² : 120%
-2Â÷ Æê Äù½ºÆ® : on
-³×ÀÌ¹ÖÆæ ÀÌº¥Æ® : off
-³×ÀÌ¹ÖÆæ È®·ü : 5/100000
-±Ý¸Þ´Þ È®·ü : 0/100000
-º¹³¯ ÀÌº¥Æ® : off
-¿Ã¸²ÇÈ ÀÌº¥Æ® ¾ÆÀÌÅÛ ·çÆÃ È®·ü : 0/100000
-´Ùµ§ ¿Ã¸²ÇÈ ÀÌº¥Æ® : on
-¿ù°è°ü °¡°Ý : 1
-ÃÊº¸ÀÚ ÀÌº¥Æ® : off
+Eventï¿½ß»ï¿½ï¿½ï¿½ï¿½ï¿½: 1
+Eventï¿½ß»ï¿½ï¿½ï¿½ï¿½ï¿½: 100
+Itemï¿½ß°ï¿½ï¿½ß»ï¿½È®ï¿½ï¿½:  99999
+ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ß°ï¿½ ï¿½ß»ï¿½È®ï¿½ï¿½: 50000
+ï¿½ï¿½ï¿½ï¿½ ï¿½Â¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½: 14400
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ HP ï¿½ï¿½ï¿½Ê½ï¿½: 0
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ HP ï¿½ï¿½ï¿½Ê½ï¿½: 0
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½Ê½ï¿½: 200
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 150
+ZoneGroupBalancing ï¿½Ã°ï¿½ ï¿½Ö±ï¿½: 60ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ ItemType È®ï¿½ï¿½: 100
+ï¿½ï¿½ï¿½ï¿½ ItemOption È®ï¿½ï¿½: 100
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½: ON
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½: 300ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ Damage ï¿½ï¿½ï¿½Ê½ï¿½: 0
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ Damage ï¿½ï¿½ï¿½Ê½ï¿½: 0
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 85000
+ï¿½ï¿½ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 70000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½: ON
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î¿¡ ï¿½×°ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½î°¡ï¿½ï¿½: OFF
+ï¿½ß¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ HP : 70%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ BD : 20%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ HP : 30%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ BD : 40%
+Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ON
+Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 75000%
+ï¿½É·ï¿½Ä¡ 40ï¿½ï¿½ ï¿½Öµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ : OFF
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½: 30
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: 30
+IncomingConnectionï¿½ï¿½ï¿½Ãµï¿½ Log: OFF
+Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0 / 10000 
+Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0 / 10000 
+Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 0 / 10000 
+Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½: 360ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Î¿ï¿½ ï¿½ï¿½: 15ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½âº» ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ 30000%
+Luck ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ ï¿½âº» È®ï¿½ï¿½ï¿½ï¿½ 100%
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0 / 10000
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : 4
+ï¿½ï¿½ï¿½ï¿½ ï¿½Ø°ï¿½ È®ï¿½ï¿½ : 0 / 10000
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ã» ï¿½Ý°ï¿½ ï¿½Ìºï¿½Æ® : OFF
+ï¿½ï¿½ï¿½ë¼º ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : 1000
+ï¿½ï¿½ï¿½å¼º ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : 10000
+ï¿½ï¿½ï¿½ë¼º ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : 100
+ï¿½ï¿½ï¿½å¼º ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : 100
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ : 30000000
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ : 7200 ï¿½ï¿½ == 120ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ : 7200 ï¿½ï¿½ == 120ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ : ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ï¿½Æ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ON
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Timeband : ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: OFF
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½: OFF
+Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: 4 ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ìºï¿½Æ®: OFF
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½É·ï¿½Ä¡ ï¿½ï¿½ï¿½Ð¹ï¿½ ï¿½ï¿½ï¿½ï¿½: 1000000
+Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ON
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´Â°ï¿½: Y
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´Â°ï¿½?: No
+ï¿½Æ¿ì½ºï¿½Í½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: 30
+ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´Â°ï¿½?: Yes
+ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´Â°ï¿½?: No
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Â°ï¿½: Yes
+PCï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½Ê½ï¿½: 100
+PCï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¹ï¿½ï¿½ È®ï¿½ï¿½ ï¿½ï¿½ï¿½Ê½ï¿½: 99
+ï¿½ï¿½ ï¿½Î±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ ï¿½Ý¾ï¿½: 5000000
+ï¿½Ç¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ®: 0
+ï¿½ï¿½ï¿½ß»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: no
+DAEMONCTL ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½: no
+ï¿½×¹Ê´ï¿½(ï¿½ï¿½ï¿½ï¿½) Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 1 / 50000
+ï¿½Ê½Â´ï¿½ Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 1 / 3000
+ï¿½Ý´ï¿½ Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 1 / 200
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½: 1 / 225000
+ï¿½ï¿½Ä«ï¿½ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ß´ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: no
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ HP ï¿½ï¿½ï¿½Ê½ï¿½: 0
+ï¿½Ó¸ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½Æ®ï¿½Ï±ï¿½: no
+ï¿½Ó¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ê½ï¿½ : 100
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ ï¿½ï¿½ï¿½î°¥ ï¿½ï¿½ ï¿½Ö´Â°ï¿½? : yes
+ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
+ï¿½Ê·Ï»ï¿½ ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 200
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½ : 4500
+ï¿½Ä¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 3000
+È²ï¿½Ý»ï¿½ ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 15000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 50000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 10000
+ï¿½Ä¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 10000
+ï¿½Ê·Ï»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 10000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 10000
+ï¿½Ý¸ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½ ï¿½Ìºï¿½Æ® : No
+ï¿½Ý¸ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0 / 100000
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : No
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ Ã¼ï¿½ï¿½ ï¿½Ìºï¿½Æ® : No
+ï¿½ï¿½ï¿½Ü°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 20%
+ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 10 / 100000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 40%
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ : 10%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½.
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ HPï¿½ï¿½ï¿½ï¿½ : 100%
+ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ HPï¿½ï¿½ï¿½ï¿½ : 175%
+ï¿½Æ¿ì½ºï¿½ï¿½ï¿½ï¿½ HPï¿½ï¿½ï¿½ï¿½ : 150%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ HPï¿½ï¿½ï¿½ï¿½ : 150%
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ EXPï¿½ï¿½ï¿½ï¿½ : 130%
+ï¿½ï¿½ï¿½ï¿½Å¬ï¿½Î¹ï¿½ ï¿½Ìºï¿½Æ® : off
+ï¿½ï¿½ï¿½ï¿½Å¬ï¿½Î¹ï¿½ È®ï¿½ï¿½ : 100/100000
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Damage ï¿½ï¿½ï¿½ï¿½ : 120%
+2ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® : on
+ï¿½ï¿½ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : off
+ï¿½ï¿½ï¿½Ì¹ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 5/100000
+ï¿½Ý¸Þ´ï¿½ È®ï¿½ï¿½ : 0/100000
+ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : off
+ï¿½Ã¸ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0/100000
+ï¿½Ùµï¿½ ï¿½Ã¸ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : on
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : 1
+ï¿½Êºï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : off
 PINE_CAKE_EVENT: 0
 PINE_CAKE_RATIO: 500
-±æµå Å»Åð½Ã Àç°¡ÀÔ ºÒ°¡ ±â°£ : 7
-¿¬ÇÕ ±æµå °¹¼ö Á¦ÇÑ : 1
-¼ö´É ´ë¹Ú ¾ÆÀÌÅÛ È®·ü : 0
-Áúµå·¹ ·¹¾î ÀÎ¿ø Á¦ÇÑ : 36
-±âºÎ ÀÌº¥Æ® 2005.01 : on
+ï¿½ï¿½ï¿½ï¿½ Å»ï¿½ï¿½ï¿½ï¿½ ï¿½ç°¡ï¿½ï¿½ ï¿½Ò°ï¿½ ï¿½â°£ : 7
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : 1
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 0
+ï¿½ï¿½ï¿½å·¹ ï¿½ï¿½ï¿½ï¿½ ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ : 36
+ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® 2005.01 : on
 HOURGLASS_RATIO_S: 3
 HOURGLASS_RATIO_M: 3
 HOURGLASS_RATIO_L: 5
-2005³â »õÇØ ¸ÂÀÌ ÀÌº¥Æ® : off
-º¹Á¶¸® ¾ÆÀÌÅÛ È®·ü : 1 / 2500
-ÀÌº¥Æ® »¡°£ ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
-ÀÌº¥Æ® ³ì»ö ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
-ÀÌº¥Æ® ÆÄ¶õ ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
-ÀÌº¥Æ® °ËÀº ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
-ÀÌº¥Æ® ¾¦»ö ¶±±¹ ¾ÆÀÌÅÛ È®·ü : 1 / 80000
-½Ã°£´ëº° °æÇèÄ¡ 2¹è ÀÌº¥Æ® : on
+2005ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® : off
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 2500
+ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 80000
+ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 80000
+ï¿½Ìºï¿½Æ® ï¿½Ä¶ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 80000
+ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 80000
+ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : 1 / 80000
+ï¿½Ã°ï¿½ï¿½ëº° ï¿½ï¿½ï¿½ï¿½Ä¡ 2ï¿½ï¿½ ï¿½Ìºï¿½Æ® : on
 : 0
 
 
@@ -664,8 +670,8 @@ VampireAmuletObject...ItemIDRegistry:1
 QuestItem...ItemIDRegistry:1
 EventTree...ItemIDRegistry:1
 EventETC...ItemIDRegistry:1
-BloodBible...ItemIDRegistry:27
-CastleSymbol...ItemIDRegistry:15
+BloodBible...ItemIDRegistry:53
+CastleSymbol...ItemIDRegistry:29
 CoupleRing...ItemIDRegistry:1
 CoupleRing...ItemIDRegistry:1
 EventItem...ItemIDRegistry:1
@@ -688,7 +694,7 @@ OustersSummonItem...ItemIDRegistry:1
 EffectItem...ItemIDRegistry:1
 CodeSheet...ItemIDRegistry:1
 MoonCard...ItemIDRegistry:1
-Sweeper...ItemIDRegistry:27
+Sweeper...ItemIDRegistry:53
 PetItem...ItemIDRegistry:1
 PetFood...ItemIDRegistry:1
 PetEnchantItem...ItemIDRegistry:1
@@ -696,7 +702,7 @@ LuckyBag...ItemIDRegistry:1
 SMSItem...ItemIDRegistry:1
 CoreZap...ItemIDRegistry:1
 TrapItem...ItemIDRegistry:1
-WarItem...ItemIDRegistry:21
+WarItem...ItemIDRegistry:41
 CarryingReceiverObject...ItemIDRegistry:1
 ShoulderArmorObject...ItemIDRegistry:1
 DermisObject...ItemIDRegistry:1
@@ -880,7 +886,7 @@ Load - slayer_filename:/home/darkeden/vs/data/GillesdeRais.slayer.bin
 Load - vampire_filename:/home/darkeden/vs/data/GillesdeRais.vampire.bin
 Load - ousters_filename:/home/darkeden/vs/data/GillesdeRais.ousters.bin
 [NoTreasureFile] ÃÃºÂµÃ¥Â·Â¹ÂºÃÂ½Ã…
-[NoTreasureFile] Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®Â
+[NoTreasureFile] Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ï¿½
 [NoTreasureFile] Â°Â¢Â¼ÂºÃÃºÂµÃ¥Â·Â¹
 [NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã®Â½Ã‡Ã‡Ã¨ÃƒÂ¼1
 [NoTreasureFile] Â¹Ã¬Ã†Ã„Ã€ÃŒÂ¾Ã®Â½Ã‡Ã‡Ã¨ÃƒÂ¼2
@@ -1185,15 +1191,15 @@ NPC[Â¹Ã™Â·Ã©] loading begin >> loading end
 @@@@@@@@@@@@@@@ [1402]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
 x : 71
 y : 75
-Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ï¿½ï¿½ HP : 55000
 x : 71
 y : 76
 x : 94
 y : 172
-Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ÂÀÇ HP : 22491
+Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ï¿½ï¿½ï¿½ HP : 22491
 x : 167
 y : 95
-Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ÂÀÇ HP : 22491
+Ã‡ÃÃ€ÃŒÂ¸ÃžÂ½Âº Â¸ÃÃ€ÃŽÂ¼Â®ï¿½ï¿½ï¿½ HP : 22491
 
 @@@@@@@@@@@@@@@ [1402]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -1401,34 +1407,34 @@ NPC[Â·Â¹Ã€ÃŒÂºÃ¬] loading begin >> loading end
 @@@@@@@@@@@@@@@ [34]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:12041,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:44187,Y:0,Sight :13) regens at 241 , 57
-Monster(ObjectID:12042,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:14833,Y:19756,Sight :13) regens at 20 , 87
-Monster(ObjectID:12043,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:22292,Y:19756,Sight :13) regens at 237 , 156
-Monster(ObjectID:12044,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:40173,Y:19756,Sight :13) regens at 154 , 225
+Monster(ObjectID:12041,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:17768,Y:0,Sight :13) regens at 37 , 107
+Monster(ObjectID:12042,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:27429,Y:19756,Sight :13) regens at 77 , 116
+Monster(ObjectID:12043,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:29773,Y:19756,Sight :13) regens at 208 , 230
+Monster(ObjectID:12044,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:59088,Y:19756,Sight :13) regens at 77 , 229
 
 @@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:13336,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:0,Y:5936,Sight :13) regens at 96 , 166
-Monster(ObjectID:13337,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:42592,Y:19756,Sight :13) regens at 188 , 123
-Monster(ObjectID:13338,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:31676,Y:19756,Sight :13) regens at 49 , 112
-Monster(ObjectID:13339,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:28721,Y:19756,Sight :13) regens at 226 , 80
+Monster(ObjectID:13336,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:216,Y:216,Sight :13) regens at 110 , 76
+Monster(ObjectID:13337,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:19566,Y:19756,Sight :13) regens at 109 , 177
+Monster(ObjectID:13338,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:45421,Y:19756,Sight :13) regens at 38 , 69
+Monster(ObjectID:13339,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:17702,Y:19756,Sight :13) regens at 135 , 29
 
 @@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:12152,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:6297,Y:0,Sight :13) regens at 16 , 232
-Monster(ObjectID:12153,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:59408,Y:19756,Sight :13) regens at 83 , 205
-Monster(ObjectID:12154,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:52563,Y:19756,Sight :13) regens at 233 , 58
-Monster(ObjectID:12155,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:15081,Y:19756,Sight :13) regens at 45 , 41
+Monster(ObjectID:12152,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:40922,Y:0,Sight :13) regens at 148 , 169
+Monster(ObjectID:12153,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:43412,Y:19756,Sight :13) regens at 27 , 157
+Monster(ObjectID:12154,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:40219,Y:19756,Sight :13) regens at 23 , 153
+Monster(ObjectID:12155,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:39191,Y:19756,Sight :13) regens at 157 , 114
 
 @@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:11772,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:25581,Y:0,Sight :13) regens at 216 , 129
-Monster(ObjectID:11773,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:33240,Y:19756,Sight :13) regens at 65 , 189
-Monster(ObjectID:11774,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:48449,Y:19756,Sight :13) regens at 183 , 141
-Monster(ObjectID:11775,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:36279,Y:19756,Sight :13) regens at 104 , 52
+Monster(ObjectID:11772,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:59674,Y:0,Sight :13) regens at 128 , 46
+Monster(ObjectID:11773,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:11904,Y:19756,Sight :13) regens at 38 , 112
+Monster(ObjectID:11774,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:28710,Y:19756,Sight :13) regens at 36 , 143
+Monster(ObjectID:11775,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:36644,Y:19756,Sight :13) regens at 228 , 158
 
 @@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -1453,7 +1459,7 @@ NPC[Â¾Ã†Â¸Â®Â¿Ã€Ã…Â©] loading begin >> loading end
 @@@@@@@@@@@@@@@ [74]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
 x : 70
 y : 52
-Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ï¿½ï¿½ HP : 55000
 x : 41
 y : 52
 x : 72
@@ -1516,7 +1522,7 @@ NPC[Ã‡ÃÂ¸Â®Â¾ÃŸ] loading begin >> loading end
 @@@@@@@@@@@@@@@ [1012]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [1013]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ÀÇ HP : 55000
+Â±Ã—Â·Â¹Ã€ÃŒÃ†Â®Â·Â¯Ã‡Ã‡Â¾Ã°ï¿½ï¿½ HP : 55000
 
 @@@@@@@@@@@@@@@ [1013]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -1565,7 +1571,7 @@ NPC[Ã‡ÃÂ¸Â®Â¾ÃŸ] loading begin >> loading end
 @@@@@@@@@@@@@@@ [1129]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [1130]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-GreatRuffianSkullÀÇ HP : 60000
+GreatRuffianSkullï¿½ï¿½ HP : 60000
 
 @@@@@@@@@@@@@@@ [1130]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -1672,7 +1678,7 @@ NPC[ÂºÂ£Â¿Ã‹ÃŽÃ·Ã€Ã¯ÃŽÃšÃ‹Â¹Â·Ã–Ã‰Ã­2] loading begin >> loading end
 @@@@@@@@@@@@@@@ [1612]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [1621]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-GreatRuffianSkullÀÇ HP : 60000
+GreatRuffianSkullï¿½ï¿½ HP : 60000
 
 @@@@@@@@@@@@@@@ [1621]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -1820,7 +1826,7 @@ ObjectManager::load() : LogNameManager Initialization Success
 ObjectManager::load() : RankBonusInfoManager Initialization Start
 ObjectManager::load() : RankBonusInfoManager Initialization Success
 ObjectManager::load() : WarSystem Initialization Start
-Á¾Á·ÀüÀï ÆÐÅ¶ º¸³»´Â ³¯Â¥ : 19010600
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¶ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ : 19010600
 ObjectManager::load() : WarSystem Initialization Success
 ObjectManager::load() : RaceWarLimiter Initialization Start
 ObjectManager::load() : RaceWarLimiter Initialization Success
@@ -1854,16 +1860,16 @@ ObjectManager::load() : PetAttrInfoManager Initialization Success
 ObjectManager::load() : PetExpInfoManager Initialization Start
 ObjectManager::load() : PetExpInfoManager Initialization Success
 ObjectManager::load() : ItemGradeManager Initialization Start
-1±Þ : 6000, 3000, 1000
-2±Þ : 13000, 14000, 5000
-3±Þ : 29000, 36000, 36000
-4±Þ : 33000, 43000, 38500
-5±Þ : 11000, 3600, 13000
-6±Þ : 4490, 400, 6000
-7±Þ : 2150, 0, 500
-8±Þ : 1080, 0, 0
-9±Þ : 210, 0, 0
-10±Þ : 70, 0, 0
+1ï¿½ï¿½ : 6000, 3000, 1000
+2ï¿½ï¿½ : 13000, 14000, 5000
+3ï¿½ï¿½ : 29000, 36000, 36000
+4ï¿½ï¿½ : 33000, 43000, 38500
+5ï¿½ï¿½ : 11000, 3600, 13000
+6ï¿½ï¿½ : 4490, 400, 6000
+7ï¿½ï¿½ : 2150, 0, 500
+8ï¿½ï¿½ : 1080, 0, 0
+9ï¿½ï¿½ : 210, 0, 0
+10ï¿½ï¿½ : 70, 0, 0
 ObjectManager::load() : ItemGradeManager Initialization Success
 ObjectManager::load() : EventZoneInfoManager Initialization Start
 ObjectManager::load() : EventZoneInfoManager Initialization Success
@@ -2319,12 +2325,12 @@ GameServerInfoManager(
 GameServerInfo(ServerID: 1,Nickname:game1,IP: 172.17.0.2,TCPPort:9998,UDPPort:9997,GroupID:0,WorldID:1,ServerStat:0)
 )EMPTY)
 GameServer::init() : GameServerInfoManager Initialization Success...
+==============================================================================
+UNEXPECTED EXCEPTION OCCURED
+==============================================================================
 >>> STARTING GAME SERVER...
 >>> RANDOMIZATION INITIALIZATION SUCCESS...
 >>> COMMAND-LINE PARAMETER READING SUCCESS...
 >>> LOGCLIENT INITIALZATION SUCCESS...
 >>> GAME SERVER INSTANCE CREATED...
 GameServer::init() : System Initialization Success...
---------------------------------------------------
-            Init DatabaseManager 
---------------------------------------------------
