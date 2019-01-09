@@ -55,6 +55,7 @@ DK_SERVER_NAME=DKDocker \        #dk server name showing on client (World and Su
 # Done so far on server
 - Tables translated to english: ```AttrInfo.sql``` and ```GSStringPool.sql```
 - One world only
+- TO-DO: Change bibles name to latin.
 
 
 # Contributing

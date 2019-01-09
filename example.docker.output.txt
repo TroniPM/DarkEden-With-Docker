@@ -33,7 +33,7 @@ User : excel96
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-08 20:17:52
+2019-01-09 12:16:03
 [LOGIN_SERVER] query WorldDBInfo
 --------------------------------------------------
 --------------------------------------------------
@@ -239,7 +239,7 @@ SharedServer::init() start
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-08 20:17:53
+2019-01-09 12:16:04
 --------------------------------------------------
 --------------------------------------------------
 Connecting....... Another DB Server
@@ -270,7 +270,7 @@ GameServer::init() : System Initialization Success...
 --------------------------------------------------
             Init DatabaseManager 
 --------------------------------------------------
-2019-01-08 20:17:55
+2019-01-09 12:16:05
 --------------------------------------------------
 --------------------------------------------------
 Connecting....... Another DB Server
@@ -618,39 +618,39 @@ ObjectManager::init() : SweeperBonusManager Initialization Success.......
 ObjectManager::init() : ItemInfoManager Initialization Start
 AR...ItemIDRegistry:1
 Belt...ItemIDRegistry:1
-Cross...ItemIDRegistry:7
+Cross...ItemIDRegistry:1
 Blade...ItemIDRegistry:1
 Bomb...ItemIDRegistry:1
 BombMaterial...ItemIDRegistry:1
 Bracelet...ItemIDRegistry:1
-Coat...ItemIDRegistry:7
+Coat...ItemIDRegistry:1
 ETC...ItemIDRegistry:1
 Glove...ItemIDRegistry:1
 Helm...ItemIDRegistry:1
 HolyWater...ItemIDRegistry:1
 Key...ItemIDRegistry:1
 LearningItem...ItemIDRegistry:1
-Magazine...ItemIDRegistry:7
+Magazine...ItemIDRegistry:1
 Mine...ItemIDRegistry:1
 Money...ItemIDRegistry:1
 Motorcycle...ItemIDRegistry:1
 Necklace...ItemIDRegistry:1
-Potion...ItemIDRegistry:9
+Potion...ItemIDRegistry:1
 Ring...ItemIDRegistry:1
 SG...ItemIDRegistry:1
 SMG...ItemIDRegistry:1
 Shield...ItemIDRegistry:1
 Shoes...ItemIDRegistry:1
-Sword...ItemIDRegistry:7
+Sword...ItemIDRegistry:1
 SR...ItemIDRegistry:1
-Trouser...ItemIDRegistry:7
+Trouser...ItemIDRegistry:1
 VampireBracelet...ItemIDRegistry:1
 VampireNecklace...ItemIDRegistry:1
 VampireRing...ItemIDRegistry:1
 Water...ItemIDRegistry:1
 VampireCoat...ItemIDRegistry:1
 Skull...ItemIDRegistry:1
-Mace...ItemIDRegistry:7
+Mace...ItemIDRegistry:1
 Serum...ItemIDRegistry:1
 VampireETC...ItemIDRegistry:1
 SlayerPortalItem...ItemIDRegistry:1
@@ -661,11 +661,11 @@ VampireEarring...ItemIDRegistry:1
 RelicObject...ItemIDRegistry:1
 VampireWeaponObject...ItemIDRegistry:1
 VampireAmuletObject...ItemIDRegistry:1
-QuestItem...ItemIDRegistry:44516
+QuestItem...ItemIDRegistry:1
 EventTree...ItemIDRegistry:1
 EventETC...ItemIDRegistry:1
-BloodBible...ItemIDRegistry:10075
-CastleSymbol...ItemIDRegistry:5437
+BloodBible...ItemIDRegistry:27
+CastleSymbol...ItemIDRegistry:15
 CoupleRing...ItemIDRegistry:1
 CoupleRing...ItemIDRegistry:1
 EventItem...ItemIDRegistry:1
@@ -674,29 +674,29 @@ ResurrectItem...ItemIDRegistry:1
 MixingItem...ItemIDRegistry:1
 OustersArmsband...ItemIDRegistry:1
 OustersBoots...ItemIDRegistry:1
-OustersChakram...ItemIDRegistry:4
+OustersChakram...ItemIDRegistry:1
 OustersCirclet...ItemIDRegistry:1
 OustersCoat...ItemIDRegistry:1
 OustersPendent...ItemIDRegistry:1
 OustersRing...ItemIDRegistry:1
 OustersStone...ItemIDRegistry:1
 OustersWristlet...ItemIDRegistry:1
-Larva...ItemIDRegistry:4
-Pupa...ItemIDRegistry:4
+Larva...ItemIDRegistry:1
+Pupa...ItemIDRegistry:1
 ComposMei...ItemIDRegistry:1
 OustersSummonItem...ItemIDRegistry:1
 EffectItem...ItemIDRegistry:1
 CodeSheet...ItemIDRegistry:1
-MoonCard...ItemIDRegistry:53612
-Sweeper...ItemIDRegistry:10138
+MoonCard...ItemIDRegistry:1
+Sweeper...ItemIDRegistry:27
 PetItem...ItemIDRegistry:1
 PetFood...ItemIDRegistry:1
-PetEnchantItem...ItemIDRegistry:105509
+PetEnchantItem...ItemIDRegistry:1
 LuckyBag...ItemIDRegistry:1
 SMSItem...ItemIDRegistry:1
 CoreZap...ItemIDRegistry:1
 TrapItem...ItemIDRegistry:1
-WarItem...ItemIDRegistry:7756
+WarItem...ItemIDRegistry:21
 CarryingReceiverObject...ItemIDRegistry:1
 ShoulderArmorObject...ItemIDRegistry:1
 DermisObject...ItemIDRegistry:1
@@ -707,7 +707,7 @@ ObjectManager::init() : ItemInfoManager Initialization Success
 ObjectManager::init() : ItemMineInfoManager Initialization Start
 ObjectManager::init() : ItemMineInfoManager Initialization Success
 ObjectManager::init() : WarID Initialization Start
-War::WarIDRegistry:228
+War::WarIDRegistry:1
 ObjectManager::init() : WarID Initialization Success
 ObjectManager::init() : VolumeInfoManager Initialization Start
 ObjectManager::init() : VolumeInfoManager Initialization Success
@@ -1401,34 +1401,34 @@ NPC[·¹ÀÌºì] loading begin >> loading end
 @@@@@@@@@@@@@@@ [34]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:12041,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:32343,Y:0,Sight :13) regens at 90 , 189
-Monster(ObjectID:12042,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:48474,Y:19756,Sight :13) regens at 207 , 55
-Monster(ObjectID:12043,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:14287,Y:19756,Sight :13) regens at 193 , 63
-Monster(ObjectID:12044,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:16321,Y:19756,Sight :13) regens at 74 , 17
+Monster(ObjectID:12041,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:44187,Y:0,Sight :13) regens at 241 , 57
+Monster(ObjectID:12042,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:14833,Y:19756,Sight :13) regens at 20 , 87
+Monster(ObjectID:12043,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:22292,Y:19756,Sight :13) regens at 237 , 156
+Monster(ObjectID:12044,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:40173,Y:19756,Sight :13) regens at 154 , 225
 
 @@@@@@@@@@@@@@@ [51]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:13336,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:0,Y:5936,Sight :13) regens at 24 , 66
-Monster(ObjectID:13337,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16920,Y:19756,Sight :13) regens at 167 , 144
-Monster(ObjectID:13338,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:37031,Y:19756,Sight :13) regens at 176 , 221
-Monster(ObjectID:13339,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:56752,Y:19756,Sight :13) regens at 131 , 148
+Monster(ObjectID:13336,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:0,Y:5936,Sight :13) regens at 96 , 166
+Monster(ObjectID:13337,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:42592,Y:19756,Sight :13) regens at 188 , 123
+Monster(ObjectID:13338,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:31676,Y:19756,Sight :13) regens at 49 , 112
+Monster(ObjectID:13339,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:28721,Y:19756,Sight :13) regens at 226 , 80
 
 @@@@@@@@@@@@@@@ [52]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:12152,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16741,Y:0,Sight :13) regens at 159 , 141
-Monster(ObjectID:12153,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:36255,Y:19756,Sight :13) regens at 167 , 25
-Monster(ObjectID:12154,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:6567,Y:19756,Sight :13) regens at 214 , 211
-Monster(ObjectID:12155,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:54230,Y:19756,Sight :13) regens at 101 , 44
+Monster(ObjectID:12152,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:6297,Y:0,Sight :13) regens at 16 , 232
+Monster(ObjectID:12153,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:59408,Y:19756,Sight :13) regens at 83 , 205
+Monster(ObjectID:12154,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:52563,Y:19756,Sight :13) regens at 233 , 58
+Monster(ObjectID:12155,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:15081,Y:19756,Sight :13) regens at 45 , 41
 
 @@@@@@@@@@@@@@@ [53]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
 @@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION START @@@@@@@@@@@@@@@
-Monster(ObjectID:11772,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:55150,Y:0,Sight :13) regens at 82 , 63
-Monster(ObjectID:11773,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:16210,Y:19756,Sight :13) regens at 190 , 176
-Monster(ObjectID:11774,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:45246,Y:19756,Sight :13) regens at 27 , 89
-Monster(ObjectID:11775,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:22811,Y:19756,Sight :13) regens at 203 , 135
+Monster(ObjectID:11772,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:25581,Y:0,Sight :13) regens at 216 , 129
+Monster(ObjectID:11773,MonsterType:358,SpriteType:78,Name:Santa Clause,Level:70,STR:120,DEX:70,INT:70,HP:4860/4860,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:837,Enemies(),X:33240,Y:19756,Sight :13) regens at 65 , 189
+Monster(ObjectID:11774,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:48449,Y:19756,Sight :13) regens at 183 , 141
+Monster(ObjectID:11775,MonsterType:360,SpriteType:77,Name:Santa's wolf,Level:65,STR:110,DEX:70,INT:70,HP:4360/4360,MainColor:1,SubColor:1,Alignment:ALIGNMENT_AGGRESSIVE,AttackOrder:ATTACK_CLOSEST,Moral:10,Delay:275,Enemies(),X:36279,Y:19756,Sight :13) regens at 104 , 52
 
 @@@@@@@@@@@@@@@ [54]th ZONE INITIALIZATION SUCCESS @@@@@@@@@@@@@@@
 
@@ -2319,3 +2319,12 @@ GameServerInfoManager(
 GameServerInfo(ServerID: 1,Nickname:game1,IP: 172.17.0.2,TCPPort:9998,UDPPort:9997,GroupID:0,WorldID:1,ServerStat:0)
 )EMPTY)
 GameServer::init() : GameServerInfoManager Initialization Success...
+>>> STARTING GAME SERVER...
+>>> RANDOMIZATION INITIALIZATION SUCCESS...
+>>> COMMAND-LINE PARAMETER READING SUCCESS...
+>>> LOGCLIENT INITIALZATION SUCCESS...
+>>> GAME SERVER INSTANCE CREATED...
+GameServer::init() : System Initialization Success...
+--------------------------------------------------
+            Init DatabaseManager 
+--------------------------------------------------
