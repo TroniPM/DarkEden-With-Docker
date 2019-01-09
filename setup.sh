@@ -24,7 +24,7 @@ echo 'Starting inserts.sql' && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME
 
 echo "Checking if DK sqls was successfully..."
 echo "Showing data in database '${DB_NAME}' on table 'WorldDBInfo' with host '${SERVER_IP}' (if nothing shows up, something was wrong):"
-mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from dkdocker.WorldDBInfo;"
+mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from ${DB_NAME}.WorldDBInfo;"
 
 echo ''
 echo 'Showing mysql users and hosts (if nothing shows up, something was wrong):'

@@ -7,8 +7,6 @@ MAINTAINER Paulo Mateus <paulomatew@gmail.com>
 ########################
 ENV DB_USERNAME=dk \
     DB_PASSWORD=dk123 \
-    DB_NAME=dkdocker \
-    DB_NAME_INFO=dkdocker_info \
     ADMIN_USERNAME=admin \
     ADMIN_PASSWORD=123456 \
     DK_SERVER_NAME=DKDocker
@@ -19,6 +17,8 @@ ENV DB_USERNAME=dk \
 ENV PATH=/usr/local/mysql/bin:$PATH \
   MYSQLDATA=/usr/local/mysql/var \
   IP_PLACEHOLDER=@@IP_CHANGE@@ \
+  DB_NAME_INFO=USERINFO \
+  DB_NAME=DARKEDEN \
   DB_USERNAME_PLACEHOLDER=@@DB_USERNAME_CHANGE@@ \
   DB_PASSWORD_PLACEHOLDER=@@DB_PASSWORD_CHANGE@@ \
   DB_NAME_PLACEHOLDER=@@DB_NAME_CHANGE@@ \
