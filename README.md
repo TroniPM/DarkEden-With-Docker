@@ -9,7 +9,7 @@
 Set up your very own server using a current technology (vm is pretty dead boysssss) with a few steps. Everyone wants to make your own server, by gets stuck on VPS princing. Why is that? Too expansive. But Why [Docker]? Well, docker works like a VM, but without a Operating System behind. But why this matter? Well... You can execute a 'vm like' with less resources of memory, cpu, etc.
 
 # NOT WORKING YET. [Why]? 
- - Error: When user do the login and goes to the character selection, GameServer process starts over.
+ - Error: When user selects the character and try to enter the server, get disconnected.
 
 # About Docker and the Project:
 Read our [wiki].
@@ -17,7 +17,7 @@ Read our [wiki].
 # Build
 ### Dependencies
 ```sh
-$ sudo apt install docker
+$ sudo apt install docker.io
 ```
 
 ### Runinng
