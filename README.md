@@ -8,10 +8,7 @@
 # DarkEden Docker
 Set up your very own server using a current technology (vm is pretty dead boysssss) with a few steps. Everyone wants to make your own server, by gets stuck on VPS princing. Why is that? Too expansive. But Why [Docker]? Well, docker works like a VM, but without a Operating System behind. But why this matter? Well... You can execute a 'vm like' with less resources of memory, cpu, etc.
 
-# NOT WORKING YET. [Why]? 
- - Error: When user selects the character and try to enter the server, get disconnected.
-
-# About Docker and the Project:
+# About Docker and our Project:
 Read our [wiki].
 
 # Build
@@ -21,7 +18,7 @@ $ sudo apt install docker.io
 ```
 
 ### Runinng
-Easy peasy lemon squeezy steps. Just run these commands below (```-d``` means "Run container in background and print container ID", ```-P``` means "Publish a container’s port(s) to the host", ```-e``` means "Set environment variables", ```-v``` means "Bind mount a volume". You can learn more about arguments [here].):
+Easy peasy lemon squeezy steps. Just run these commands below ( You can learn more about docker arguments [here].):
 ```sh
 $ cd DarkEden-Docker/
 sudo docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
@@ -34,8 +31,8 @@ sudo docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OP
 
 Now what? Inside the docker image (REALLY lightwave), just setup and start your server ;]
 ```sh
-cd / && ./setup.sh   #This is for darkeden sql scripts. Just run this ONCE.
-cd / && ./start      #You know that, right? :)
+cd / && ./setup.sh YOUR_PUBLIC_HOST_IP_HERE  #This is for darkeden sql scripts. Just run this ONCE. YOUR_PUBLIC_IP is optional.
+cd / && ./start                              #You know that, right? :)
 ```
 
 ### Customizable
