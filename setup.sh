@@ -22,13 +22,26 @@ echo 'Starting creates.sql' && cat /home/sql/creates.sql | mysql -u${DB_USERNAME
 echo 'Starting creates.sql' && cat /home/sql/creates_info.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates_info.sql done...'
 echo 'Starting inserts.sql' && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
 
-echo "Checking if DK sqls was successfully..."
-echo "Showing data in database '${DB_NAME}' on table 'WorldDBInfo' with host '${SERVER_IP}' (if nothing shows up, something was wrong):"
-mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from ${DB_NAME}.WorldDBInfo;"
+echo ''
+echo ''
+echo '###############################################################'
+echo '###############################################################'
+echo "############## Checking if SQLs was successfully ##############"
+echo '###############################################################'
+echo '###############################################################'
 
 echo ''
-echo 'Showing mysql users and hosts (if nothing shows up, something was wrong):'
+echo "Showing data in '${DB_NAME}.WorldDBInfo' with '${DB_USERNAME}@${SERVER_IP}' (if nothing shows up, something was wrong):"
+mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from ${DB_NAME}.WorldDBInfo;"
+echo ''
+echo "Showing dk users in '${DB_NAME}.Player' with '${DB_USERNAME}@${SERVER_IP}' (if nothing shows up, something was wrong):"
+mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select PlayerID, Password, SSN, Access from ${DB_NAME}.Player;"
+echo ''
+echo "Showing mysql users and hosts with '${DB_USERNAME}@${SERVER_IP}' (if nothing shows up, something was wrong):"
 mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select User, Host, Password from mysql.user;"
+echo ''
+echo "Showing databases with '${DB_USERNAME}@${SERVER_IP}':"
+mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "show databases;"
 
 echo ''
 echo "FINISHING SETUP DARKEDEN SQL script."

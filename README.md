@@ -27,14 +27,7 @@ $ cd DarkEden-Docker/
 sudo docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
 CONTAINER=`sudo docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk' random ports
 
-
-CONTAINER=`sudo docker run -d -p 9999:9999/tcp -p 9999:9999/udp -p 9998:9998/tcp -p 9998:9998/udp -p 9997:9997/tcp -p 9997:9997/udp -p 9996:9996/tcp -p 9996:9996/udp -p 9977:9977/tcp -p 9977:9977/udp -p 9900:9900/tcp -p 9900:9900/udp -p 9800:9800/tcp -p 9800:9800/udp -p 5001:5001/tcp -p 5001:5001/udp -p 5000:5000/tcp -p 5000:5000/udp -p 3001:3001/tcp -p 3001:3001/udp -p 2999:2999/tcp -p 2999:2999/udp -p 1111:1111/tcp -p 1111:1111/udp -p 9876:9876/tcp -p 9876:9876/udp -e "MYSQL_ROOT_PASSWORD=123" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk' static 
-
-
-CONTAINER=`sudo docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" -v "/home/pmateus/DarkEden-With-Docker/data/:/home/darkeden/vs/data" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk'
-
-
-CONTAINER=`sudo docker run -d -p 9999:9999/tcp -p 9999:9999/udp -p 9998:9998/tcp -p 9998:9998/udp -p 9997:9997/tcp -p 9997:9997/udp -p 9996:9996/tcp -p 9996:9996/udp -p 9977:9977/tcp -p 9977:9977/udp -p 9900:9900/tcp -p 9900:9900/udp -p 9800:9800/tcp -p 9800:9800/udp -p 5001:5001/tcp -p 5001:5001/udp -p 5000:5000/tcp -p 5000:5000/udp -p 3001:3001/tcp -p 3001:3001/udp -p 2999:2999/tcp -p 2999:2999/udp -p 1111:1111/tcp -p 1111:1111/udp -p 9876:9876/tcp -p 9876:9876/udp -e "MYSQL_ROOT_PASSWORD=123" -v "/home/matt/dkworkspace/DarkEden-With-Docker/data/:/home/darkeden/vs/data" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk'
+CONTAINER=`sudo docker run -d      -p 9999:9999/tcp -p 9999:9999/udp -p 9998:9998/tcp -p 9998:9998/udp -p 9997:9997/tcp -p 9997:9997/udp -p 9996:9996/tcp -p 9996:9996/udp -p 9977:9977/tcp -p 9977:9977/udp -p 9900:9900/tcp -p 9900:9900/udp -p 9876:9876/tcp -p 9876:9876/udp -p 9800:9800/tcp -p 9800:9800/udp -p 5001:5001/tcp -p 5001:5001/udp -p 5000:5000/tcp -p 5000:5000/udp -p 3306:3306/tcp -p 3306:3306/udp -p 3001:3001/tcp -p 3001:3001/udp -p 2999:2999/tcp -p 2999:2999/udp -p 1111:1111/tcp -p 1111:1111/udp -e "MYSQL_ROOT_PASSWORD=123" dk`
 
 sudo docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
 ```

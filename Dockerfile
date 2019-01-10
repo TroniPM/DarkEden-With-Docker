@@ -95,6 +95,7 @@ EXPOSE 3306/tcp 3306/udp \
        9996/tcp 9996/udp \
        9977/tcp 9977/udp \
        9900/tcp 9900/udp \
+       9876/tcp 9876/udp \
        9800/tcp 9800/udp \
        5001/tcp 5001/udp \
        5000/tcp 5000/udp \
