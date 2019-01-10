@@ -44,4 +44,21 @@ echo "Showing databases with '${DB_USERNAME}@${SERVER_IP}':"
 mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "show databases;"
 
 echo ''
+echo ''
+IP_HOST=$1
+
+#DO A VALIDATION IP HERE.
+
+if [ ! -z "$IP_HOST" ]; then
+	echo "PUBLISHING your server to the world ('$IP_HOST')..."
+	echo "IP HOST was setted. Changing IP in '${DB_NAME}.GameServerInfo'..."
+	mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "UPDATE ${DB_NAME}.GameServerInfo SET IP = '$1';"
+	mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from ${DB_NAME}.GameServerInfo;"
+else
+	echo "PUBLISHING your server to the world wasn't successfully..."
+	mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select * from ${DB_NAME}.GameServerInfo;"
+	echo "IP HOST wasn't setted. You'll have to set this later ('${DB_NAME}.GameServerInfo') to publish the dk server to the world. Or just run '$0 xxx.xxx.xxx.xxx' again (replacing 'xxx.xxx.xxx.xxx' for your ip address). This will drop the current database and start over."
+fi
+
+echo ''
 echo "FINISHING SETUP DARKEDEN SQL script."
