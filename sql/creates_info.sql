@@ -40,7 +40,7 @@ CREATE TABLE LoginData (
   Area17 int(11) NOT NULL default '0',
   Area18 int(11) NOT NULL default '0',
   AreaETC int(11) NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 CREATE TABLE LoginPlayerData (
   PlayerID varchar(10) NOT NULL default '',
@@ -52,7 +52,7 @@ CREATE TABLE LoginPlayerData (
   KEY IDX_LoginPlayerData2 (PlayerID),
   KEY IDX_DATE (Date),
   KEY LoginPlayerData_IP (IP)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 CREATE TABLE LogoutPlayerData (
   PlayerID varchar(10) NOT NULL default '',
@@ -63,7 +63,7 @@ CREATE TABLE LogoutPlayerData (
   IP varchar(15) NOT NULL default '',
   KEY IDX_LogoutPlayerData2 (PlayerID),
   KEY IDX_DATE (Date)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 CREATE TABLE UserStat (
   Year int(11) NOT NULL default '0',
@@ -107,10 +107,14 @@ CREATE TABLE UserStat (
   BillingPlayerCount int(11) NOT NULL default '0',
   KEY IDX_UserStat (Year,Month,Day,Hour,Minute,TotalUser,PlayerCount),
   KEY UserStat_2 (Year,Month,Day)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
+
+INSERT INTO UserStat VALUES (1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 
 CREATE TABLE UserStatus (
   WorldID tinyint(10) NOT NULL default '0',
   CurrentUser tinyint(3) NOT NULL default '0',
   ServerID int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
+
+INSERT INTO UserStatus VALUES (1,0,1);

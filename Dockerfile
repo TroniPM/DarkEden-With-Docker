@@ -30,7 +30,7 @@ ENV PATH=/usr/local/mysql/bin:$PATH \
   CONF_PATH=/home/darkeden/vs/conf/ \
   SQL_PATH=/home/sql/ 
 
-VOLUME /usr/local/mysql/var
+RUN mkdir -m 777 -p /usr/local/mysql/var
 
 RUN apt-get update && apt-get install -q -y --no-install-recommends \
     nano \

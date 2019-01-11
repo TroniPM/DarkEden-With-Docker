@@ -18,9 +18,9 @@ echo ''
 echo "Dropping database: ${DB_NAME}" && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME};"
 echo "Dropping database: ${DB_NAME_INFO}" && mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "drop database ${DB_NAME_INFO};"
 
-echo 'Starting creates.sql' && cat /home/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates.sql done...'
-echo 'Starting creates.sql' && cat /home/sql/creates_info.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'creates_info.sql done...'
-echo 'Starting inserts.sql' && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'inserts.sql done...'
+echo "Starting: Creating ${DB_NAME} tables" && cat /home/sql/creates.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'done...'
+echo "Starting: Creating  ${DB_NAME_INFO} tables" && cat /home/sql/creates_info.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'done...'
+echo "Starting: Populating ${DB_NAME} tables" && cat /home/sql/inserts.sql | mysql -u${DB_USERNAME} -p${DB_PASSWORD} && echo 'done...'
 
 echo ''
 echo ''
@@ -42,6 +42,20 @@ mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "select User, Host, Pa
 echo ''
 echo "Showing databases with '${DB_USERNAME}@${SERVER_IP}':"
 mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "show databases;"
+
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.Player VALUES ('${ADMIN_USERNAME}',password('${ADMIN_PASSWORD}'),'docker is a beauty',NULL,'',NULL,NULL,NULL,NULL,NULL,'docker@docker.com',NULL,NULL,'PRIVATE',1,1,'LOGOFF','ALLOW',0,0,0,0,0,'','192.168.1.10',2,NULL,0,0,'2002-07-15 00:00:00',0,0,'2009-01-21','2009-01-21 13:28:53',0,'',2,'2002-07-15 00:00:00','Y');"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.GameServerGroupInfo VALUES (0,1,'${DK_SERVER_NAME} 1',1);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.GameServerGroupInfo VALUES (1,1,'${DK_SERVER_NAME} 2',0);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.GameServerInfo VALUES (1,'game1','${SERVER_IP}',9998,9997,1,0,0);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.GameServerInfo VALUES (1,'game2','${SERVER_IP}',9998,9997,1,1,0);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.WorldDBInfo VALUES (0,'${SERVER_IP}','${DB_NAME}','${DB_USERNAME}','${DB_PASSWORD}',3306);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.WorldDBInfo VALUES (1,'${SERVER_IP}','${DB_NAME}','${DB_USERNAME}','${DB_PASSWORD}',3306);"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "INSERT INTO ${DB_NAME}.WorldInfo VALUES (1,'${DK_SERVER_NAME}',0);"
+
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "UPDATE ${DB_NAME}.WorldDBInfo SET User='${DB_USERNAME}', Password='${DB_PASSWORD}', Host='${SERVER_IP}';"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "UPDATE ${DB_NAME}.WorldInfo SET Name='${DK_SERVER_NAME}';"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "UPDATE ${DB_NAME}.GameServerInfo SET IP='${SERVER_IP}';"
+#mysql -u${DB_USERNAME} -p${DB_PASSWORD} -h${SERVER_IP} -e "UPDATE ${DB_NAME}.GameServerGroupInfo SET GroupName='${SERVER_IP}';"
 
 echo ''
 echo ''

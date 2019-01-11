@@ -20,13 +20,19 @@ $ sudo apt install docker.io
 ### Runinng
 Easy peasy lemon squeezy steps. Just run these commands below ( You can learn more about docker arguments [here].):
 ```sh
-$ cd DarkEden-Docker/
-sudo docker build -t dk .                                          #THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
-CONTAINER=`sudo docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk`  #THIS WILL RUN THE IMAGE CALLED 'dk' random ports
+cd DarkEden-Docker/
 
-CONTAINER=`sudo docker run -d      -p 9999:9999/tcp -p 9999:9999/udp -p 9998:9998/tcp -p 9998:9998/udp -p 9997:9997/tcp -p 9997:9997/udp -p 9996:9996/tcp -p 9996:9996/udp -p 9977:9977/tcp -p 9977:9977/udp -p 9900:9900/tcp -p 9900:9900/udp -p 9876:9876/tcp -p 9876:9876/udp -p 9800:9800/tcp -p 9800:9800/udp -p 5001:5001/tcp -p 5001:5001/udp -p 5000:5000/tcp -p 5000:5000/udp -p 3306:3306/tcp -p 3306:3306/udp -p 3001:3001/tcp -p 3001:3001/udp -p 2999:2999/tcp -p 2999:2999/udp -p 1111:1111/tcp -p 1111:1111/udp -e "MYSQL_ROOT_PASSWORD=123" dk`
+#THIS WILL BUILD THE IMAGE LABELED AS 'dk'.
+sudo docker build -t dk .
 
-sudo docker exec -it ${CONTAINER} /bin/bash                        #THIS WILL OPEN THE CONTAINER CALLED 'CONTAINER_ID'
+#THIS WILL RUN THE IMAGE CALLED 'dk' wih random ports on hoster. FOR TEST ONLY
+CONTAINER=`sudo docker run -d -P -e "MYSQL_ROOT_PASSWORD=123" dk`
+
+#THIS WILL RUN THE CONTAINER CALLED 'dk' AND OPEN PORTS SAME WAY OF GUEST
+DK_MYSQL_PATH=`pwd`'/datamysql' && CONTAINER=`sudo docker run -d -p 9999:9999/tcp -p 9999:9999/udp -p 9998:9998/tcp -p 9998:9998/udp -p 9997:9997/tcp -p 9997:9997/udp -p 9996:9996/tcp -p 9996:9996/udp -p 9977:9977/tcp -p 9977:9977/udp -p 9900:9900/tcp -p 9900:9900/udp -p 9876:9876/tcp -p 9876:9876/udp -p 9800:9800/tcp -p 9800:9800/udp -p 5001:5001/tcp -p 5001:5001/udp -p 5000:5000/tcp -p 5000:5000/udp -p 3306:3306/tcp -p 3306:3306/udp -p 3001:3001/tcp -p 3001:3001/udp -p 2999:2999/tcp -p 2999:2999/udp -p 1111:1111/tcp -p 1111:1111/udp -e "MYSQL_ROOT_PASSWORD=123" -v "${DK_MYSQL_PATH}:/usr/local/mysql/var" dk`
+
+#THIS WILL OPEN DE CONTAINER
+sudo docker exec -it ${CONTAINER} /bin/bash
 ```
 
 Now what? Inside the docker image (REALLY lightwave), just setup and start your server ;]
@@ -70,7 +76,6 @@ Bro, just open an issue explaining what you thinking, then we discuss about it, 
  - Lucas Lemos
 
    [Docker]: <https://www.docker.com/resources/what-container>
-   [Gerry Fleming]: <https://www.nebulaworks.com/blog/2015/03/24/what-is-docker-a-simple-explanation/>
    [Why]: <https://github.com/TroniPM/DarkEden-With-Docker/issues>
    [here]: <https://docs.docker.com/engine/reference/commandline/run/>
    [wiki]: <https://github.com/TroniPM/DarkEden-With-Docker/wiki>

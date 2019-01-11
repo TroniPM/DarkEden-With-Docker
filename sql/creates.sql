@@ -1,11 +1,13 @@
+-- MySQL dump 9.11
 --
--- ONLY CREATES
--- 
+-- Database: DARKEDEN
+-- ------------------------------------------------------
+
 DROP DATABASE IF EXISTS `@@DB_NAME_CHANGE@@`;
 CREATE DATABASE `@@DB_NAME_CHANGE@@`;
 USE `@@DB_NAME_CHANGE@@`; 
 
-CREATE TABLE ARInfo (
+/*CREATE TABLE ARInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
   NextItemType tinyint(3) unsigned NOT NULL default '0',
   Name varchar(30) NOT NULL default '',
@@ -30,8 +32,35 @@ CREATE TABLE ARInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM;*/
 
+
+CREATE TABLE ARInfo (
+  ItemType tinyint(3) unsigned NOT NULL default '0',
+  NextItemType tinyint(3) unsigned NOT NULL default '0',
+  Name varchar(30) NOT NULL default '',
+  EName varchar(30) NOT NULL default '',
+  Price int(10) unsigned NOT NULL default '0',
+  Volume tinyint(3) unsigned NOT NULL default '0',
+  Weight tinyint(3) unsigned NOT NULL default '0',
+  Ratio int(11) NOT NULL default '0',
+  Durability smallint(5) unsigned NOT NULL default '0',
+  minDamage smallint(5) unsigned NOT NULL default '0',
+  maxDamage smallint(5) unsigned NOT NULL default '0',
+  ToHitBonus tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
+  Speed smallint(5) unsigned NOT NULL default '0',
+  ReqAbility varchar(50) NOT NULL default '',
+  ItemLevel tinyint(3) unsigned NOT NULL default '0',
+  CriticalBonus int(11) NOT NULL default '0',
+  DefaultOption varchar(50) NOT NULL default '',
+  UpgradeCrashPercent tinyint(4) NOT NULL default '0',
+  UpgradeRatio smallint(6) NOT NULL default '0',
+  NextOptionRatio tinyint(3) unsigned NOT NULL default '0',
+  DowngradeRatio smallint(6) NOT NULL default '0',
+  Race tinyint(1) unsigned NOT NULL default '0',
+  PRIMARY KEY  (ItemType)
+) TYPE=MyISAM;
 
 CREATE TABLE ARObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -51,12 +80,12 @@ CREATE TABLE ARObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_ARObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 CREATE TABLE AbnormalList (
   PlayerID varchar(15) NOT NULL default '',
   PRIMARY KEY  (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE AdvancementClassEXPInfo (
@@ -64,8 +93,7 @@ CREATE TABLE AdvancementClassEXPInfo (
   GoalExp int(11) NOT NULL default '0',
   AccumExp bigint(11) NOT NULL default '0',
   KEY IDX_Level (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE AttrInfo (
   attrID int(11) NOT NULL default '0',
@@ -73,8 +101,7 @@ CREATE TABLE AttrInfo (
   attr2 int(11) NOT NULL default '0',
   comm varchar(200) NOT NULL default '',
   PRIMARY KEY  (attrID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BeltInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -98,8 +125,7 @@ CREATE TABLE BeltInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BeltObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -117,7 +143,7 @@ CREATE TABLE BeltObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_BeltObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BladeInfo (
@@ -133,7 +159,7 @@ CREATE TABLE BladeInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   MaxSilver smallint(5) unsigned NOT NULL default '0',
@@ -146,8 +172,7 @@ CREATE TABLE BladeInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BladeObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -166,15 +191,14 @@ CREATE TABLE BladeObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_BladeObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 CREATE TABLE BloodBibleBonusInfo (
   Type int(11) NOT NULL default '0',
   Name varchar(30) NOT NULL default '',
   OptionList text NOT NULL,
   PRIMARY KEY  (Type)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BloodBibleInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -191,8 +215,7 @@ CREATE TABLE BloodBibleInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BloodBibleObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -210,8 +233,7 @@ CREATE TABLE BloodBibleObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_BloodBibleObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BloodBibleSignInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -219,8 +241,7 @@ CREATE TABLE BloodBibleSignInfo (
   EName varchar(30) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BloodBibleSignObject (
   ItemID bigint(20) unsigned NOT NULL auto_increment,
@@ -228,7 +249,7 @@ CREATE TABLE BloodBibleSignObject (
   OwnerID varchar(10) NOT NULL default '',
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BombInfo (
@@ -243,8 +264,7 @@ CREATE TABLE BombInfo (
   maxDamage smallint(5) unsigned NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BombMaterialInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -256,8 +276,7 @@ CREATE TABLE BombMaterialInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BombMaterialObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -273,7 +292,7 @@ CREATE TABLE BombMaterialObject (
   PRIMARY KEY  (ItemID),
   KEY BombMaterialObject_m1 (OwnerID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BombObject (
@@ -289,7 +308,7 @@ CREATE TABLE BombObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY BombObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BraceletInfo (
@@ -313,8 +332,7 @@ CREATE TABLE BraceletInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE BraceletObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -332,7 +350,7 @@ CREATE TABLE BraceletObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_BraceletObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BugReportLog (
@@ -342,7 +360,7 @@ CREATE TABLE BugReportLog (
   ReportTime datetime NOT NULL default '0000-00-00 00:00:00',
   ReportLog text NOT NULL,
   PRIMARY KEY  (BugID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE BulletinBoardObject (
@@ -356,7 +374,7 @@ CREATE TABLE BulletinBoardObject (
   TimeLimit datetime NOT NULL default '0000-00-00 00:00:00',
   PRIMARY KEY  (ID),
   KEY IDX_ZONEID (ServerID,ZoneID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CanEnterGDRLair (
@@ -364,15 +382,14 @@ CREATE TABLE CanEnterGDRLair (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   KEY CanEnterGDRLair_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CardCount (
   CARDKIND smallint(5) NOT NULL default '0',
   CARDCOUNT int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (CARDKIND)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CarryingReceiverInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -395,8 +412,7 @@ CREATE TABLE CarryingReceiverInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CarryingReceiverObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -413,7 +429,7 @@ CREATE TABLE CarryingReceiverObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CastleInfo (
@@ -438,8 +454,7 @@ CREATE TABLE CastleInfo (
   ThirdResurrectY int(10) unsigned NOT NULL default '0',
   ZoneIDList text NOT NULL,
   PRIMARY KEY  (ServerID,ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CastleShrineInfo (
   ID smallint(5) unsigned NOT NULL default '0',
@@ -454,23 +469,20 @@ CREATE TABLE CastleShrineInfo (
   HolyY int(10) unsigned NOT NULL default '0',
   HolyMType smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CastleSkillInfo (
   SkillType int(11) unsigned NOT NULL default '0',
   ZoneID smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (SkillType,ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CastleStatInfo (
   WorldID smallint(5) unsigned NOT NULL default '0',
   ServerGroupID smallint(5) unsigned NOT NULL default '0',
   FollowServerID smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (WorldID,ServerGroupID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CastleSymbolInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -487,8 +499,7 @@ CREATE TABLE CastleSymbolInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CastleSymbolObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -506,24 +517,21 @@ CREATE TABLE CastleSymbolObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_CastleSymbolObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ClientVersion (
   Version int(10) unsigned NOT NULL default '0',
   GuildMarkVersion int(10) unsigned NOT NULL default '0',
   LastGuildMarkVersion int(10) unsigned NOT NULL default '0',
   TempGuildMarkVersion int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ClientVersion_bak (
   Version int(10) unsigned NOT NULL default '0',
   GuildMarkVersion int(10) unsigned NOT NULL default '0',
   LastGuildMarkVersion int(10) unsigned NOT NULL default '0',
   TempGuildMarkVersion int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CoatInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -546,8 +554,7 @@ CREATE TABLE CoatInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CoatObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -566,8 +573,7 @@ CREATE TABLE CoatObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_CoatObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CodeSheetInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -578,8 +584,7 @@ CREATE TABLE CodeSheetInfo (
   Weight tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CodeSheetObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -593,7 +598,7 @@ CREATE TABLE CodeSheetObject (
   OptionType varchar(30) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_RESURRECT_ITEM (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ComposMeiInfo (
@@ -607,8 +612,7 @@ CREATE TABLE ComposMeiInfo (
   Effect varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ComposMeiObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -622,7 +626,7 @@ CREATE TABLE ComposMeiObject (
   Num tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_ComposMeiObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CoreZapInfo (
@@ -636,8 +640,7 @@ CREATE TABLE CoreZapInfo (
   OptionClass tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CoreZapObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -654,7 +657,7 @@ CREATE TABLE CoreZapObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY CoreZapObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CoupleInfo (
@@ -666,8 +669,7 @@ CREATE TABLE CoupleInfo (
   PRIMARY KEY  (ID),
   KEY CoupleInfo_m1 (MalePartnerName),
   KEY CoupleInfo_m2 (FemalePartnerName)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CoupleRingInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -682,8 +684,7 @@ CREATE TABLE CoupleRingInfo (
   DefaultOption varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CoupleRingObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -702,7 +703,7 @@ CREATE TABLE CoupleRingObject (
   PRIMARY KEY  (ItemID),
   KEY CoupleRingObject_m1 (OwnerID),
   KEY IDX_PartnerItemID (PartnerItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CrashLog (
@@ -716,7 +717,7 @@ CREATE TABLE CrashLog (
   Message text NOT NULL,
   PRIMARY KEY  (BugID),
   KEY IDX_ADDRESS (Address)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CrashReportLog (
@@ -732,7 +733,7 @@ CREATE TABLE CrashReportLog (
   Message text NOT NULL,
   PRIMARY KEY  (BugID),
   KEY IDX_ADDRESS (Address)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE CrossInfo (
@@ -748,7 +749,7 @@ CREATE TABLE CrossInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   MaxSilver smallint(5) unsigned NOT NULL default '0',
@@ -762,8 +763,7 @@ CREATE TABLE CrossInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE CrossObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -782,16 +782,14 @@ CREATE TABLE CrossObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_CrossObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DEXBalanceInfo (
   Level int(11) NOT NULL auto_increment,
   GoalExp int(11) NOT NULL default '0',
   AccumExp bigint(11) unsigned NOT NULL default '0',
   PRIMARY KEY  (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DarkLightInfo (
   Month tinyint(3) unsigned NOT NULL default '0',
@@ -800,15 +798,13 @@ CREATE TABLE DarkLightInfo (
   DarkLevel tinyint(3) unsigned NOT NULL default '0',
   LightLevel tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (Month,Hour,Minute)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DefaultOptionSetInfo (
   Type int(11) NOT NULL default '0',
   OptionList varchar(50) NOT NULL default '0',
   PRIMARY KEY  (Type)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DeleteChar (
   PlayerID varchar(15) NOT NULL default '',
@@ -816,7 +812,7 @@ CREATE TABLE DeleteChar (
   Name varchar(10) NOT NULL default '',
   delDate datetime NOT NULL default '0000-00-00 00:00:00',
   KEY IDX_PlayerID (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE DermisInfo (
@@ -840,8 +836,7 @@ CREATE TABLE DermisInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DermisObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -858,7 +853,7 @@ CREATE TABLE DermisObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE DirectiveSet (
@@ -867,8 +862,7 @@ CREATE TABLE DirectiveSet (
   Content text NOT NULL,
   DeadContent text NOT NULL,
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DonationGuild200501 (
   GuildID int(10) unsigned NOT NULL default '0',
@@ -877,9 +871,9 @@ CREATE TABLE DonationGuild200501 (
   Name varchar(20) NOT NULL default '',
   WorldID int(10) unsigned NOT NULL default '0',
   Amount bigint(20) unsigned NOT NULL default '0',
-  DonationDateTime datetime NOT NULL default '2005-01-01 00:00:00',
+  DonationDateTime datetime NOT NULL default '0000-00-00 00:00:00',
   KEY IDX_NAME (GuildID,PlayerID,Name,WorldID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE DonationPersonal200501 (
@@ -887,9 +881,9 @@ CREATE TABLE DonationPersonal200501 (
   Name varchar(10) NOT NULL default '',
   WorldID int(10) unsigned NOT NULL default '0',
   Amount bigint(20) unsigned NOT NULL default '0',
-  DonationDateTime datetime NOT NULL default '2005-01-01 00:00:00',
+  DonationDateTime datetime NOT NULL default '0000-00-00 00:00:00',
   KEY IDX_NAME (PlayerID,Name,WorldID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE DyePotionInfo (
@@ -905,8 +899,7 @@ CREATE TABLE DyePotionInfo (
   FunctionValue smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE DyePotionObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -921,7 +914,7 @@ CREATE TABLE DyePotionObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_DyePotionObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ETCInfo (
@@ -934,8 +927,7 @@ CREATE TABLE ETCInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ETCObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -950,14 +942,14 @@ CREATE TABLE ETCObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_ETCObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectAcidTouch (
   OwnerID varchar(10) NOT NULL default '',
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectAftermath (
@@ -965,15 +957,14 @@ CREATE TABLE EffectAftermath (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   KEY IDX_EffectAftermath (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectBehemothForceScroll (
   OwnerID varchar(10) NOT NULL default '',
   RemainTime int(10) unsigned NOT NULL default '0',
   KEY EffectBehemothForceScroll_m1 (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EffectBloodDrain (
   OwnerID varchar(10) NOT NULL default '',
@@ -981,21 +972,21 @@ CREATE TABLE EffectBloodDrain (
   DayTime int(10) unsigned NOT NULL default '0',
   Level tinyint(3) unsigned NOT NULL default '0',
   KEY IDX_EffectBloodDrain (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectCarnelianForceScroll (
   OwnerID varchar(10) NOT NULL default '',
   RemainTime int(10) unsigned NOT NULL default '0',
   KEY EffectCarnelianForceScroll_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectDetectHidden (
   OwnerID varchar(10) NOT NULL default '',
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectFlare (
@@ -1005,7 +996,7 @@ CREATE TABLE EffectFlare (
   Level int(10) unsigned NOT NULL default '0',
   OldSight tinyint(3) unsigned NOT NULL default '0',
   KEY IDX_EffectFlare (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectItemInfo (
@@ -1021,8 +1012,7 @@ CREATE TABLE EffectItemInfo (
   TimeSec int(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EffectItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1037,7 +1027,7 @@ CREATE TABLE EffectItemObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_RESURRECT_ITEM (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectKillAftermath (
@@ -1045,7 +1035,7 @@ CREATE TABLE EffectKillAftermath (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectLight (
@@ -1053,7 +1043,7 @@ CREATE TABLE EffectLight (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   OldSight tinyint(3) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectMute (
@@ -1061,7 +1051,7 @@ CREATE TABLE EffectMute (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   KEY EffectMute_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectPKZoneRegen (
@@ -1073,14 +1063,13 @@ CREATE TABLE EffectPKZoneRegen (
   BottomY int(10) NOT NULL default '0',
   PRIMARY KEY  (ID),
   KEY EffectPKZoneRegen_ZoneID (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EffectParalysis (
   OwnerID varchar(10) NOT NULL default '',
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectPoison (
@@ -1088,16 +1077,16 @@ CREATE TABLE EffectPoison (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   Level tinyint(3) unsigned NOT NULL default '0',
-  `Point` tinyint(3) unsigned NOT NULL default '0',
+  Point tinyint(3) unsigned NOT NULL default '0',
   Delay smallint(5) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectPoisonousHands (
   OwnerID varchar(10) NOT NULL default '',
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectProtectionFromParalysis (
@@ -1105,7 +1094,7 @@ CREATE TABLE EffectProtectionFromParalysis (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   SkillLevel tinyint(3) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectProtectionFromPoison (
@@ -1113,7 +1102,7 @@ CREATE TABLE EffectProtectionFromPoison (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   SkillLevel tinyint(3) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectRestore (
@@ -1121,14 +1110,13 @@ CREATE TABLE EffectRestore (
   YearTime int(10) unsigned NOT NULL default '0',
   DayTime int(10) unsigned NOT NULL default '0',
   KEY EffectRestore_m1 (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EffectSafeForceScroll (
   OwnerID varchar(10) NOT NULL default '',
   RemainTime int(10) unsigned NOT NULL default '0',
   KEY EffectSafeForceScroll_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EffectYellowPoisonToCreature (
@@ -1138,7 +1126,7 @@ CREATE TABLE EffectYellowPoisonToCreature (
   Level int(10) unsigned NOT NULL default '0',
   OldSight tinyint(3) unsigned NOT NULL default '0',
   KEY IDX_EffectYellowPoisionToCreature (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EnemyErase (
@@ -1147,7 +1135,7 @@ CREATE TABLE EnemyErase (
   DayTime int(10) unsigned NOT NULL default '0',
   EnemyName varchar(10) NOT NULL default '',
   KEY IDX_EnemyErase (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE Event200501Main (
@@ -1159,7 +1147,7 @@ CREATE TABLE Event200501Main (
   OrderID int(10) unsigned NOT NULL default '0',
   RecvPremiumItemDate date NOT NULL default '0000-00-00',
   PRIMARY KEY  (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE Event200501Recommend (
@@ -1170,7 +1158,7 @@ CREATE TABLE Event200501Recommend (
   RecvItemDate date NOT NULL default '0000-00-00',
   PRIMARY KEY  (UniqueID),
   KEY IDX_PlayerID (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventETCInfo (
@@ -1185,8 +1173,7 @@ CREATE TABLE EventETCInfo (
   Function int(10) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventETCObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1201,7 +1188,7 @@ CREATE TABLE EventETCObject (
   ItemFlag tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY EventETCObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventGiftBoxInfo (
@@ -1214,8 +1201,7 @@ CREATE TABLE EventGiftBoxInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventGiftBoxObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1229,7 +1215,7 @@ CREATE TABLE EventGiftBoxObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY EventGiftBoxObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventItemCount (
@@ -1237,16 +1223,14 @@ CREATE TABLE EventItemCount (
   ItemType smallint(5) NOT NULL default '0',
   Count int(11) NOT NULL default '0',
   PRIMARY KEY  (ItemClass,ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventItemCount2 (
   Race int(11) NOT NULL default '0',
   ItemIndex int(11) NOT NULL default '0',
   Count int(11) NOT NULL default '0',
   PRIMARY KEY  (Race,ItemIndex)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -1259,8 +1243,7 @@ CREATE TABLE EventItemInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1275,7 +1258,7 @@ CREATE TABLE EventItemObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventLotto (
@@ -1285,7 +1268,7 @@ CREATE TABLE EventLotto (
   Kind varchar(20) NOT NULL default 'ChoboEvent',
   PRIMARY KEY  (PlayerID,Type),
   KEY ID_IDX (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventQuestAdvance (
@@ -1294,7 +1277,7 @@ CREATE TABLE EventQuestAdvance (
   Status tinyint(3) NOT NULL default '0',
   PRIMARY KEY  (OwnerID,QuestLevel),
   KEY EventQuestAdvance_Owner (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventQuestLootingInfo (
@@ -1310,8 +1293,7 @@ CREATE TABLE EventQuestLootingInfo (
   MinGrade smallint(5) NOT NULL default '0',
   MaxGrade smallint(5) NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventQuestRewardInfo (
   RewardID int(10) unsigned NOT NULL default '0',
@@ -1319,30 +1301,29 @@ CREATE TABLE EventQuestRewardInfo (
   Status int(10) unsigned NOT NULL default '0',
   Grade tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (RewardID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventQuestRewardRecord (
   PlayerID varchar(15) NOT NULL default '',
   RewardID int(10) unsigned NOT NULL default '0',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00',
+  Time datetime NOT NULL default '0000-00-00 00:00:00',
   RealPlayerID varchar(10) NOT NULL default ''
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventQuestRewardSchedule (
   RewardID int(10) unsigned NOT NULL default '0',
   QuestLevel int(10) unsigned NOT NULL default '0',
   Count int(10) unsigned NOT NULL default '0',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00'
-) ENGINE=MyISAM;
+  Time datetime NOT NULL default '0000-00-00 00:00:00'
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventQuestStatus (
   ID varchar(10) NOT NULL default '',
   Status tinyint(3) unsigned NOT NULL default '0',
   Count int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventStarInfo (
@@ -1358,8 +1339,7 @@ CREATE TABLE EventStarInfo (
   FunctionValue smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventStarObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1374,7 +1354,7 @@ CREATE TABLE EventStarObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY EventStarObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventTreeInfo (
@@ -1388,8 +1368,7 @@ CREATE TABLE EventTreeInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE EventTreeObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1404,7 +1383,7 @@ CREATE TABLE EventTreeObject (
   ItemFlag tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY EventTreeObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE EventZoneInfo (
@@ -1418,8 +1397,7 @@ CREATE TABLE EventZoneInfo (
   PCLimit int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID),
   KEY EventZoneInfo_ZoneID (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE FasciaInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -1442,8 +1420,7 @@ CREATE TABLE FasciaInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE FasciaObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1460,14 +1437,13 @@ CREATE TABLE FasciaObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE FirstNameInfo (
   MonsterType varchar(10) NOT NULL default 'BASIC',
   Name varchar(20) NOT NULL default ''
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE FlagPolePosition (
   ZoneID smallint(5) unsigned NOT NULL default '0',
@@ -1477,15 +1453,13 @@ CREATE TABLE FlagPolePosition (
   Height int(10) unsigned NOT NULL default '0',
   Race enum('SLAYER','VAMPIRE','OUSTERS') NOT NULL default 'SLAYER',
   MonsterType smallint(5) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE FlagSet (
   OwnerID varchar(30) NOT NULL default '',
   FlagData varchar(24) default NULL,
   PRIMARY KEY  (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE FlagWarHistory (
   FlagWarID varchar(10) NOT NULL default '',
@@ -1495,7 +1469,7 @@ CREATE TABLE FlagWarHistory (
   ServerID tinyint(1) unsigned NOT NULL default '0',
   FlagNum tinyint(3) unsigned NOT NULL default '0',
   KEY IDX_FlagWarID (FlagWarID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE FlagWarStat (
@@ -1505,7 +1479,7 @@ CREATE TABLE FlagWarStat (
   ServerID tinyint(1) unsigned NOT NULL default '0',
   ItemID bigint(20) unsigned NOT NULL default '0',
   KEY IDX_FlagWarStat (Name,ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GQuestItemInfo (
@@ -1517,8 +1491,7 @@ CREATE TABLE GQuestItemInfo (
   Weight tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GQuestItemObject (
   ItemID bigint(20) unsigned NOT NULL auto_increment,
@@ -1526,33 +1499,31 @@ CREATE TABLE GQuestItemObject (
   OwnerID varchar(10) NOT NULL default '',
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GQuestSave (
   QuestID smallint(5) NOT NULL default '0',
   OwnerID varchar(20) NOT NULL default '',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00',
+  Time datetime NOT NULL default '2003-01-01 00:00:00',
   Status tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (QuestID,OwnerID),
   KEY IDX_OWNER (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GSStringPool (
   ID int(11) NOT NULL default '0',
   String text NOT NULL,
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GameServerGroupInfo (
   GroupID int(10) unsigned NOT NULL default '0',
   WorldID int(10) unsigned NOT NULL default '0',
   GroupName char(20) NOT NULL default '',
   Stat tinyint(1) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GameServerInfo (
   ServerID int(10) unsigned NOT NULL default '0',
@@ -1564,8 +1535,7 @@ CREATE TABLE GameServerInfo (
   GroupID int(10) unsigned NOT NULL default '0',
   Stat tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (Nickname)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GatherItemQuestInfo (
   QuestID int(10) NOT NULL default '0',
@@ -1581,15 +1551,13 @@ CREATE TABLE GatherItemQuestInfo (
   EventQuest tinyint(3) NOT NULL default '0',
   QuestLevel smallint(5) NOT NULL default '0',
   PRIMARY KEY  (QuestID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GiftBoxCount (
   BOXKIND smallint(5) NOT NULL default '0',
   BOXCOUNT int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (BOXKIND)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GloveInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -1612,8 +1580,7 @@ CREATE TABLE GloveInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GloveObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1631,7 +1598,7 @@ CREATE TABLE GloveObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_GloveObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GoodsList (
@@ -1640,12 +1607,12 @@ CREATE TABLE GoodsList (
   WorldID varchar(5) NOT NULL default '',
   PlayerID varchar(15) NOT NULL default '',
   Name varchar(15) NOT NULL default '',
-  InputTime datetime NOT NULL default '2004-04-18 00:00:00',
+  InputTime datetime NOT NULL default '0000-00-00 00:00:00',
   Num int(3) unsigned NOT NULL default '0',
   ItemType int(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (KeyId),
   KEY KeyNum (KeyCode)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GoodsListInfo (
@@ -1672,8 +1639,7 @@ CREATE TABLE GoodsListInfo (
   GroupItem int(4) NOT NULL default '0',
   NewGoods tinyint(3) NOT NULL default '0',
   PRIMARY KEY  (GoodsID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GoodsListInfo_bak (
   GoodsID int(10) unsigned NOT NULL auto_increment,
@@ -1699,8 +1665,7 @@ CREATE TABLE GoodsListInfo_bak (
   GroupItem int(4) NOT NULL default '0',
   NewGoods tinyint(3) NOT NULL default '0',
   PRIMARY KEY  (GoodsID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GoodsListObject (
   BuyID varchar(16) NOT NULL default '',
@@ -1715,7 +1680,7 @@ CREATE TABLE GoodsListObject (
   KEY IDX_BuyID (BuyID),
   KEY IDX_PlayerID (PlayerID),
   KEY IDX_Name (Name)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GroupListInfo (
@@ -1742,8 +1707,7 @@ CREATE TABLE GroupListInfo (
   G19 int(10) unsigned NOT NULL default '0',
   G20 int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (GroupID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GuildInfo (
   GuildID int(10) unsigned NOT NULL default '0',
@@ -1755,14 +1719,13 @@ CREATE TABLE GuildInfo (
   GuildZoneID smallint(5) unsigned NOT NULL default '0',
   Master varchar(10) NOT NULL default '',
   MemberCount int(10) unsigned NOT NULL default '0',
-  `Date` varchar(11) NOT NULL default '',
+  Date varchar(11) NOT NULL default '',
   Fame int(10) unsigned NOT NULL default '0',
   Notoriety int(10) unsigned NOT NULL default '0',
   Gold int(10) unsigned NOT NULL default '0',
   Intro text NOT NULL,
   UNIQUE KEY GuildInfo_u1 (GuildID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GuildMember (
   GuildID int(10) unsigned NOT NULL default '0',
@@ -1774,7 +1737,7 @@ CREATE TABLE GuildMember (
   LogOn tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (Name),
   KEY IDX_GuildID (GuildID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GuildRegistrationInfo (
@@ -1782,15 +1745,14 @@ CREATE TABLE GuildRegistrationInfo (
   GuildType tinyint(3) unsigned NOT NULL default '0',
   Deadline varchar(30) NOT NULL default '',
   PRIMARY KEY  (GuildID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GuildUnionInfo (
   UnionID int(10) unsigned NOT NULL auto_increment,
   MasterGuildID int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (UnionID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GuildUnionMember (
   UnionID int(10) unsigned NOT NULL default '0',
@@ -1798,8 +1760,7 @@ CREATE TABLE GuildUnionMember (
   PRIMARY KEY  (OwnerGuildID,UnionID),
   KEY IDX_Owner (OwnerGuildID),
   KEY IDX_Union (UnionID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GuildUnionOffer (
   UnionID int(10) unsigned NOT NULL default '0',
@@ -1808,8 +1769,7 @@ CREATE TABLE GuildUnionOffer (
   OfferTime datetime NOT NULL default '2004-10-01 00:00:00',
   PRIMARY KEY  (OwnerGuildID),
   KEY IDX_Union (UnionID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE GuildVoteDataInfo (
   VoteID int(10) unsigned NOT NULL default '0',
@@ -1817,7 +1777,7 @@ CREATE TABLE GuildVoteDataInfo (
   Casted tinyint(3) unsigned NOT NULL default '0',
   Vote tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (VoteID,Name)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GuildVoteInfo (
@@ -1826,7 +1786,7 @@ CREATE TABLE GuildVoteInfo (
   VoteType tinyint(3) unsigned NOT NULL default '0',
   Deadline varchar(30) NOT NULL default '',
   PRIMARY KEY  (VoteID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE GuildWarHistory (
@@ -1842,18 +1802,18 @@ CREATE TABLE GuildWarHistory (
   WinnerGuildName varchar(20) NOT NULL default '',
   PRIMARY KEY  (WarID),
   KEY IDX_GuildWarID (GuildWarID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE HeadCount (
   ID int(10) unsigned NOT NULL auto_increment,
   Name varchar(20) NOT NULL default '',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00',
+  Time datetime NOT NULL default '0000-00-00 00:00:00',
   FirstLevel smallint(5) unsigned NOT NULL default '0',
   LastLevel smallint(5) unsigned NOT NULL default '0',
   HeadCount int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE HelmInfo (
@@ -1877,8 +1837,7 @@ CREATE TABLE HelmInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE HelmObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1896,7 +1855,7 @@ CREATE TABLE HelmObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_HelmObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE HolyWaterInfo (
@@ -1911,8 +1870,7 @@ CREATE TABLE HolyWaterInfo (
   maxDamage smallint(5) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE HolyWaterObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -1926,7 +1884,7 @@ CREATE TABLE HolyWaterObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_HolyWaterObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE INTBalanceInfo (
@@ -1934,8 +1892,7 @@ CREATE TABLE INTBalanceInfo (
   GoalExp int(11) NOT NULL default '0',
   AccumExp bigint(11) unsigned NOT NULL default '0',
   PRIMARY KEY  (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE IPBlockInfo (
   IP varchar(15) NOT NULL default '',
@@ -1943,23 +1900,21 @@ CREATE TABLE IPBlockInfo (
   last varchar(15) NOT NULL default '',
   class smallint(5) NOT NULL default '0',
   KEY IP (IP)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE IllegalPlayerInfo (
   loginTime datetime NOT NULL default '0000-00-00 00:00:00',
   IP char(15) default NULL,
   MAC char(12) default NULL,
   PRIMARY KEY  (loginTime)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ItemClass (
   ItemClass int(11) NOT NULL default '0',
   Name varchar(20) NOT NULL default '',
   PRIMARY KEY  (ItemClass)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ItemGradeRatioInfo (
   Grade tinyint(3) unsigned NOT NULL default '0',
@@ -1967,8 +1922,7 @@ CREATE TABLE ItemGradeRatioInfo (
   GambleRatio smallint(3) unsigned NOT NULL default '0',
   BeadRatio smallint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (Grade)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ItemMineInfo (
   ID int(11) NOT NULL default '0',
@@ -1976,8 +1930,7 @@ CREATE TABLE ItemMineInfo (
   ItemType smallint(5) NOT NULL default '0',
   ItemOption varchar(50) NOT NULL default '',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ItemRewardInfo (
   RewardClass int(10) NOT NULL default '0',
@@ -1989,8 +1942,7 @@ CREATE TABLE ItemRewardInfo (
   TimeLimitSec int(10) NOT NULL default '0',
   PRIMARY KEY  (RewardID),
   KEY ItemRewardInfo_RewardClass (RewardClass)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ItemTraceLog (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2001,11 +1953,11 @@ CREATE TABLE ItemTraceLog (
   OwnerID varchar(10) NOT NULL default '',
   LogType enum('CREATE','TRADE','DELETE','MOVE','NONE') NOT NULL default 'NONE',
   DetailType enum('COMMAND','SHOPBUY','PICKUP','EVENTNPC','SHOPSELL','TIMEOUT','ENCHANT','OPCLEAR','DROP','TRADE','ETC') NOT NULL default 'ETC',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00',
+  Time datetime NOT NULL default '0000-00-00 00:00:00',
   KEY IDX_ItemTraceLog (ItemClass,ItemID),
   KEY IDX_PreOwnerID (PreOwnerID(4)),
   KEY IDX_OwnerID (OwnerID(4))
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE KeyInfo (
@@ -2020,8 +1972,7 @@ CREATE TABLE KeyInfo (
   TargetType smallint(5) unsigned NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE KeyObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2035,7 +1986,7 @@ CREATE TABLE KeyObject (
   Target int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_KeyObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE LarvaInfo (
@@ -2049,8 +2000,7 @@ CREATE TABLE LarvaInfo (
   Effect varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LarvaObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2064,14 +2014,12 @@ CREATE TABLE LarvaObject (
   Num tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_LarvaObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LastNameInfo (
   MonsterType varchar(10) NOT NULL default 'BASIC',
   Name varchar(20) NOT NULL default ''
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LearningItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2084,8 +2032,7 @@ CREATE TABLE LearningItemInfo (
   SkillType smallint(5) unsigned NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LearningItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2098,7 +2045,7 @@ CREATE TABLE LearningItemObject (
   Y tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_LearningItemObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE LevelWarHistory (
@@ -2114,8 +2061,7 @@ CREATE TABLE LevelWarHistory (
   DefaultSweeper varchar(30) NOT NULL default '',
   KEY IDX_Level (Level),
   KEY IDX_LevelWarID (LevelWarID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LevelWarZoneInfo (
   ID int(10) unsigned NOT NULL default '0',
@@ -2130,13 +2076,11 @@ CREATE TABLE LevelWarZoneInfo (
   OustersMax smallint(11) unsigned NOT NULL default '0',
   ZoneIDList text NOT NULL,
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LogUserInfo (
   Name varchar(20) NOT NULL default ''
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LuckInfo (
   Level tinyint(4) NOT NULL default '0',
@@ -2144,15 +2088,13 @@ CREATE TABLE LuckInfo (
   UpgradeItemType2 int(11) NOT NULL default '0',
   UpgradeItemType3 int(11) NOT NULL default '0',
   PRIMARY KEY  (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LuckyBagCount (
   BAGKIND smallint(5) NOT NULL default '0',
   BAGCOUNT int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (BAGKIND)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LuckyBagInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2164,8 +2106,7 @@ CREATE TABLE LuckyBagInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE LuckyBagObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2181,15 +2122,14 @@ CREATE TABLE LuckyBagObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_LuckyBagObject (OwnerID),
   KEY IDX_LuckyBagObject2 (Storage)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MACBlockInfo (
   LockMAC varchar(20) NOT NULL default '00000000',
   State enum('ALLOW','DENY') NOT NULL default 'DENY',
   PRIMARY KEY  (LockMAC)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MaceInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2204,7 +2144,7 @@ CREATE TABLE MaceInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   MaxSilver smallint(5) unsigned NOT NULL default '0',
@@ -2218,8 +2158,7 @@ CREATE TABLE MaceInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MaceObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2238,8 +2177,7 @@ CREATE TABLE MaceObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_MaceObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MagazineInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2256,8 +2194,7 @@ CREATE TABLE MagazineInfo (
   GunType enum('AR','SMG','SG','SR') NOT NULL default 'AR',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MagazineObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2272,8 +2209,7 @@ CREATE TABLE MagazineObject (
   nBullets tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_MagazineObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MasterLairInfo (
   ZoneID smallint(5) unsigned NOT NULL default '0',
@@ -2302,8 +2238,7 @@ CREATE TABLE MasterLairInfo (
   MasterDeadVampireSay text,
   MasterNotDeadSay text,
   PRIMARY KEY  (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MeetNPCQuestInfo (
   QuestID int(10) NOT NULL default '0',
@@ -2318,7 +2253,7 @@ CREATE TABLE MeetNPCQuestInfo (
   EventQuest tinyint(3) NOT NULL default '0',
   QuestLevel smallint(5) NOT NULL default '0',
   PRIMARY KEY  (QuestID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE Messages (
@@ -2326,14 +2261,13 @@ CREATE TABLE Messages (
   Sender varchar(10) NOT NULL default '',
   Message varchar(255) NOT NULL default '',
   KEY IDX_Receiver (Receiver)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MiddleNameInfo (
   MonsterType varchar(10) NOT NULL default 'BASIC',
   Name varchar(20) NOT NULL default ''
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MineInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2347,8 +2281,7 @@ CREATE TABLE MineInfo (
   maxDamage smallint(5) unsigned NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MineObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2362,7 +2295,7 @@ CREATE TABLE MineObject (
   NUM tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY MineObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MiniGameQuestInfo (
@@ -2377,20 +2310,19 @@ CREATE TABLE MiniGameQuestInfo (
   EventQuest tinyint(3) NOT NULL default '0',
   QuestLevel smallint(5) NOT NULL default '0',
   PRIMARY KEY  (QuestID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MiniGameScores (
   Name varchar(20) NOT NULL default '',
   Type tinyint(3) NOT NULL default '0',
   Level tinyint(3) NOT NULL default '0',
   Score int(20) NOT NULL default '0',
-  `Time` datetime NOT NULL default '2003-06-24 15:47:00',
+  Time datetime NOT NULL default '2003-06-24 15:47:00',
   KEY IDX_SCORE (Score),
   KEY IDX_NAME (Name),
   KEY IDX_TYPE (Type),
   KEY IDX_LEVEL (Level)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MittenInfo (
@@ -2414,8 +2346,7 @@ CREATE TABLE MittenInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MittenObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2434,7 +2365,7 @@ CREATE TABLE MittenObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY MittenObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MixingItemInfo (
@@ -2451,8 +2382,7 @@ CREATE TABLE MixingItemInfo (
   OustersLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MixingItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2467,7 +2397,7 @@ CREATE TABLE MixingItemObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MofusLog (
@@ -2476,14 +2406,13 @@ CREATE TABLE MofusLog (
   RecvPoint smallint(5) NOT NULL default '0',
   SavePoint smallint(5) NOT NULL default '0',
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MofusPowerPoint (
   OwnerID varchar(30) NOT NULL default '',
   Point int(11) NOT NULL default '0',
   PRIMARY KEY  (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MoneyInfo (
@@ -2496,8 +2425,7 @@ CREATE TABLE MoneyInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   UNIQUE KEY MoneyInfo_u1 (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MoneyObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2512,7 +2440,7 @@ CREATE TABLE MoneyObject (
   Num tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_MoneyObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MoneyTraceLog (
@@ -2521,8 +2449,8 @@ CREATE TABLE MoneyTraceLog (
   LogType enum('CREATE','TRADE','DELETE','MOVE','NONE') NOT NULL default 'NONE',
   DetailType enum('COMMAND','DROP','PICKUP','TRADE','TIMEOUT','ETC') NOT NULL default 'ETC',
   Amount int(10) unsigned default '0',
-  `Time` datetime NOT NULL default '0000-00-00 00:00:00'
-) ENGINE=MyISAM;
+  Time datetime NOT NULL default '0000-00-00 00:00:00'
+) TYPE=MyISAM;
 
 
 CREATE TABLE MonsterInfo (
@@ -2566,15 +2494,14 @@ CREATE TABLE MonsterInfo (
   MonsterClass tinyint(4) NOT NULL default '0',
   SkullType tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (MType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MonsterKillLog (
   WorldID tinyint(4) NOT NULL default '0',
   ZoneID smallint(6) NOT NULL default '0',
   MonsterType smallint(6) NOT NULL default '0',
   KillDt datetime NOT NULL default '0000-00-00 00:00:00'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE MonsterKillQuestInfo (
@@ -2591,8 +2518,7 @@ CREATE TABLE MonsterKillQuestInfo (
   EventQuest tinyint(3) NOT NULL default '0',
   QuestLevel smallint(5) NOT NULL default '0',
   PRIMARY KEY  (QuestID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MoonCardInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2604,8 +2530,7 @@ CREATE TABLE MoonCardInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MoonCardObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2621,8 +2546,7 @@ CREATE TABLE MoonCardObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_MoonCardObject (OwnerID),
   KEY IDX_MoonCardObject2 (Storage)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MotorcycleInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2636,8 +2560,7 @@ CREATE TABLE MotorcycleInfo (
   CC smallint(5) unsigned NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE MotorcycleObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2652,7 +2575,7 @@ CREATE TABLE MotorcycleObject (
   Durability smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_MotorcycleObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE NPC (
@@ -2667,8 +2590,7 @@ CREATE TABLE NPC (
   ShowInMinimap tinyint(3) unsigned NOT NULL default '0',
   Description text NOT NULL,
   TaxingCastleZoneID int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE NecklaceInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2691,8 +2613,7 @@ CREATE TABLE NecklaceInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE NecklaceObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2710,7 +2631,7 @@ CREATE TABLE NecklaceObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_NecklaceObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE NicknameBook (
@@ -2719,11 +2640,10 @@ CREATE TABLE NicknameBook (
   NickType tinyint(3) NOT NULL default '0',
   NickIndex smallint(6) NOT NULL default '0',
   Nickname varchar(22) NOT NULL default '',
-  `Time` datetime NOT NULL default '2004-06-01 14:00:00',
+  Time datetime NOT NULL default '2004-06-01 14:00:00',
   PRIMARY KEY  (nID,OwnerID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE NicknameIndex (
   NickIndex smallint(6) NOT NULL default '0',
@@ -2731,13 +2651,12 @@ CREATE TABLE NicknameIndex (
   NickType enum('LEVEL','ETC') NOT NULL default 'ETC',
   Race tinyint(3) NOT NULL default '0',
   Level10 tinyint(3) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE NonPKServerList (
   WorldID tinyint(3) unsigned NOT NULL default '0',
   ServerGroupID tinyint(3) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OlympicStat (
@@ -2750,15 +2669,14 @@ CREATE TABLE OlympicStat (
   PRIMARY KEY  (PlayerID,OwnerID,Type,Day),
   KEY NAME_IDX (OwnerID),
   KEY ID_IDX (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OpCreate (
   OpName varchar(10) NOT NULL default '',
   DateTime varchar(30) NOT NULL default '',
   ItemDesc text NOT NULL
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OptionClassInfo (
   OptionClassType int(11) NOT NULL default '0',
@@ -2768,8 +2686,7 @@ CREATE TABLE OptionClassInfo (
   TotalGrade int(11) NOT NULL default '0',
   OptionGroup smallint(5) NOT NULL default '0',
   PRIMARY KEY  (OptionClassType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OptionInfo (
   OptionType int(11) NOT NULL default '0',
@@ -2792,8 +2709,7 @@ CREATE TABLE OptionInfo (
   NextOptionRatio tinyint(3) NOT NULL default '0',
   Grade int(11) NOT NULL default '0',
   PRIMARY KEY  (OptionType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Ousters (
   Name varchar(10) NOT NULL default '',
@@ -2848,8 +2764,7 @@ CREATE TABLE Ousters (
   KEY IDX_Ousters1 (PlayerID),
   KEY IDX_Ousters2 (Slot),
   KEY Ousters_m1 (GuildID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersArmsbandInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -2873,8 +2788,7 @@ CREATE TABLE OustersArmsbandInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersArmsbandObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2892,7 +2806,7 @@ CREATE TABLE OustersArmsbandObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersArmsbandObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersBootsInfo (
@@ -2916,8 +2830,7 @@ CREATE TABLE OustersBootsInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersBootsObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2935,7 +2848,7 @@ CREATE TABLE OustersBootsObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersBootsObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersChakramInfo (
@@ -2950,7 +2863,7 @@ CREATE TABLE OustersChakramInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -2963,8 +2876,7 @@ CREATE TABLE OustersChakramInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersChakramObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -2982,8 +2894,7 @@ CREATE TABLE OustersChakramObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersChakramObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersCircletInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3006,8 +2917,7 @@ CREATE TABLE OustersCircletInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersCircletObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3025,7 +2935,7 @@ CREATE TABLE OustersCircletObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersCircletObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersCoatInfo (
@@ -3049,8 +2959,7 @@ CREATE TABLE OustersCoatInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersCoatObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3068,7 +2977,7 @@ CREATE TABLE OustersCoatObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersCoatObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersEXPBalanceInfo (
@@ -3077,8 +2986,7 @@ CREATE TABLE OustersEXPBalanceInfo (
   AccumExp bigint(11) NOT NULL default '0',
   SkillPointBonus int(11) NOT NULL default '0',
   KEY IDX_Level (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersPendentInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3101,8 +3009,7 @@ CREATE TABLE OustersPendentInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersPendentObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3120,7 +3027,7 @@ CREATE TABLE OustersPendentObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersPendentObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersRingInfo (
@@ -3144,8 +3051,7 @@ CREATE TABLE OustersRingInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersRingObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3163,7 +3069,7 @@ CREATE TABLE OustersRingObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersRingObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersSkillSave (
@@ -3174,7 +3080,7 @@ CREATE TABLE OustersSkillSave (
   CastingTime int(10) unsigned NOT NULL default '0',
   NextTime int(10) unsigned NOT NULL default '0',
   KEY IDX_OustersSkillSave (OwnerID,SkillType)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersStoneInfo (
@@ -3200,8 +3106,7 @@ CREATE TABLE OustersStoneInfo (
   Elemental tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersStoneObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3219,7 +3124,7 @@ CREATE TABLE OustersStoneObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersStoneObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersSummonItemInfo (
@@ -3233,8 +3138,7 @@ CREATE TABLE OustersSummonItemInfo (
   Effect smallint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersSummonItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3250,7 +3154,7 @@ CREATE TABLE OustersSummonItemObject (
   Charge smallint(6) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY OwnerID_IDX (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE OustersWristletInfo (
@@ -3265,7 +3169,7 @@ CREATE TABLE OustersWristletInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -3280,8 +3184,7 @@ CREATE TABLE OustersWristletInfo (
   Elemental tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE OustersWristletObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3299,7 +3202,7 @@ CREATE TABLE OustersWristletObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_OustersWristletObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PCRoomIPInfo (
@@ -3308,7 +3211,7 @@ CREATE TABLE PCRoomIPInfo (
   PRIMARY KEY  (ID,IP),
   KEY IDX_PCRoomIPInfo_ID (ID),
   KEY IDX_PCRoomIPInfo_IP (IP)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PCRoomInfo (
@@ -3322,7 +3225,7 @@ CREATE TABLE PCRoomInfo (
   Email varchar(30) NOT NULL default '',
   ZipCode2 varchar(7) default NULL,
   Address2 varchar(100) default NULL,
-  `Line` varchar(20) default NULL,
+  Line varchar(20) default NULL,
   Kind varchar(20) default NULL,
   Kind2 varchar(20) default NULL,
   T_admin varchar(30) default NULL,
@@ -3348,7 +3251,7 @@ CREATE TABLE PCRoomInfo (
   PRIMARY KEY  (ID),
   UNIQUE KEY Account (Account),
   KEY IDX_PCRoomInfo_Name (Name)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PCRoomLottoObject (
@@ -3366,7 +3269,7 @@ CREATE TABLE PCRoomLottoObject (
   KEY IDX_DIMENSIONID (DimensionID),
   KEY IDX_WORLDID (WorldID),
   KEY IDX_NAME (Name)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PCRoomPayList (
@@ -3377,7 +3280,7 @@ CREATE TABLE PCRoomPayList (
   KEY PCRoomPayList_IDX1 (PCRoomID),
   KEY PCRoomPayList_IDX2 (Year),
   KEY PCRoomPayList_IDX3 (Month)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PCRoomUserInfo (
@@ -3385,13 +3288,13 @@ CREATE TABLE PCRoomUserInfo (
   PlayerID varchar(15) NOT NULL default '',
   PRIMARY KEY  (ID,PlayerID),
   KEY IDX_PCRoomUserInfo_PlayerID (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PKServerList (
   WorldID tinyint(3) unsigned NOT NULL default '0',
   ServerGroupID tinyint(3) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PKZoneInfo (
@@ -3405,8 +3308,7 @@ CREATE TABLE PKZoneInfo (
   PCLimit int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID),
   KEY PKZoneInfo_ZoneID (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PersonaInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3429,8 +3331,7 @@ CREATE TABLE PersonaInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PersonaObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3449,7 +3350,7 @@ CREATE TABLE PersonaObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY PersonaObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PetAttrBalanceInfo (
@@ -3457,14 +3358,12 @@ CREATE TABLE PetAttrBalanceInfo (
   Level int(11) NOT NULL default '0',
   AddAttr int(11) NOT NULL default '0',
   AccumAttr int(11) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetAttrInfo (
   PetAttr tinyint(3) NOT NULL default '0',
   EnchantRatio tinyint(3) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetEnchantItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3479,8 +3378,7 @@ CREATE TABLE PetEnchantItemInfo (
   FunctionGrade tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetEnchantItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3496,22 +3394,19 @@ CREATE TABLE PetEnchantItemObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_PetEnchantItemObject (OwnerID),
   KEY IDX_PetEnchantItemObject2 (Storage)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetEnchantOptionRatioInfo (
   OptionType int(11) NOT NULL default '0',
   Ratio int(11) NOT NULL default '0',
   PRIMARY KEY  (OptionType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetExpInfo (
   PetLevel tinyint(3) NOT NULL default '0',
   PetGoalExp int(11) NOT NULL default '0',
   PetAccumExp int(11) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetFoodInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3527,8 +3422,7 @@ CREATE TABLE PetFoodInfo (
   TameRatio tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetFoodObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3544,7 +3438,7 @@ CREATE TABLE PetFoodObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_PetFoodObject (OwnerID),
   KEY IDX_PetFoodObject2 (Storage)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PetItemInfo (
@@ -3558,8 +3452,7 @@ CREATE TABLE PetItemInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3586,7 +3479,7 @@ CREATE TABLE PetItemObject (
   Nickname varchar(22) NOT NULL default '',
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE PetTypeInfo (
@@ -3599,8 +3492,7 @@ CREATE TABLE PetTypeInfo (
   CreatureType5 smallint(5) unsigned NOT NULL default '0',
   FoodType smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (PetType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PetTypeInfo_bak (
   PetType tinyint(3) unsigned NOT NULL default '0',
@@ -3612,12 +3504,11 @@ CREATE TABLE PetTypeInfo_bak (
   CreatureType5 smallint(5) unsigned NOT NULL default '0',
   FoodType smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (PetType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Player (
   PlayerID varchar(15) NOT NULL default '',
-  Password varchar(41) NOT NULL default '',
+  Password varchar(16) NOT NULL default '',
   Name varchar(20) NOT NULL default '',
   Sex enum('MALE','FEMALE') default NULL,
   SSN varchar(20) NOT NULL default '',
@@ -3635,7 +3526,7 @@ CREATE TABLE Player (
   LogOn enum('LOGOFF','LOGON','GAME') NOT NULL default 'LOGOFF',
   Access enum('ALLOW','DENY','WAIT','OUT') NOT NULL default 'ALLOW',
   SpecialEventCount int(10) unsigned NOT NULL default '0',
-  `Number` int(10) unsigned NOT NULL default '0',
+  Number int(10) unsigned NOT NULL default '0',
   IYear int(10) unsigned NOT NULL default '0',
   IMonth int(10) unsigned NOT NULL default '0',
   IDay int(10) unsigned NOT NULL default '0',
@@ -3659,8 +3550,7 @@ CREATE TABLE Player (
   KEY IDX_SSN (SSN),
   KEY IDX_PayPlayDate (PayPlayDate),
   KEY IDX_Player (LogOn,CurrentLoginServerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PotionInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3674,8 +3564,7 @@ CREATE TABLE PotionInfo (
   Effect varchar(50) NOT NULL default '',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PotionObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3689,8 +3578,7 @@ CREATE TABLE PotionObject (
   Num tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_PotionObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PupaInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3703,8 +3591,7 @@ CREATE TABLE PupaInfo (
   Effect varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE PupaObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3718,8 +3605,7 @@ CREATE TABLE PupaObject (
   Num tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_PupaObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE QuestItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3733,8 +3619,7 @@ CREATE TABLE QuestItemInfo (
   BonusRatio int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE QuestItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3748,8 +3633,7 @@ CREATE TABLE QuestItemObject (
   ItemFlag tinyint(4) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY QuestItemObject_m1 (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RaceWarHistory (
   RaceWarID varchar(10) NOT NULL default '',
@@ -3763,8 +3647,7 @@ CREATE TABLE RaceWarHistory (
   VampireBloodBible varchar(30) NOT NULL default '',
   OustersBloodBible varchar(30) NOT NULL default '',
   KEY IDX_RaceWarID (RaceWarID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RaceWarPCLimit (
   ID int(11) NOT NULL default '0',
@@ -3773,32 +3656,30 @@ CREATE TABLE RaceWarPCLimit (
   MaxLevel smallint(11) NOT NULL default '0',
   LimitNum smallint(11) NOT NULL default '0',
   CurrentNum smallint(11) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RaceWarPCList (
   Name char(10) NOT NULL default '',
   Race tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (Name)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE RankBonusData (
   OwnerID varchar(10) NOT NULL default '',
   Type int(11) NOT NULL default '0',
   KEY IDX_RankBonusData (OwnerID,Type)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE RankBonusInfo (
   Type int(11) NOT NULL default '0',
   Name varchar(30) NOT NULL default '',
   Rank tinyint(4) NOT NULL default '0',
-  `Point` tinyint(4) NOT NULL default '0',
+  Point tinyint(4) NOT NULL default '0',
   Race tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (Type)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RankEXPInfo (
   RankType tinyint(3) unsigned NOT NULL default '0',
@@ -3806,8 +3687,7 @@ CREATE TABLE RankEXPInfo (
   GoalExp int(11) NOT NULL default '0',
   AccumExp int(11) NOT NULL default '0',
   PRIMARY KEY  (RankType,Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RareEnchantInfo (
   ID int(11) NOT NULL auto_increment,
@@ -3817,8 +3697,7 @@ CREATE TABLE RareEnchantInfo (
   RatioWhenFail int(11) NOT NULL default '0',
   RatioWhenSuccess int(11) NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RegenZonePosition (
   ID int(10) unsigned NOT NULL default '0',
@@ -3827,8 +3706,7 @@ CREATE TABLE RegenZonePosition (
   ZoneY int(10) unsigned NOT NULL default '0',
   Owner tinyint(3) unsigned NOT NULL default '3',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ReinforceRegisterInfo (
   WarID int(10) unsigned NOT NULL default '0',
@@ -3836,8 +3714,7 @@ CREATE TABLE ReinforceRegisterInfo (
   ReinforceGuildID smallint(5) unsigned NOT NULL default '0',
   Status enum('WAIT','ACCEPT','DENY') NOT NULL default 'WAIT',
   KEY WarID_IDX (WarID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RelicInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3859,8 +3736,7 @@ CREATE TABLE RelicInfo (
   MonsterType smallint(5) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RelicObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3876,13 +3752,12 @@ CREATE TABLE RelicObject (
   EnchantLevel smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_RingObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ResurrectItemCount (
   Count int(10) unsigned NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ResurrectItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -3896,8 +3771,7 @@ CREATE TABLE ResurrectItemInfo (
   ResurrectType tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ResurrectItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3912,7 +3786,7 @@ CREATE TABLE ResurrectItemObject (
   ItemFlag tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY IDX_RESURRECT_ITEM (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE RingInfo (
@@ -3936,8 +3810,7 @@ CREATE TABLE RingInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE RingObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -3955,7 +3828,7 @@ CREATE TABLE RingObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_RingObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SGInfo (
@@ -3971,7 +3844,7 @@ CREATE TABLE SGInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -3983,8 +3856,7 @@ CREATE TABLE SGInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SGObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4004,7 +3876,7 @@ CREATE TABLE SGObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_SGObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SMGInfo (
@@ -4020,7 +3892,7 @@ CREATE TABLE SMGInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -4032,8 +3904,7 @@ CREATE TABLE SMGInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SMGObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4053,7 +3924,7 @@ CREATE TABLE SMGObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_SMGObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SMSAddressBook (
@@ -4061,11 +3932,11 @@ CREATE TABLE SMSAddressBook (
   OwnerID varchar(20) NOT NULL default '',
   CharacterName varchar(20) NOT NULL default '',
   CustomName varchar(40) NOT NULL default '',
-  `Number` varchar(11) NOT NULL default '',
-  `Time` datetime NOT NULL default '2004-06-01 14:00:00',
+  Number varchar(11) NOT NULL default '',
+  Time datetime NOT NULL default '2004-06-01 14:00:00',
   PRIMARY KEY  (eID,OwnerID),
   KEY IDX_OwnerID (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SMSItemInfo (
@@ -4080,8 +3951,7 @@ CREATE TABLE SMSItemInfo (
   Charge int(10) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SMSItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4097,7 +3967,7 @@ CREATE TABLE SMSItemObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_RESURRECT_ITEM (OwnerID),
   KEY IDX_RESURRECT_ITEM_2 (Storage)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SRInfo (
@@ -4113,7 +3983,7 @@ CREATE TABLE SRInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -4125,8 +3995,7 @@ CREATE TABLE SRInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SRObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4146,23 +4015,21 @@ CREATE TABLE SRObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_SRObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SSStringPool (
   ID int(11) NOT NULL default '0',
   String text NOT NULL,
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE STRBalanceInfo (
   Level int(11) NOT NULL auto_increment,
   GoalExp int(11) NOT NULL default '0',
   AccumExp bigint(11) unsigned NOT NULL default '0',
   PRIMARY KEY  (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Script (
   ScriptID int(10) unsigned NOT NULL default '0',
@@ -4170,8 +4037,7 @@ CREATE TABLE Script (
   Subject text,
   Content text,
   PRIMARY KEY  (ScriptID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SerumInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4184,8 +4050,7 @@ CREATE TABLE SerumInfo (
   SerumEffect varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SerumObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4199,7 +4064,7 @@ CREATE TABLE SerumObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_SerumObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ShieldInfo (
@@ -4223,8 +4088,7 @@ CREATE TABLE ShieldInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ShieldObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4242,7 +4106,7 @@ CREATE TABLE ShieldObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_ShieldObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ShoesInfo (
@@ -4266,8 +4130,7 @@ CREATE TABLE ShoesInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ShoesObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4285,7 +4148,7 @@ CREATE TABLE ShoesObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_ShoesObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ShopTemplate (
@@ -4298,8 +4161,7 @@ CREATE TABLE ShopTemplate (
   MaxOptionLevel tinyint(3) unsigned NOT NULL default '0',
   NPCID smallint(5) unsigned NOT NULL default '0',
   UNIQUE KEY ShopTemplate_u1 (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ShoulderArmorInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4322,8 +4184,7 @@ CREATE TABLE ShoulderArmorInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ShoulderArmorObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4342,7 +4203,7 @@ CREATE TABLE ShoulderArmorObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY ShoulderArmorObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ShrineInfo (
@@ -4367,8 +4228,7 @@ CREATE TABLE ShrineInfo (
   HolyMType smallint(5) unsigned NOT NULL default '0',
   OwnerRace tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SkillBalance (
   Type int(11) NOT NULL default '0',
@@ -4386,7 +4246,7 @@ CREATE TABLE SkillBalance (
   MaxRange int(11) default NULL,
   Target tinyint(4) default NULL,
   SubExp int(11) NOT NULL default '0',
-  `Point` tinyint(4) NOT NULL default '0',
+  Point tinyint(4) NOT NULL default '0',
   EXP int(11) NOT NULL default '0',
   Domain tinyint(4) NOT NULL default '0',
   MagicDomain tinyint(4) NOT NULL default '0',
@@ -4396,13 +4256,12 @@ CREATE TABLE SkillBalance (
   SkillPoint tinyint(4) NOT NULL default '0',
   LevelUpPoint tinyint(4) NOT NULL default '0',
   RequireSkill varchar(30) NOT NULL default '',
-  `Condition` varchar(150) NOT NULL default '',
-  `ElementalDomain` tinyint(4) NOT NULL default '0',
+  Condition varchar(150) NOT NULL default '',
+  ElementalDomain tinyint(4) NOT NULL default '0',
   CanDelete tinyint(4) NOT NULL default '0',
   Available tinyint(1) NOT NULL default '0',
   UNIQUE KEY SkillBalance_u1 (Type)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SkillDomainInfo (
   Type int(11) NOT NULL auto_increment,
@@ -4413,8 +4272,7 @@ CREATE TABLE SkillDomainInfo (
   BestItemType tinyint(4) NOT NULL default '0',
   PRIMARY KEY  (Type),
   KEY IDX_Level (DomainType,Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SkillSave (
   OwnerID varchar(10) NOT NULL default '',
@@ -4425,14 +4283,13 @@ CREATE TABLE SkillSave (
   CastingTime int(10) unsigned NOT NULL default '0',
   NextTime int(10) unsigned NOT NULL default '0',
   KEY IDX_SkillSave (OwnerID,SkillType)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SkillTreeInfo (
   SkillType int(11) NOT NULL default '0',
   Parent int(11) NOT NULL default '0'
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SkullInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4445,8 +4302,7 @@ CREATE TABLE SkullInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SkullObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4460,15 +4316,14 @@ CREATE TABLE SkullObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_SkullObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE Slang (
   Word char(20) NOT NULL default '',
   PRIMARY KEY  (Word),
   KEY IDX_Slang_Word (Word)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Slayer (
   Race enum('SLAYER','VAMPIRE','OUSTERS') NOT NULL default 'SLAYER',
@@ -4557,8 +4412,7 @@ CREATE TABLE Slayer (
   KEY IDX_Slayer1 (PlayerID),
   KEY IDX_Slayer2 (Slot),
   KEY Slayer_m1 (GuildID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SlayerPortalItemInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4572,8 +4426,7 @@ CREATE TABLE SlayerPortalItemInfo (
   ReqAbility varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SlayerPortalItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4587,7 +4440,7 @@ CREATE TABLE SlayerPortalItemObject (
   Charge tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY SlayerProtalItemObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SlayerWeaponRewardInfo (
@@ -4599,15 +4452,13 @@ CREATE TABLE SlayerWeaponRewardInfo (
   OptionType varchar(50) NOT NULL default '',
   TimeLimitSec int(10) NOT NULL default '0',
   PRIMARY KEY  (RewardID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SpecialEvent (
   Name varchar(30) NOT NULL default '',
   Count int(10) NOT NULL default '0',
   PRIMARY KEY  (Name)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SpeedHackPlayer (
   PlayerID varchar(15) NOT NULL default '',
@@ -4618,7 +4469,7 @@ CREATE TABLE SpeedHackPlayer (
   Date datetime NOT NULL default '0000-00-00 00:00:00',
   Count int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SubInventoryInfo (
@@ -4633,8 +4484,7 @@ CREATE TABLE SubInventoryInfo (
   Height tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SubInventoryObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4647,7 +4497,7 @@ CREATE TABLE SubInventoryObject (
   Y tinyint(3) unsigned NOT NULL default '0',
   ItemFlag tinyint(4) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE SweeperBonusInfo (
@@ -4657,8 +4507,7 @@ CREATE TABLE SweeperBonusInfo (
   OwnerRace tinyint(3) unsigned NOT NULL default '0',
   Level tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (Type)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SweeperInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4675,8 +4524,7 @@ CREATE TABLE SweeperInfo (
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SweeperObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4695,8 +4543,7 @@ CREATE TABLE SweeperObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_SweeperObject (OwnerID),
   KEY IDX_SweeperObject2 (Storage)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SweeperOwnerInfo (
   SweeperType int(11) NOT NULL default '0',
@@ -4704,8 +4551,7 @@ CREATE TABLE SweeperOwnerInfo (
   OwnerRace tinyint(3) unsigned NOT NULL default '0',
   SweeperSafeType int(11) NOT NULL default '0',
   PRIMARY KEY  (SweeperType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SweeperSetInfo (
   ID smallint(5) unsigned NOT NULL default '0',
@@ -4725,8 +4571,7 @@ CREATE TABLE SweeperSetInfo (
   DefaultY int(10) unsigned NOT NULL default '0',
   DefaultMType smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SwordInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4741,7 +4586,7 @@ CREATE TABLE SwordInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   MaxSilver smallint(5) unsigned NOT NULL default '0',
@@ -4754,8 +4599,7 @@ CREATE TABLE SwordInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SwordObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4774,22 +4618,20 @@ CREATE TABLE SwordObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_SwordObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE SystemAvailabilities (
   SystemKind int(11) NOT NULL default '0',
   Available tinyint(1) NOT NULL default '0',
   Description varchar(50) NOT NULL default '',
   PRIMARY KEY  (SystemKind)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE TestClientUser (
   PlayerID varchar(15) NOT NULL default '',
   IP varchar(13) NOT NULL default '',
   LoginDate datetime NOT NULL default '0000-00-00 00:00:00'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE TimeLimitItems (
@@ -4802,7 +4644,7 @@ CREATE TABLE TimeLimitItems (
   PRIMARY KEY  (ID),
   KEY TimeLimitItems_m1 (OwnerID),
   KEY TimeLimitItems_m2 (ItemClass,ItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE TradeLog (
@@ -4816,7 +4658,7 @@ CREATE TABLE TradeLog (
   KEY IDX_Name2 (Name2),
   KEY IDX_IP1 (IP1),
   KEY IDX_IP2 (IP2)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE TrapItemInfo (
@@ -4832,8 +4674,7 @@ CREATE TABLE TrapItemInfo (
   Parameter int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE TrapItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4847,7 +4688,7 @@ CREATE TABLE TrapItemObject (
   ItemFlag tinyint(4) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY OwnerID_IDX (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE Triggers (
@@ -4858,8 +4699,7 @@ CREATE TABLE Triggers (
   Conditions text NOT NULL,
   Actions text NOT NULL,
   PRIMARY KEY  (TriggerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Triggers_bak (
   TriggerID int(10) unsigned NOT NULL auto_increment,
@@ -4869,8 +4709,7 @@ CREATE TABLE Triggers_bak (
   Conditions text NOT NULL,
   Actions text NOT NULL,
   PRIMARY KEY  (TriggerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE TrouserInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -4893,8 +4732,7 @@ CREATE TABLE TrouserInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE TrouserObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -4912,8 +4750,7 @@ CREATE TABLE TrouserObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_TrouserObject (OwnerID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE UnderworldEvent (
   ID int(10) unsigned NOT NULL auto_increment,
@@ -4923,7 +4760,7 @@ CREATE TABLE UnderworldEvent (
   CharacterID varchar(20) NOT NULL default '',
   KillTime datetime NOT NULL default '2003-09-23 00:00:00',
   PRIMARY KEY  (ID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE UniqueItemInfo (
@@ -4933,8 +4770,7 @@ CREATE TABLE UniqueItemInfo (
   CurrentNumber int(10) unsigned NOT NULL default '0',
   ItemClassName varchar(30) NOT NULL default '',
   PRIMARY KEY  (ItemClass,ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE UserIPInfo (
   Name varchar(10) NOT NULL default '',
@@ -4943,14 +4779,14 @@ CREATE TABLE UserIPInfo (
   Port smallint(5) unsigned NOT NULL default '9858',
   PRIMARY KEY  (Name),
   KEY IDX_UserIPInfo (ServerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VSPMInfo (
   id int(11) default NULL,
   host char(30) default NULL,
   name char(30) default NULL
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampEXPBalanceInfo (
@@ -4958,8 +4794,7 @@ CREATE TABLE VampEXPBalanceInfo (
   GoalExp int(11) NOT NULL default '0',
   AccumExp bigint(11) NOT NULL default '0',
   KEY IDX_Level (Level)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE Vampire (
   Name varchar(10) NOT NULL default '',
@@ -5019,8 +4854,7 @@ CREATE TABLE Vampire (
   KEY IDX_Vampire1 (PlayerID),
   KEY IDX_Vampire2 (Slot),
   KEY Vampire_m1 (GuildID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireAmuletInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -5043,8 +4877,7 @@ CREATE TABLE VampireAmuletInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireAmuletObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5062,7 +4895,7 @@ CREATE TABLE VampireAmuletObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY VampireAmuletObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireBraceletInfo (
@@ -5086,8 +4919,7 @@ CREATE TABLE VampireBraceletInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireBraceletObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5105,7 +4937,7 @@ CREATE TABLE VampireBraceletObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_VampireBraceletObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireCoatInfo (
@@ -5129,8 +4961,7 @@ CREATE TABLE VampireCoatInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireCoatObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5148,7 +4979,7 @@ CREATE TABLE VampireCoatObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_VampireCoatObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireCoupleRingInfo (
@@ -5164,8 +4995,7 @@ CREATE TABLE VampireCoupleRingInfo (
   DefaultOption varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireCoupleRingObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5184,7 +5014,7 @@ CREATE TABLE VampireCoupleRingObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_OwnerID (OwnerID),
   KEY IDX_PartnerItemID (PartnerItemID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireETCInfo (
@@ -5198,8 +5028,7 @@ CREATE TABLE VampireETCInfo (
   ReqAbility varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireETCObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5213,7 +5042,7 @@ CREATE TABLE VampireETCObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_VampireETCObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireEarringInfo (
@@ -5237,8 +5066,7 @@ CREATE TABLE VampireEarringInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireEarringObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5256,7 +5084,7 @@ CREATE TABLE VampireEarringObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   UNIQUE KEY VampireEarringObject_u1 (ItemID),
   KEY VampireEarringObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireNecklaceInfo (
@@ -5280,8 +5108,7 @@ CREATE TABLE VampireNecklaceInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireNecklaceObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5299,7 +5126,7 @@ CREATE TABLE VampireNecklaceObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_VampireNecklaceObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampirePortalItemInfo (
@@ -5314,8 +5141,7 @@ CREATE TABLE VampirePortalItemInfo (
   ReqAbility varchar(50) NOT NULL default '',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampirePortalItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5332,7 +5158,7 @@ CREATE TABLE VampirePortalItemObject (
   TargetY int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemID),
   KEY VampirePortalItemObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireRingInfo (
@@ -5356,8 +5182,7 @@ CREATE TABLE VampireRingInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireRingObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5375,7 +5200,7 @@ CREATE TABLE VampireRingObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY IDX_VampireRingObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireSkillSave (
@@ -5385,7 +5210,7 @@ CREATE TABLE VampireSkillSave (
   CastingTime int(10) unsigned NOT NULL default '0',
   NextTime int(10) unsigned NOT NULL default '0',
   KEY IDX_VampireSkillSave (OwnerID,SkillType)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE VampireWeaponInfo (
@@ -5400,7 +5225,7 @@ CREATE TABLE VampireWeaponInfo (
   minDamage smallint(5) unsigned NOT NULL default '0',
   maxDamage smallint(5) unsigned NOT NULL default '0',
   ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
+  Range tinyint(3) unsigned NOT NULL default '0',
   Speed smallint(5) unsigned NOT NULL default '0',
   ReqAbility varchar(50) NOT NULL default '',
   ItemLevel tinyint(3) unsigned NOT NULL default '0',
@@ -5413,8 +5238,7 @@ CREATE TABLE VampireWeaponInfo (
   DowngradeRatio smallint(6) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE VampireWeaponObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5432,7 +5256,7 @@ CREATE TABLE VampireWeaponObject (
   Grade smallint(5) unsigned NOT NULL default '6',
   PRIMARY KEY  (ItemID),
   KEY VampireWeaponObject_m1 (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE WarItemInfo (
@@ -5445,8 +5269,7 @@ CREATE TABLE WarItemInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WarItemObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5461,8 +5284,7 @@ CREATE TABLE WarItemObject (
   PRIMARY KEY  (ItemID),
   KEY IDX_WarItemObject (OwnerID),
   KEY IDX_WarItemObject2 (Storage)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WarScheduleInfo (
   WarID int(10) unsigned NOT NULL default '0',
@@ -5480,8 +5302,7 @@ CREATE TABLE WarScheduleInfo (
   Status enum('WAIT','START','END','CANCEL') NOT NULL default 'WAIT',
   PRIMARY KEY  (WarID),
   KEY WarScheduleInfo_m1 (ServerID,ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WaterInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
@@ -5493,8 +5314,7 @@ CREATE TABLE WaterInfo (
   Ratio int(11) NOT NULL default '0',
   Race tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WaterObject (
   ItemID bigint(20) unsigned NOT NULL default '0',
@@ -5508,7 +5328,7 @@ CREATE TABLE WaterObject (
   Num tinyint(3) unsigned NOT NULL default '1',
   PRIMARY KEY  (ItemID),
   KEY IDX_WaterObject (OwnerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE WayPointInfo (
@@ -5517,8 +5337,7 @@ CREATE TABLE WayPointInfo (
   Y smallint(5) unsigned NOT NULL default '0',
   Race smallint(5) unsigned NOT NULL default '0',
   PRIMARY KEY  (ZoneID,X,Y)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WeatherInfo (
   Month tinyint(3) unsigned NOT NULL default '0',
@@ -5526,15 +5345,14 @@ CREATE TABLE WeatherInfo (
   Rainy tinyint(3) unsigned default NULL,
   Snowy tinyint(3) unsigned default NULL,
   PRIMARY KEY  (Month)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WebLogin (
   PlayerID varchar(15) NOT NULL default '',
   LoginKey varchar(20) NOT NULL default '',
   CreateTime datetime NOT NULL default '2004-01-01 00:00:00',
   PRIMARY KEY  (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE WorldDBInfo (
@@ -5545,8 +5363,7 @@ CREATE TABLE WorldDBInfo (
   Password varchar(20) NOT NULL default '',
   Port int(10) unsigned NOT NULL default '0',
   PRIMARY KEY  (WorldID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE WorldInfo (
   ID int(10) unsigned NOT NULL default '0',
@@ -5554,14 +5371,13 @@ CREATE TABLE WorldInfo (
   Stat tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (ID),
   KEY IDX_GameServerGroupInfo1 (Name)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE YellowDropLog (
   LogID int(10) unsigned NOT NULL auto_increment,
   PlayerID varchar(15) NOT NULL default '',
   Name varchar(10) NOT NULL default '',
-  ReportTime datetime NOT NULL default '0000-00-00 00:00:00',
+  ReportTime datetime NOT NULL default '2003-01-01 00:00:00',
   IClass smallint(3) unsigned NOT NULL default '0',
   IType smallint(3) unsigned NOT NULL default '0',
   IID int(10) unsigned NOT NULL default '0',
@@ -5570,7 +5386,7 @@ CREATE TABLE YellowDropLog (
   Ratio int(10) unsigned NOT NULL default '0',
   Success tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (LogID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE ZoneEffectInfo (
@@ -5587,15 +5403,13 @@ CREATE TABLE ZoneEffectInfo (
   PRIMARY KEY  (ID),
   KEY IDX_ZONEID (ZoneID),
   KEY IDX_EFFECTID (EffectID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ZoneGroupInfo (
   ZoneGroupID smallint(6) NOT NULL default '0',
   ServerID smallint(6) NOT NULL default '0',
   PRIMARY KEY  (ZoneGroupID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ZoneInfo (
   ZoneID smallint(5) unsigned NOT NULL default '0',
@@ -5627,8 +5441,7 @@ CREATE TABLE ZoneInfo (
   Available tinyint(1) unsigned NOT NULL default '0',
   OpenLevel tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ZoneInfo_bak (
   ZoneID smallint(5) unsigned NOT NULL default '0',
@@ -5660,8 +5473,7 @@ CREATE TABLE ZoneInfo_bak (
   Available tinyint(1) unsigned NOT NULL default '0',
   OpenLevel tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (ZoneID)
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE ZoneTriggers (
   TriggerID int(10) unsigned NOT NULL default '0',
@@ -5674,8 +5486,7 @@ CREATE TABLE ZoneTriggers (
   Conditions text NOT NULL,
   Actions text NOT NULL,
   CounterActions text NOT NULL
-) ENGINE=MyISAM;
-
+) TYPE=MyISAM;
 
 CREATE TABLE dk2active (
   activeid int(11) NOT NULL default '0',
@@ -5685,7 +5496,7 @@ CREATE TABLE dk2active (
   province tinyint(3) unsigned NOT NULL default '0',
   activetime datetime NOT NULL default '0000-00-00 00:00:00',
   delactive tinyint(1) NOT NULL default '0'
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE dk2editpass (
@@ -5697,14 +5508,14 @@ CREATE TABLE dk2editpass (
   editip varchar(15) NOT NULL default '',
   UNIQUE KEY editid (editid),
   KEY username (username)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE list (
   PlayerID varchar(15) NOT NULL default '',
   colType enum('RecvPremiumDate','RecvPremiumItemDate','RecvItemDate','PayPremiumDate') NOT NULL default 'RecvPremiumDate',
   KEY idx_PlayerID (PlayerID)
-) ENGINE=MyISAM;
+) TYPE=MyISAM;
 
 
 CREATE TABLE loginerror (
@@ -5715,6 +5526,4 @@ CREATE TABLE loginerror (
   logintime datetime NOT NULL default '0000-00-00 00:00:00',
   UNIQUE KEY errorid (errorid),
   KEY username (username)
-) ENGINE=MyISAM;
-
-
+) TYPE=MyISAM;

@@ -1,0 +1,9 @@
+datamysql/
+*.err
+*.pid
+*-bin.*
+ibdata*
+ib_logfile*
+log_mysql
+extract/
+dump/
