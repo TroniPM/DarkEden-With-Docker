@@ -37,8 +37,14 @@ sudo docker exec -it ${CONTAINER} /bin/bash
 
 Now what? Inside the docker image (REALLY lightwave), just setup and start your server ;]
 ```sh
-cd / && ./setup.sh YOUR_PUBLIC_HOST_IP_HERE  #This is for darkeden sql scripts. Just run this ONCE. YOUR_PUBLIC_IP is optional.
-cd / && ./start                              #You know that, right? :)
+#This is for sql scripts. Just run this ONCE or run again to reset server data.
+#YOUR_PUBLIC_IP is optional: this will publish the server to others players could enter
+#(your vps public ip, or your machine lan ip, or your hamachi ip, etc...). 
+#Leave it blank to only your machine enter de server. After set this, host ip cannot enter the server.
+cd / && ./setup.sh YOUR_PUBLIC_HOST_IP_HERE
+
+#You know what this does, right? :)
+cd / && ./start
 ```
 
 ### Customizable
