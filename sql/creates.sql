@@ -7,34 +7,6 @@ DROP DATABASE IF EXISTS `@@DB_NAME_CHANGE@@`;
 CREATE DATABASE `@@DB_NAME_CHANGE@@`;
 USE `@@DB_NAME_CHANGE@@`; 
 
-/*CREATE TABLE ARInfo (
-  ItemType tinyint(3) unsigned NOT NULL default '0',
-  NextItemType tinyint(3) unsigned NOT NULL default '0',
-  Name varchar(30) NOT NULL default '',
-  EName varchar(30) NOT NULL default '',
-  Price int(10) unsigned NOT NULL default '0',
-  Volume tinyint(3) unsigned NOT NULL default '0',
-  Weight tinyint(3) unsigned NOT NULL default '0',
-  Ratio int(11) NOT NULL default '0',
-  Durability smallint(5) unsigned NOT NULL default '0',
-  minDamage smallint(5) unsigned NOT NULL default '0',
-  maxDamage smallint(5) unsigned NOT NULL default '0',
-  ToHitBonus tinyint(3) unsigned NOT NULL default '0',
-  `Range` tinyint(3) unsigned NOT NULL default '0',
-  Speed smallint(5) unsigned NOT NULL default '0',
-  ReqAbility varchar(50) NOT NULL default '',
-  ItemLevel tinyint(3) unsigned NOT NULL default '0',
-  CriticalBonus int(11) NOT NULL default '0',
-  DefaultOption varchar(50) NOT NULL default '',
-  UpgradeCrashPercent tinyint(4) NOT NULL default '0',
-  UpgradeRatio smallint(6) NOT NULL default '0',
-  NextOptionRatio tinyint(3) unsigned NOT NULL default '0',
-  DowngradeRatio smallint(6) NOT NULL default '0',
-  Race tinyint(1) unsigned NOT NULL default '0',
-  PRIMARY KEY  (ItemType)
-) ENGINE=MyISAM;*/
-
-
 CREATE TABLE ARInfo (
   ItemType tinyint(3) unsigned NOT NULL default '0',
   NextItemType tinyint(3) unsigned NOT NULL default '0',
