@@ -3535,7 +3535,7 @@ CREATE TABLE Player (
   LastSlot tinyint(1) default '0',
   creation_date date default NULL,
   CurrentLoginServerID tinyint(3) unsigned NOT NULL default '0',
-  PayType tinyint(1) unsigned NOT NULL default '1',
+  PayType tinyint(1) unsigned NOT NULL default '0',
   PayPlayDate datetime NOT NULL default '2002-07-15 00:00:00',
   PayPlayHours int(10) unsigned NOT NULL default '0',
   PayPlayFlag int(10) unsigned NOT NULL default '0',
